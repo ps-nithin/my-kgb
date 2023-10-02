@@ -1,0 +1,256 @@
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=windows-1252">
+    <link rel="stylesheet" type="text/css" href="jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="style2.css">
+    <script src="jquery-3.2.1.min.js"></script>
+    <script src="jquery-ui.js"></script>
+    <script>
+        $(function(){
+            $("#accordion").accordion({
+                collapsible: true,
+                active: false,
+                heightStyle: 'content',
+            });
+        });
+
+    </script>
+    <title>cumm</title>
+</head>
+<body>
+
+<div id="accordion">
+    <h3>Opening of Customer ID</h3>
+
+    <table>
+
+        <tr>
+            <td>Menu option</td>
+            <td>CUMM</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Function</td>
+            <td>A-Add, Press F4</td>
+            <td>Other options are C - Copy, D - Suspend, I - Inquiry, L - List, M
+                - Modify, U - Undelete, V - Verify, X - Cancel
+            </td>
+        </tr>
+        <tr>
+            <td>Cust name</td>
+            <td>Select using F2, in first filed, Press F4, enter name in second
+                field, press F4
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Staff</td>
+            <td>If staff select Y and enter employee ID else enter N, press F4</td>
+            <td>If yes then name entered in Cust name field should be exactly which shown in EFI
+                menu
+                related to that staff number
+            </td>
+        </tr>
+        <tr>
+            <td>Minor</td>
+            <td>Enter Y/N, If y then enter details related to minor when system prompt, press
+                F4
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Non resident</td>
+            <td>Enter Y/N. If Y enter NRE related details when system prompts, press F4</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Address type</td>
+            <td>Select: Default address to which communicatioins are to be sent by system, press
+                F4
+            </td>
+            <td>P - Permanent, C - Communication, E - Official</td>
+        </tr>
+        <tr>
+            <td>Address</td>
+            <td>Enter address, Press F4</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>City</td>
+            <td>Enter the city code, press F4 Postal code will automatically populate. Press
+                F4
+            </td>
+            <td>In HMISRPT report ID 102 provides help for city codes</td>
+        </tr>
+        <tr>
+            <td>Type</td>
+            <td>Select appropriate customer type using F2, press F4</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Group</td>
+            <td>Select appropriate customer group using F2, press F4</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Occupation</td>
+            <td>Select occupation of the customer using F2, press F4</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Constitution</td>
+            <td>Select appropriate constitution using F2, press F4</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Gender</td>
+            <td>Enter M/F/O. Press F1 for help. Press F4</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Nat.ID.Card.No</td>
+            <td>Furnish distinguishing number of ID proof produced by the customer, press F4
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Marital Status</td>
+            <td>Select the marital status of the customer by using F2, press F4</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Community</td>
+            <td>Select appropriate community by using F2, press F4</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Caste</td>
+            <td>Select appropriate caste using F2, press F4</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Cust. Rating</td>
+            <td>Select using F2, press F4, As on: Furnish work date by pressing Ctrl+X, press
+                F4
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Tax slab</td>
+            <td>Select appropriate tax slab from the list by pressing F2. For 15H, 15GFE, 15GMA,
+                No TDS
+                and BASE, Pan number is mandatory in PAN/GIR No. field and for Penal
+                FORM60/FORM61 to be
+                furnished in PAN/GIR No. field (Click on PAN/GIR No. field and enter value
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Free Text 1</td>
+            <td>S/O, W/O Etc. (F1 will provide help). press F4</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Free Text 2</td>
+            <td>Relative name. (F1 will provide help). press F4</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Free Text 3</td>
+            <td>Enter age as on date. (F1 will provide help). press F4</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Free Text 4</td>
+            <td>Enter annual income. (F1 will provide help). press F4</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Free Text 5</td>
+            <td>Enter 12 digit Aaadhaar number of that customer, if available and customer
+                desirese to
+                accept Aadhaar based credits through this else enter NA. press F4
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Free Code 1</td>
+            <td>Enter location code. press enter</td>
+            <td>Entering 3 didgit SOL ID and pressing F2 will show all location defined for that
+                SOL
+            </td>
+        </tr>
+        <tr>
+            <td>Free Code 2 to 4</td>
+            <td>Remove default values. press F4 and select from list. press F4</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Option code</td>
+            <td>Enter E, press F4</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Currency field</td>
+            <td>Enter INR - press F4 and then F10</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Note down 9 digit unique customer ID.</td>
+            <td></td>
+            <td></td>
+        </tr>
+
+    </table>
+    <h3>Modification of Customer ID</h3>
+    <table>
+        <tr>
+            <td>Menu option</td>
+            <td>CUMM</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Function</td>
+            <td>M - Modify</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Cust. ID</td>
+            <td>Enter the customer ID to be modified and press F4. Select the required page to be
+                modified by pressing F6 and press F4 & F10 after modifying the data
+            </td>
+            <td></td>
+        </tr>
+    </table>
+    <h3>Verification of Customer ID</h3>
+    <table>
+        <tr>
+            <td>Menu opiton</td>
+            <td>CUMM</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Cust. ID</td>
+            <td>Enter customer ID/select from the list by pressing F2. press F4, F6 seven times and
+                press F4
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Enter option</td>
+            <td>Enter E, press F4, Ctrl+E, F4, F4, and F10</td><td></td>
+        </tr>
+
+    </table>
+    <h3>Extra info</h3>
+    <div class="extra">Please note that as and when branch receives any information regarding the demise of a
+        customer, then the relative customer ID should
+        be modififed and after verification of modification, it should be suspended. For marking the
+        customer as deceased, access menu CUMM >> Function "M" >> F4 >> Customer ID >> F4 >> Select
+        status >> Enter "DEC" >> press F4, F10. After verification, it should be suspended using the
+        function code "D"</div>
+</div>
+
+
+</body>
+</html>

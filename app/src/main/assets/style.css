@@ -1,0 +1,53 @@
+tr:nth-child(odd) {
+	background-color: #ccc;
+}
+tr:nth-child(even) {
+	background-color: #eee;
+}
+body {
+	padding: 0;
+	margin: 0;
+}
+table {
+    table-layout: fixed;
+    width: 100%;
+}
+td {
+    word-wrap: break-word;
+}
+.ui-accordion .ui-accordion-content {
+    padding: 0px;
+}
+
+#extra {
+    padding: 14px;
+}
+
+.ui-accordion .ui-accordion-header {
+    margin-top: 0px;
+    padding: 16px;
+    padding-left: 0px;
+}
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active {
+    border: 0;
+    background: white;
+    font-weight: normal;
+    color: #454545;
+    outline: none;
+}
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover {
+
+    border: 0;
+    font-weight: normal;
+    outline: none;
+}
+.ui-corner-all, .ui-corner-top, .ui-corner-right, .ui-corner-tr, .ui-corner-bottom {
+    border-radius: 0;
+}
+
+.ui-state-default {
+    border-bottom: 1px solid #eeeeee;
+}
+* {
+-webkit-tap-highlight-color: rgba(0,0,0,0);
+}

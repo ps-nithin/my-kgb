@@ -1,0 +1,81 @@
+tr:nth-child(odd) {
+	background-color: #ccc;
+}
+tr:nth-child(even) {
+	background-color: #eee;
+}
+body {
+	background-color: white;
+	padding:0;
+	margin:0;
+}
+table {
+    table-layout: fixed;
+    width: 100%;
+    border-spacing:5px;
+}
+.container {
+  height: 500px;
+  position: relative;
+}
+.center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+td {
+    word-wrap: break-word;
+    padding:14px;
+}
+#oops_head{
+padding:15px;
+}
+#oops_not_found{
+padding-left:15px;
+color: grey;
+}
+.ui-accordion .ui-accordion-content {
+    padding: 0px;
+}
+.ui-icon {
+	display: none;
+}
+h3 {
+margin: 0px;
+}
+
+.ui-accordion .ui-accordion-header {
+	margin-top: 0px;
+	padding:16px;
+}
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active {
+	border:0px;
+	    background: white;
+        font-weight: normal;
+        color: #454545;
+        outline: none;
+}
+.ui-corner-all, .ui-corner-top, .ui-corner-right, .ui-corner-tr, .ui-corner-bottom {
+    border-radius: 0;
+}
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover {
+
+    border: 0;
+    font-weight: normal;
+    outline: none;
+}
+.ui-state-default {
+    border-bottom: 1px solid #eeeeee;
+}
+
+.extra {
+    margin:16px;
+    border:0;
+}
+* {
+-webkit-tap-highlight-color: rgba(0,0,0,0);
+}

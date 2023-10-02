@@ -1,0 +1,579 @@
+hoaacca open current account
+hoaacvca verify current account
+hoaaccc open cash credit account
+hoaacvcc verify cash credit account
+abmr report of account below minimum balance
+accbal components of account balance inquiry
+acdet account balance details based on criteria
+gdet account balance details based on criteria
+aci customer account inquiry
+acli account ledger inquiry
+acm customer account maintenance modify current savings
+acmp account master print
+acs account selection
+acsp account selection print
+acxfrsol transfer account between sol
+afsm account freeze status maintenance
+aintrpt account interest report
+aitinq account interest detailed inquiry
+alm account lien maintenance
+caac close account
+caacau close account verify authorize
+cacc close account charge collection
+cca change customer id
+oaac open savings current account
+oaacau verify authorize savings current account
+tacbsh transfer account between sub head mark account as lpd
+hclm collateral linkage maintenance add term deposit as security of loan advance
+srm collateral linkage maintenance
+psp pass sheet print
+pbp pass book print
+acint interest run for account
+aclhm account limit history maintenance modify sanction limit drawing power cc od kcc 
+iarm interest adjustment register
+uacharge unapplied charge details
+inttm interest table maintenance change
+ismanual interest subvention manual adjustment
+law waive legal action
+jtholder view joint holder of account
+aclpca customer account ledger print
+paisdet nominee details for pais personel accident insurance scheme for kcc account
+paisrpt pais report for kcc account
+cslkcc capture yearwise sublimit for kcc
+hoaacla open loan account
+hoaacvla verify loan account
+ladgen loan demand generation process
+ladsp loan demand satisfaction process
+laopi loan overdue position inquiry
+lagi loan general inquiry
+hlara reshedule loan
+lamod loan modelling model
+vbsis vbs interest subsidy claim
+olaps open loan account with principal subsidy
+dsaupld dsa transaction creation
+dsadnd download file generation
+hoaacod open overdraft account
+hoaacvod verify overdraft account
+actodm account tod maintenance
+todm account tod maintenance
+spp stop payment of cheque
+sppau stop payment verify authorize
+dbt dbt registration maintenance
+actodi account tod inquiry
+todcs tod criteria and selection
+hoaacsb open savings account
+hoaacvsb verify open savings account
+bacopen batch account open
+hoaactd open term deposit
+drp term deposit receipt print
+tdren term deposit renewal renew
+tdscalc tds calculation
+tdbatch td batch operation verify close
+depmod deposit modelling model
+rftds refunt tds
+rmtds remit tds
+tdsip tds inquiry and print
+dudrp term deposit receipt print duplicate
+redrp reprint term deposit receipt
+dtr deposit transaction report
+meac modify effective asset classification mark account as lpd npa 
+mapd mark account as past due
+rpda retransfer past due account
+atm atm registration maintenance
+fatm account facility maintenance for np atm card
+swcm atm card account info maintenance
+atmrpt atm report maintenance menu
+bm bill maintenance
+bi bill inquiry
+bcso bill covering schedule interbank
+custbm lodge stopped cheque
+cersaipm cersai property master
+cersailm cersai loan master
+mclzoh maintain outward clearing zone
+octm outward clearing transaction maintenance
+micz maintain inward clearing zone
+ictm inward clearing transaction maintenance
+markpend mark pending
+revpend revoke pending
+trofsets transfer of set
+iocls inqure clearing transaction set
+pclso print outward clearing schedule
+picw print inward clearing waste
+ctsrpt inward clearing validation report
+cumm customer master maintenance open modify verify customer id
+cca change customer id of account
+cumi customer master inquiry
+hcusum customer inquiry
+cus select customer based on criteria
+hcus select customer based on criteria
+link link customer id and account number based on criteria
+mobdet inquire details of customer based on mobile aadhaar customer id
+custbalp balance print of all account of customer
+cump customer master print
+ddprnt print dd
+ddc cancel dd
+ddreprnt reprint dd
+ddpall print dd
+ddip specific dd paid inquiry
+ddic dd credit inquiry
+ddid dd debit inquiry
+ddii specific dd issue inquiry
+ecsm ecs mandate maintenance electronic clearing system
+ecsutl ecs utility menu
+eirp ecs inward return process
+ptw print generate report
+rist iso reconciliation
+solval service outlet validation process
+abh initiate after business hour process
+csolop close sol operation
+nnddue mark matured nnd accounts as overdue
+hocip advice bar inquiry and print
+cti calendar table inquiry
+efi employee file inquiry
+intcert interest certificate print
+pr print report
+hprtinq print queue inquiry
+pwmnt password maintenance
+sac user login maintenance
+solstat service outlet status inquiry
+aod aod register
+hmemopad memo pad inquiry
+followup followup register
+smsreg sms alert register maintenance
+gmm guarantee master maintenance
+gi guarantee inquiry
+gp guarantee print
+bgstmnt statement of guarantee transaction
+gilr guarantee issue liability register
+etdsbm etds branch master
+etdsrom etds responsible officer master
+etdsanm etds acknowledgement number master
+etdscm1 etds challan master 1
+etdscm2 etds challan master 2
+etdsf16 etds form 16
+imc inventory movement between location cheque book dd term deposit receipt
+ichm issue cheque book
+chbm cheque book maintenance
+chbmau cheque book maintenace verify authorize
+isi inventory inquiry split merge self
+isia invetory inquiry split merge all
+imaum inventory movement maintenance verify authorize
+ucs update cheque status
+hucs update cheque status
+echrac enter cheque rejected at counter
+imr inventory movement report
+imi inventory movement inquiry
+chbir cheque book issue register
+inqachq inquire account number for cheque
+lcrm locker rack id maintenance
+lcrmv locker raid id maintenance verify authorize
+lckma locker key maintenance
+lckmav locker key maintenance verify authorize
+lccm locker customer maintenance
+lccmv locker customer maintenance verify authorize
+lcpay locker payment
+lcsm locker surrender maintenance
+lcsmv locker surrender maintenance verify authorize
+lckmm locker key status maintenance
+lckmmv locker key status maintenance verify authorize
+lcmig locker migration maintenance
+lcupld locker upload maintenance
+lcri locker rent inquiry maintenance
+lcnom locker nominee maintenance
+lcnomv locker nominee maintenance verify authorize
+lclck locker freeze unfreeze maintenance
+lclckv locker freeze unfreeze maintenance verify authorize
+lcbrkop locker break open maintenance
+lcbrkopv locker break open maintenance verify authorize
+icinq locker inquiry
+lcops locker operation maintenance
+lockrpt locker report
+lclost locker key lost maintenance
+lclostv locker key lost maintenance verify authorize
+hcashdep cash deposit
+hxfer transfer transaction
+hrtgs neft rtgs transaction menu
+neftup neft transaction upload
+neftrpt neft report maintenance menu
+notrpt notice report
+notice notice receipient module
+noticeex notice excemption marking maintenance
+msgoirp outstanding item report office account
+aclpoa office account ledger print
+msoirp minor subsidiary outstanding item report oap type
+hmisrpt mis report menu
+advac advance accountvise report
+stmt statement menu monthly
+derpt day end report
+dlyrpt daily report maintenance menu
+deprpt deposit report maintenance menu
+balrpt balance report maintenance menu
+masrpt master report maintenance menu
+advrpt advance report maintenance menu
+durpt data upload report menu
+firpt financial inclusion report
+misrpt misc report maintenance menu
+nparpt npa report maintenence menu
+swrpt sol wise report menu
+bsrpt balancesheet maintenance menu
+rr rr register
+ldimg image upload menu
+imgmnt image maintenance
+sim lodge standing instruction
+sii inquire standing instruction
+sirp standing instruction register print
+suit suit register
+tm transaction maintenance
+ti transaction inquiry
+fti financial transaction inquiry
+ftr financial transcation report
+sptm system pointing transaction maintenance
+ocst open cash transaction
+oxft open transfer transaction
+massupld mass transaction upload
+hcashwd cash withdrawal for western union money transaction
+kcctm kcc transaction maintenance
+tmps transaction maintenance for principal subsidy
+gecm teller cash account maintenance
+advrpt-8501 old special watch statement
+advrpt-8502 smgb kudumbasree report
+advrpt-8503 refinance statement
+advrpt-8504 npa movement statement
+advrpt-8505 top npa customer report
+advrpt-8506 elgr statement
+advrpt-8507 new special watch statement
+advrpt-8508 special watch statement
+balrpt-8701 bar balancing report
+balrpt-8702 bank guarantee balancing report
+balrpt-8703 bill balancing report
+balrpt-8704 smgb balancing partition
+balrpt-8705 smgb balancing pointing
+balrpt-8706 smgb balancing subglcode
+bsrpt-8801 balance sheet profit loss schedule worksheet
+bsrpt-8802 supporting sheet of standard asset
+bsrpt-8803 supporting sheet of substandard asset
+bsrpt-8804 supporting sheet of da1
+bsrpt-8805 supporting sheet of da2
+bsrpt-8806 supporting sheet of da3
+bsrpt-8807 supporting sheet of loss asset
+bsrpt-8808 consolidation of supporting sheet
+deprpt-8901 deposit opened register
+deprpt-8902 nrdcsr
+derpt-5001 daybook
+derpt-5002 cash receipt scroll report
+derpt-5003 cash payment scroll report
+derpt-5004 transfer scroll report
+derpt-5005 outward clearing scroll report
+derpt-5006 inward clearing scroll report
+derpt-5007 inter sol transaction report
+derpt-5008 system scroll report summary scheme
+derpt-5009 proxy balance report
+derpt-5010 high value transaction report
+durpt-501 loan security missing account
+durpt-502 invalid account in senior citizen deposit
+durpt-503 deposit with preferential interest rate
+durpt-504 interest rate mismatch in loan account
+firpt-1901 smgb flash deposit outstanding report
+firpt-1902 smgb first advance outstanding balance
+firpt-1903 smgb first npa statement
+firpt-1904 smgb first disbursement statement
+firpt-1905 smgb first dcb statement
+firpt-1906 lpd statement
+firpt-1907 deposit opened closed report
+firpt-1908 account data for master card creation
+firpt-1909 customer linked to usb branch
+firpt-1910 report of fi online transaction
+firpt-1911 report of transaction
+hmisrpt-101 report of location
+hmisrpt-102 report of city post office code
+hmisrpt-103 scheme wise split up of sub gl code
+hmisrpt-104 account wise split up of scheme code
+hmisrpt-105 report of gl code
+hmisrpt-106 report of sub gl code
+hmisrpt-107 report of office account place holder
+hmisrpt-108 business position
+hmisrpt-109 average business position
+hmisrpt-112 purpose linked to loan scheme
+hmisrpt-113 deposit due date report
+hmisrpt-114 sl tds split up
+hmisrpt-115 report of scheme code
+hmisrpt-116 sl withholding tax split up
+hmisrpt-117 loan interest certificate
+hmisrpt-118 day end check
+hmisrpt-119 interest subvention account wise report
+hmisrpt-120 interest subvention claim certificate
+hmisrpt-121 prompt repayment incentive claim certificate
+hmisrpt-122 signature scan pending report
+hmisrpt-123 system scroll report summary
+hmisrpt-124 system scroll report detailed
+hmisrpt-125 list of non kyc compliance customer
+hmisrpt-126 vbs interest subsidy claim 
+hmisrpt-127 daily cash position
+hmisrpt-128 etds branch master report
+hmisrpt-129 etds reposible officer master report
+hmisrpt-130 etds challan master report
+hmisrpt-131 etds statement covering letter
+hmisrpt-132 bsr 2
+hmisrpt-133 bsr 1
+hmisrpt-134 cersai provisional list of account
+hmisrpt-135 cersai master report
+hmisrpt-136 report of manual adjustment in interest
+hmisrpt-137 report of quick mortality account
+hmisrpt-138 cib data code 403 time deposit
+hmisrpt-139 cib data code 410 cash deposit
+hmisrpt-140 report of gold loan
+hmisrpt-141 additional data on educational loan
+hmisrpt-142 monthly report on etransaction
+hmisrpt-143 interest subvention manual claim certificate
+hmisrpt-144 prompt repayment incentive manual claim
+hmisrpt-145 list of unclaimed deposit transferred 
+hmisrpt-146 report of deposit account having 
+hmisrpt-147 invalid charge transaction in loan kcc
+hmisrpt-148 debit balance in demand deposit account
+hmisrpt-149 credit balance in loan account 
+hmisrpt-150 report of unadjusted advance recovery 
+hmisrpt-151 zero balance account report
+hmisrpt-152 customer having multipe kcc account
+hmisrpt-153 pan status of term deposit account holder
+hmisrpt-154 report of shg depositor
+hmisrpt-155 report of account not linked with valid
+hmisrpt-156 report of legal action waived account
+hmisrpt-157 report of village
+hmisrpt-158 report of census code of village
+hmisrpt-159 list of aadhaar linked customer customers
+hmisrpt-161 report of account opened during the day
+hmisrpr-162 list of demand deposit account for atm
+hmisrpt-163 discrict wise status of aadhaar linkage
+hmisrpt-164 list of customer customers enrolled for atm
+hmisrpt-165 term deposit interest rate definition
+hmisrpt-166 report of advance account accounts having preferential rate
+hmisrpt-167 debit transaction transactions in pl
+hmisrpt-168 interest suspense statement of account
+hmisrpt-169 report of account accounts opened through bacopen
+hmisrpt-170 rpda mapd execution pending report
+hmisrpt-171 sms enrollment status
+hmisrpt-172 list of nnd account accounts of an agent
+hmisrpt-173 course wise classification of vbs account
+hmisrpt-174 tds projection report
+hmisrpt-175 casa ccod interest rate definition
+hmisrpt-176 loan interest rate definition 
+hmisrpt-177 list of demand deposit account accounts for sms
+hmisrpt-178 list of demand deposit account accounts not enrolled
+hmisrpt-179 list of demand deposit account accounts not enrolled
+hmisrpt-180 notice generation status report
+hmisrpt-181 list of undrawn limit limits in loan account accounts
+hmisrpt-182 insurance due report
+hmisrpt-183 report od tod
+hmisrpt-184 report of top n customer 
+hmisrpt-185 report of top n account
+hmisrpt-186 report of charge charges
+hmisrpt-187 interest application report
+hmisrpt-188 interest application missed account
+hmisrpt-189 ei loan interest parameter mismatch
+hmisrpt-190 current npa position
+hmisrpt-191 statement of account with declaration
+hmisrpt-192 etds f16 form16
+hmisrpt-193 gold loan net weight report
+hmisrpt-194 lpd module data entry pending account
+hmisrpt-195 tds of staff
+hmisrpt-196 error report on cibil individual data upload
+hmisrpt-197 error report on cibil non individual data upload
+hmisrpt-198 rr requisition added during period
+hmisrpt-200 cgtmse account linking status report
+hmisrpt-201 gold loan effective per gram rate
+hmisrpt-202 report of location linkage
+hmisrpt-203 provisional statement of interest subvention
+hmisrpt-204 locker status report
+hmisrpt-205 apbs transaction summary
+hmisrpt-206 apbs transaction history
+hmisrpt-207 locker overdue report
+hmisrpt-208 update aadhaar number
+hmisrpt-209 report of nri customer
+hmisrpt-210 business review report
+hmisrpt-211 check aadhaar linkage status with npci
+hmisrpt-212 loan account with interest rate less than 8%
+hmisrpt-213 deposit with preferential interest
+hmisrpt-214 report on subsidy interest reversal
+hmisrpt-215 report on aadhaar registration and deregistration
+hmisrpt-216 dbt scheme wise enrollment report
+hmisrpt-217 term deposit interest paid report
+hmisrpt-218 vsl od against nre deposit
+hmisrpt-219 gold loan completed 90 days after due date
+masrpt-801 smgb flash outstanding balance report
+masrpt-802 smgb first outstanding balance report
+masrpt-803 smgb first disbursement report
+masrpt-804 smgb first dcb report
+masrpt-805 smgb first npa report
+masrpt-806 smgb first lpd report
+masrpt-807 smgb first term wise report
+masrpt-808 smgb first interest suspense
+masrpt-809 smgb first npa movement statement
+masrpt-810 npa provision
+masrpt-811 smgb first deposit for crar
+masrpt-812 smgb first claims
+misrpt-checklist smgb checklist report
+misrpt-fisolution smgb financial inclusion report
+misrpt-901 sol wise analysis of office account data
+neftrpt-n10received n10 acknkowledge received report
+neftrpt-n10sent n10 acknkowledge sent report
+neftrpt-neftin neft inward message report 
+neftrpt-neftincon consolidated neft inward message report
+neftrpt-neftmonth neft month wise report
+neftrpt-neftout neft outward message report
+neftrpt-outcon consolidated neft outward message report
+neftrpt-rtgs_inward rtgs inward report
+neftrpt-rtgs_outward rtgs outward report
+neftrpt-r09_ack r09 acknkowledgement received report
+neftrpt-neft_in_status neft inward status report
+notrpt-3001 gold loan ordinary notice
+notrpt-3002 gold loan registered notice
+notrpt-3003 gold loan final notice
+notrpt-3004 gold loan post auction notice
+notrpt-3005 general loan ordinary notice
+notrpt-3006 general loan registered notice
+notrpt-3007 general loan final notice
+notrpt-3008 kcc advance notice
+notrpt-3009 kcc ordinary notice
+notrpt-3010 kcc registered notice
+notrpt-3011 kcc final notice
+notrpt-3012 ccod ordinary notice
+notrpt-3013 ccod registered notice
+notrpt-3014 ccod final notice
+notrpt-3015 term deposit due notice
+notrpt-3016 sarfaesi notice printing
+nparpt-406 npa in out report
+nparpt-407 npa alert report 1 summary
+nparpt-408 npa alert report 1 account wise
+nparpt-409 npa alert report 2 summary
+nparpt-410 npa alert report 2 account wise
+nparpt-411 non lpd npa report
+nparpt-412 lpd npa report
+nparpt-413 npa alert report 3 smgb first style
+nparpt-414 mismatch in npa marking
+stmt-1001 smgb flash
+stmt-1002 smgb first
+stmt-1003 loan opened report 
+stmt-1004 new limit opened report
+stmt-1005 old special watch statement
+stmt-1006 aod statement
+stmt-1007 pr 2
+stmt-1008 npa account wise report
+stmt-1009 checklist of statement
+stmt-1010 thrust area scheme statement
+stmt-1011 expired credit limit new scheme
+stmt-1012 expired credit limit discontinued scheme
+stmt-1013 credit limit expiring during next 2
+stmt-1014 credit limit expiring during next 2
+stmt-1015 npa movement statement
+stmt-1016 balancing of bank guarantees
+stmt-1017 balancing of bar
+stmt-1018 balancing of bill bills
+stmt-1019 balancing of sundry deposit
+stmt-1020 balancing of sundry liability
+stmt-1021 balancing of sundry asset
+stmt-1022 entry outstanding in sundry asset beyond
+stmt-1023 entry outstanding in ba account beyond
+stmt-1024 entry outstanding in sundry deposit beyond
+stmt-1025 entry outstanding in sundry liability 
+stmt-1026 kudumbasree interest subsidy statement
+stmt-1027 balancing of cgtmse account
+stmt-1028 cgtmse account opened during month
+stmt-1029 cgtmse account in npa status
+stmt-1030 loan with interest rate less than 9%
+stmt-1031 credit balance in loan account
+stmt-1032 gold loan account having recovery during
+stmt-1033 list of account wrongly opened in lpd
+stmt-1034 unclaimed deposit progress report
+stmt-1035 special watch statement new
+stmt-1036 expired credit limit part c
+stmt-1037 credit limit expiring during next 2 month
+swrpt-701 loan opened report
+swrpt-702 scheme balance report 
+swrpt-703 advance scheme group level exposure report
+swrpt-704 business progress report
+dlyrpt-consistency data consistency and integrity report
+dlyrpt-601 daybook report
+dlyrpt-602 provisional daybook report
+dlyrpt-ddstmnt dd statement
+dlyrpt-hostmnt ho statement
+dlyrpt-udetails user logged on detail
+dlyrpt-old-daybook daybook report
+dlyrpt-chq_stop_rpt stopped cheque return report
+dlyrpt-tds_proj tds projection
+dlyrpt-unclaim_dep unclaim deposit report
+dlyrpt-unpaiddd unpaid dd report
+dlyrpt-unprintdd detail of unprinted candd report
+dlyrpt-trnrpt transaction report
+apbsrpt-aadhaar_list aadhaar number mapped account list
+atmrpt-atm-month atm month wise report
+atmrpt-new_atm-report atm transaction report
+atmrpt-card_details atm card detailed report
+offinrpt-6201 list of loan account having no adequate security
+offinrpt-6202 interest rate mismatch in loan account
+offinrpt-6203 report of quick mortality account
+offinrpt-6204 invalid charge transaction in loan kcc account
+offinrpt-6205 credit balance in loan account
+offinrpt-6206 customer having multiple kcc account
+offinrpt-6207 report of advance account having preferential rate of interest
+offinrpt-6208 list of undrawn limit in loan account
+offinrpt-6209 insurance due report
+offinrpt-6210 debit balance in demand deposit account
+offinrpt-6211 interest application missing report
+offinrpt-6212 gold loan effective per gram rate report
+offinrpt-6213 list of loan account with interest rate less than 9%
+offinrpt-6214 notice generation status report
+offinrpt-6215 report of manual adjustment in interest
+offinrpt-6216 report of legal action waived account
+offinrpt-6217 report of expired credit limit
+offinrpt-6218 mismatch in npa marking
+offinrpt-6219 account wrongly opened in lpd report
+offinrpt-6220 report of cgtmse account in npa status
+offinrpt-6221 invalid account in senior citizen
+offinrpt-6222 zero balance account report
+offinrpt-6223 list of non kyc compliance customer
+offinrpt-6224 report of debit transaction in pl
+offinrpt-6225 report of pending entry in sl
+offinrpt-6226 report of pending entry in sa 
+offinrpt-6227 report of pending entry in sd
+offinrpt-6228 list of pending entry in bar
+offinrpt-6229 list of term deposit opened with value date
+offinrpt-6230 report of prematurely closed term deposit
+offinrpt-6231 staff transaction above particular limit
+offinrpt-6232 report of inoperative account classified
+offinrpt-6233 transaction in bsb above particular limit
+offinrpt-6234 detail of lien in matured term deposit
+offinrpt-6235 term deposit account marked lien for non vsl account
+offinrpt-6236 account having invalid simple interest flag
+offinrpt-6237 report of em not entered in srm
+offinrpt-6238 customer having gold loan above specified number
+offinrpt-6239 customer having gold loan above specified amount
+offinrpt-6240 aod pending more than specified period
+offinrpt-6241 bill pending for more than specified period
+offinrpt-6242 list of sb ca account without any credit
+offinrpt-6243 list of vbs account pending for reschedule
+procedur-6301 aadhaar enrollment
+procedur-6302 educational loan additional detail
+procedur-6303 sms mobile banking enrollment
+procedur-6304 kyc updation
+procedur-6305 atm card enrollment
+procedur-6306 linking of location with customer id
+procedur-6307 creation and linking of location
+procedur-6308 cibil data rectification
+procedur-6309 data entry in lpd module
+procedur-6310 cersai enrollment missing security
+procedur-6311 pending entry under sa sl ba bill
+procedur-6312 interest rate to loan account less than 8%
+procedur-6313 deposit with preferential interest rate
+procedur-6314 em security not entered in finacle
+procedur-6315 account having invalid simple interest flag
+procedur-6316 loan having no security
+procedur-6317 interest application missing account
+procedur-6318 signature scan
+procedur-6319 aod
+procedur-6320 issue in vsl account
+procedur-6321 education loan reschedule
+posrpt-pos_tran pos transaction report
+osb single window open savings account
+oca single window open current account
+otd single window open term deposit account
+ogold single window open gold loan account

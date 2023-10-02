@@ -1,0 +1,78 @@
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=windows-1252">
+    <link rel="stylesheet" type="text/css" href="jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="style2.css">
+    <script src="jquery-3.2.1.min.js"></script>
+    <script src="jquery-ui.js"></script>
+    <script>
+        $(function(){
+            $("#accordion").accordion({
+                collapsible: true,
+                active: false,
+                heightStyle: 'content',
+            });
+        });
+
+    </script>
+    <title>acm</title>
+</head>
+<body>
+
+<div id="accordion">
+    <div>Modification of SB/CA account after verification</div>
+
+    <table>
+
+        <tr>
+            <td>Menu option</td>
+            <td>ACM</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Function</td>
+            <td>Enter M and Press F4</td>
+            <td>Other options are I - Inquiry, V - Verify, X - Cancel
+            </td>
+        </tr>
+        <tr>
+            <td>A/c ID</td>
+            <td>Enter the account number to modified, Press F4
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Enter option</td>
+            <td>Enter relative option code by selecting from the list on pressing F2 and after required modification press F4 & F10</td>
+            <td>0 (Zero) - general details, S-Scheme details, N-Nomination details, A-Related party details, R-NRE details
+            </td>
+        </tr>
+    </table>
+    <h3>Verification of modification in SB/CA accounts</h3>
+    <table>
+        <tr>
+            <td>Menu option</td>
+            <td>ACM</td>
+        </tr>
+        <tr>
+            <td>Function</td>
+            <td>Enter V and press F4</td>
+        </tr>
+        <tr>
+            <td>A/c ID</td>
+            <td>Enter the account number/select from the list by pressing F2 and press F4</td>
+        </tr>
+        <tr>
+            <td>Option code</td>
+            <td>Enter all the relative option codes in which data modified one by one and press F4 and F10</td>
+        </tr>
+    </table>
+    <h3>Extra info</h3>
+    <div class="extra">For changing the authorized signatories, after entering option A, user has to select the page containing details
+    of signatories to be changed by pressing 'down arrow' key and select Del. Flag field and modify the existing value N to Y and
+    enter the details of new signatory in a new page by pressing down arrow.</div>
+</div>
+
+
+</body>
+</html>
