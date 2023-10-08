@@ -49,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
         final ListView listview=(ListView)findViewById(R.id.listview1);
         //getWindow().requestFeature(Window.FEATURE_ACTION_BAR_OVERLAY);
 
-
+        /*
         SQLiteDatabase db;
         try {
             db=SQLiteDatabase.openDatabase(DB_PATH,null,0);
@@ -114,8 +114,11 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         }
-        final SQLiteDatabase db1=SQLiteDatabase.openDatabase("/data/data/com.app.mykgb/databases/kgbmenu",null,0);
 
+         */
+        //final SQLiteDatabase db1=SQLiteDatabase.openDatabase("/data/data/com.app.mykgb/databases/kgbmenu",null,0);
+        dbHelper dbHelper = new dbHelper(getApplicationContext());
+        SQLiteDatabase db = dbHelper.getReadableDatabase();
         hint.addTextChangedListener(new TextWatcher() {
 
 
@@ -134,7 +137,7 @@ public class MainActivity extends AppCompatActivity {
                 Cursor cur=null;
                 if(hints.size()>0){
                     for (String hint: hints){
-                        cur=db1.rawQuery("SELECT * FROM MENU_DICT WHERE HINT=\'"+hint+"\';",null);
+                        cur=db.rawQuery("SELECT * FROM MENU_DICT WHERE HINT=\'"+hint+"\';",null);
                         if(cur.getCount()>0){
                             cur.moveToFirst();
                             List<String> menusArr=Arrays.asList(cur.getString(1).trim().split("\\,"));
@@ -158,7 +161,7 @@ public class MainActivity extends AppCompatActivity {
                             for (int i=0;i<menus.size();i++){
                                 RowData data=new RowData();
                                 data.setTitle(i+1+". " + menus.get(i).get(0));
-                                cur=db1.rawQuery("SELECT * FROM MENU_INFO WHERE MENU=\'"+menus.get(i).get(0)+"\';",null);
+                                cur=db.rawQuery("SELECT * FROM MENU_INFO WHERE MENU=\'"+menus.get(i).get(0)+"\';",null);
                                 cur.moveToFirst();
                                 data.setSubtitle(cur.getString(1));
                                 rowData.add(data);
@@ -186,7 +189,7 @@ public class MainActivity extends AppCompatActivity {
                                 for (int i=0;i<common.size();i++){
                                     RowData data=new RowData();
                                     data.setTitle(i+1+". "+common.get(i));
-                                    cur=db1.rawQuery("SELECT * FROM MENU_INFO WHERE MENU=\'"+common.get(i)+"\';",null);
+                                    cur=db.rawQuery("SELECT * FROM MENU_INFO WHERE MENU=\'"+common.get(i)+"\';",null);
                                     cur.moveToFirst();
                                     data.setSubtitle(cur.getString(1));
                                     rowData.add(data);
@@ -216,7 +219,7 @@ public class MainActivity extends AppCompatActivity {
                         for (int i=0;i<menus.get(0).size();i++){
                             RowData data=new RowData();
                             data.setTitle(i+1+". " + menus.get(0).get(i));
-                            cur=db1.rawQuery("SELECT * FROM MENU_INFO WHERE MENU=\'"+menus.get(0).get(i)+"\';",null);
+                            cur=db.rawQuery("SELECT * FROM MENU_INFO WHERE MENU=\'"+menus.get(0).get(i)+"\';",null);
                             cur.moveToFirst();
                             data.setSubtitle(cur.getString(1));
                             rowData.add(data);
