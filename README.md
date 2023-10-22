@@ -1,2 +1,2 @@
 # my-kgb
-Search menu from its description.
+Android app to search finacle menu from its description.
