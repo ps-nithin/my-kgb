@@ -1,0 +1,42 @@
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=windows-1252">
+    <link rel="stylesheet" type="text/css" href="jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="style2.css">
+    <script src="jquery-3.2.1.min.js"></script>
+    <script src="jquery-ui.js"></script>
+    <script>
+        $(function(){
+            $("#accordion").accordion({
+                collapsible: true,
+                active: false,
+                heightStyle: 'content',
+            });
+        });
+
+    </script>
+    <title>acm</title>
+</head>
+<body>
+
+<div id="accordion">
+    <h3>Reprint Passbook (HPBPR)</h3>
+    <table>
+        <tr><td colspan="2">In Finacle 10, once the passbook is printed, for reprinting the already printed transactions, the date,
+    from which reprint is required, needs to be resetted using HPBPR Menu. Invoke the menu and
+            follow the below procedure.</td></tr>
+        <tr><td>Function</td><td>Select B - Reset</td></tr>
+        <tr><td>A/c. ID</td><td>Enter the Account Number</td></tr>
+        <tr><td>From Date</td><td>Enter the From Date as applicable</td></tr>
+        <tr><td>To Date</td><td>Will be auto populated as current date</td></tr>
+        <tr><td colspan="2">Click on Accept</td></tr>
+    <tr><td colspan="2">The transactions will be displayed in the grid. Select the Next Reset Date from which the
+        passbook needs to be reprinted.</td></tr>
+        <tr><td colspan="2">Click on Submit</td></tr>
+    </table>
+
+</div>
+
+
+</body>
+</html>

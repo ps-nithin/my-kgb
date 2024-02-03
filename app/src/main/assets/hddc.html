@@ -1,0 +1,45 @@
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=windows-1252">
+    <link rel="stylesheet" type="text/css" href="jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="style2.css">
+    <script src="jquery-3.2.1.min.js"></script>
+    <script src="jquery-ui.js"></script>
+    <script>
+        $(function(){
+            $("#accordion").accordion({
+                collapsible: true,
+                active: false,
+                heightStyle: 'content',
+            });
+        });
+
+    </script>
+    <title>acm</title>
+</head>
+<body>
+
+<div id="accordion">
+    <h3>DD Cancelation</h3>
+    <table>
+        <tr><td colspan="2">For canceling a Demand Draft, Invoke the Menu HDDC and follow the below procedure.</td></tr>
+        <tr><td>Function</td><td>C - Cancel</td></tr>
+        <tr><td>Demand Draft No</td><td>Enter the DD Number that need to be canceled</td></tr>
+        <tr><td>Demand Draft Issue Date</td><td>Enter the date of DD</td></tr>
+        <tr><td>Transaction Type</td><td>Select the appropriate option</td></tr>
+        <tr><td>Create Fee Transaction</td><td>Select Yes</td></tr>
+        <tr><td colspan="2">Click on Go Button</td></tr>
+        <tr><td colspan="2">The DD Details will be displayed</td></tr>
+        <tr><td>Notes</td><td>Enter the Remarks, if any</td></tr>
+        <tr><td colspan="2">Click on Submit and Note down the Transaction ID and Amount</td></tr>
+        <tr><td colspan="2">Posting of the DD Payment is to be done using HDDC Menu. Before posting the Transaction ID, the
+            same can be modified using the M - Modify option.
+            If the posting of the transaction is done by the same user, the same needs to be Verified by another
+            user using HTM Menu. If the posting is done by another user then the transaction will be in verified
+            status.</td></tr>
+    </table>
+</div>
+
+
+</body>
+</html>

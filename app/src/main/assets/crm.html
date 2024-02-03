@@ -1,0 +1,479 @@
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=windows-1252">
+    <link rel="stylesheet" type="text/css" href="jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="style2.css">
+    <script src="jquery-3.2.1.min.js"></script>
+    <script src="jquery-ui.js"></script>
+    <script>
+        $(function(){
+            $("#accordion").accordion({
+                collapsible: true,
+                active: false,
+                heightStyle: 'content',
+            });
+        });
+
+    </script>
+    <title>cumm</title>
+</head>
+<body>
+
+<div id="accordion">
+    <h3>Introduction</h3>
+    <div class="extra">In Finacle 7, CUMM Menu was used for all types of Customer ID related activities. Also In
+    Finacle 7, the classification of Customer into Individual and Non Individual was done based
+    on the Constitution Code of the Customer.
+    In Finacle 10, Customer ID has been renamed as Customer Information File (CIF)
+    Another significant change in Finacle 10, is the classification of Customer Information File
+    (CIF) into the following
+    ? Individual (Retail)
+    ? Non Individual (Corporate)
+    The data related to Retail and Corporate customers are captured using dedicated menus.
+    Information gathered through this menu is entirely different and specific to the type of
+    customer (Individual/Non Individual). Please note that once a CIF is opened, swapping of
+    individual Customer ID to Non Individual Customer ID and vice versa is not permitted.
+    Following are the Finacle 10 menus for Customer ID operations:</div>
+    <h3>Core Menus - Retail CIF</h3>
+    <table>
+
+        <tr>
+            <td>Create CIF</td>
+            <td>CIF Retail >> New Entity >> Customer</td>
+        </tr>
+        <tr>
+            <td>Verify CIF</td><td>CIF Retail >> Entity Queue</td>
+        </tr>
+        <tr>
+            <td>Modify CIF</td><td>CIF Retail >> Edit Entity</td>
+        </tr>
+        <tr>
+            <td>Suspend CIF</td><td>CIF Retail >> Operations >> Suspend/Undo Suspension</td>
+        </tr>
+        <tr>
+            <td>Un Suspend CIF</td><td>CIF Retail >> Operations >> Suspend/Undo Suspension</td>
+        </tr>
+    </table>
+    <h3>Core Menus - Corporate CIF</h3>
+    <table>
+
+        <tr>
+            <td>Create CIF</td>
+            <td>CIF Corporate >> New Entity >> Customer</td>
+        </tr>
+        <tr>
+            <td>Verify CIF</td><td>CIF Corporate >> Entity Queue</td>
+        </tr>
+        <tr>
+            <td>Modify CIF</td><td>CIF Corporate >> Edit Entity</td>
+        </tr>
+        <tr>
+            <td>Suspend CIF</td><td>CIF Corporate >> Operations >> Suspend/Undo Suspension</td>
+        </tr>
+        <tr>
+            <td>Un Suspend CIF</td><td>CIF Corporate >> Operations >> Suspend/Undo Suspension</td>
+        </tr>
+    </table>
+    <h3>Single Window Menus</h3>
+    <table><tr><td>OCASAIN</td><td>Open Individual (retail) CIF with or without account</td>
+        <tr><td>OCASANI</td><td>Open Non Individual (corporate) CIF with or without account</td>
+    <tr><td colspan="2">The above two menus covers all the functionalities of Finacle 7 - OSB, OCA, OMINOR, ONRE,
+    OCID menus</td></tr>
+    </table>
+    <h3>Create Retail CIF</h3>
+    <table>
+        <tr><td colspan="2">For Creating a Retail CIF, Select the Solution as CRM and follow the below mentioned procedure.</td></tr>
+        <tr><td>Menu Path</td><td>CRM > CIF Retail > New Entity > Customer</td></tr>
+        <tr><td colspan="2" class="blue">General >> Basic Info Tab</td></tr>
+        <tr><td>Gender</td><td>Select the required option</td></tr>
+        <tr><td>Title</td><td>Select the required option</td></tr>
+        <tr><td>Last</td><td>Name Enter the Full Name of the Customer</td></tr>
+        <tr><td>Date of Birth</td><td>Enter the Date of Birth</td></tr>
+        <tr><td>Minor Indicator</td><td>Will be auto populated by the system based on the Date of Birth entered</td></tr>
+        <tr><td>Minor Turned Major On</td><td>Will be auto populated by the system based on the Date of Birth entered</td></tr>
+        <tr><td>Senior Citizen</td><td>Will be auto populated by the system based on the Date of Birth entered</td></tr>
+        <tr><td>Senior Citizen Applicable Date</td><td>Will be auto populated by the system based on the Date of Birth entered</td></tr>
+        <tr><td>Non-resident Indicator</td><td>Select the applicable value (Select Y, If the Customer is NRE)</td></tr>
+        <tr><td>Turned Non Resident On</td><td>Enter the date of becoming NRE (Applicable only if Non-resident Indicator is Y)</td></tr>
+        <tr><td>Staff Indicator</td><td>Select the applicable value (Select Y, If it is Staff)</td></tr>
+        <tr><td>Staff ID</td><td>Enter the Staff ID (Applicable only if Staff Indicator is Y)</td></tr>
+        <tr><td>Mothers Maiden Name</td><td>Enter Mothers Name</td></tr>
+        <tr><td>Primary Sol ID</td><td>User Sol ID will be auto populated by system</td></tr>
+        <tr><td>Customer Status</td><td>Select the applicable option</td></tr>
+        <tr><td>Customer Type</td><td>Select the applicable option</td></tr>
+        <tr><td>Segment</td><td>Select 001 (Not Relevant)</td></tr>
+        <tr><td>Sub Segment</td><td>Select 001 (Not Relevant)</td></tr>
+        <tr><td>Health Code</td><td>Will be auto populated by the system</td></tr>
+        <tr><td>Physical State</td><td>Select the applicable option</td></tr>
+        <tr><td>Community</td><td>Select the applicable option</td></tr>
+        <tr><td>Customer Rating</td><td>Select the applicable option</td></tr>
+        <tr><td>Risk Rating</td><td>Select the applicable option</td></tr>
+        <tr><td>Region (will be renamed as Location)</td><td>Select the location code of the customer</td></tr>
+        <tr><td>Tax Deducted at Source Table</td><td>Select the applicable Tax Slab of the customer</td></tr>
+        <tr><td>Enable CRM Alerts</td><td>Select N</td></tr>
+        <tr><td colspan="2" class="blue">General >> Contact Tab</td></tr>
+        <tr><td colspan="2">Click on Address Tab</td></tr>
+        <tr><td>Preferred Address Type</td><td>Mailing and click on Add Address Details</td></tr>
+        <tr><td>Address Format</td><td>Select Free Text</td></tr>
+        <tr><td>Address</td><td>Type Mailing</td></tr>
+        <tr><td>Address Label</td><td>Enter Landmark</td></tr>
+        <tr><td>Address Line 1</td><td>Enter the Address of the customer</td></tr>
+        <tr><td>Address Line 2</td><td>Enter the Address of the customer</td></tr>
+        <tr><td>Address Line 3</td><td>Enter the Address of the customer</td></tr>
+        <tr><td>City</td><td>Select the appropriate City Code</td></tr>
+        <tr><td>State</td><td>Select the appropriate State</td></tr>
+        <tr><td>Country Code</td><td>Select the appropriate Country Code</td></tr>
+        <tr><td>Postal Code</td><td>Enter the PIN Code</td></tr>
+        <tr><td>Address</td><td>Valid From Will be auto populated by the system</td></tr>
+        <tr><td colspan="2">Click on Save</td></tr>
+        <tr><td colspan="2" class="blue">Click on Phone and E-mail Tab</td></tr>
+        <tr><td>Preferred Contact</td><td>No Type Select the appropriate option</td></tr>
+        <tr><td>Preferred E-Mail ID</td><td>Select the appropriate option</td></tr>
+        <tr><td>Preferred Mobile Type for Alerts</td><td>Select the appropriate option</td></tr>
+        <tr><td colspan="2">Click on Add Phone and E-mail</td></tr>
+        <tr><td>Phone No/E-mail ID</td><td>Select Phone</td></tr>
+        <tr><td>Type</td><td>Select the appropriate option</td></tr>
+        <tr><td>Phone No</td><td>First Field - 91 (Country Code)<br>
+                Second Field - Blank (For domestic mobile no)<br>
+                Third Field - Enter the Mobile No<br></td></tr>
+        <tr><td colspan="2">Click on Save</td></tr>
+        <tr><td colspan="2">If Multiple Phone No needs to be captured, click on Add Phone and E-mail and follow the above procedure.</td></tr>
+        <tr><td colspan="2">Click on Add Phone and E-mail</td></tr>
+        <tr><td>Phone No/E-mail ID</td><td>Select E-mail</td></tr>
+        <tr><td>Type</td><td>Select the appropriate option</td></tr>
+        <tr><td>Email ID</td><td>Enter Email ID</td></tr>
+        <tr><td colspan="2">Click on Save</td></tr>
+        <tr><td colspan="2">If Multiple Email ID needs to be captured, click on Add Phone and E-mail and follow the above procedure.</td></tr>
+        <tr><td colspan="2" class="blue">General >> Identification Document Details</td></tr>
+        <tr><td colspan="2">Click on Add Identification Document Details</td></tr>
+        <tr><td>Document Type</td><td>Select the appropriate option</td></tr>
+        <tr><td>Document Code</td><td>Select the appropriate option</td></tr>
+        <tr><td>Unique ID</td><td>Enter the corresponding Proof Number</td></tr>
+        <tr><td colspan="2">Click on Save</td></tr>
+        <tr><td colspan="2">Select the toggle button Is Preferred</td></tr>
+        <tr><td colspan="2">If Multiple KYC Documents needs to be captured, click on Add Identification Document Details and follow the above procedure.</td></tr>
+        <tr><td colspan="2" class="blue">General >> Core Interface</td></tr>
+        <tr><td>Education Qualification</td><td>Select the appropriate option</td>
+        <tr><td>Customer Group</td><td>Select the appropriate option</td></tr>
+        <tr><td>PAN Option</td><td>Select the appropriate option</td></tr>
+        <tr><td>IIN Number</td><td>Select the appropriate Option</td></tr>
+        <tr><td>Relative Name</td><td>Enter the Relative Name</td></tr>
+        <tr><td>Relation Type</td><td>Select the appropriate Option</td></tr>
+        <tr><td>PAN Number</td><td>Enter PAN Number, if available, Else Enter NA</td></tr>
+        <tr><td>Aadhaar Number</td><td>Enter Aadhaar Number, if available, Else Enter NA</td></tr>
+        <tr><td>Farmers Registration Number</td><td>Enter Farmers Registration Number, if available</td></tr>
+        <tr><td>Ration Card</td><td>Enter Ration Card Number, if available</td></tr>
+        <tr><td>House No</td><td>Enter the House Number, if available</td></tr>
+        <tr><td colspan="2" class="blue">General >> Minor Tab (Applicable only if the customer is Minor)</td></tr>
+        <tr><td>Bank Relation Type</td><td>Select Customer</td></tr>
+        <tr><td>Last Name</td><td>Click on the Searcher and select the CIF ID of Guardian</td></tr>
+        <tr><td>Guardian</td><td>Select the appropriate Guardian Type</td></tr>
+        <tr><td colspan="2">Click on Demographic Tab</td></tr>
+        <tr><td colspan="2" class="blue">Demographic >> General Details Tab</td></tr>
+        <tr><td>Nationality</td><td>Select the appropriate option</td></tr>
+        <tr><td>Caste</td><td>Select the appropriate option</td></tr>
+        <tr><td>Marital Status</td><td>Select the appropriate option</td></tr>
+        <tr><td>Tax Deducted at Source Exemption Submitted on</td><td>Will be auto populated by the system as BOD Date</td></tr>
+        <tr><td>Tax Exemption Start Date</td><td>Financial Year Start Date will be auto populated</td></tr>
+        <tr><td>Tax Exemption End Date</td><td>Financial Year End Date will be auto populated</td></tr>
+        <tr><td>Tax Rate Table Code Select</td><td>the applicable Tax Slab of the customer</td></tr>
+        <tr><td colspan="2" class="blue">Demographic >> Income and Expense Details</td></tr>
+        <tr><td>Employment Type</td><td>Select the appropriate occupation</td></tr>
+        <tr><td>Gross Income</td><td>Enter the Annual Income of the customer</td></tr>
+        <tr><td colspan="2">Click on Submit and Note down the CIF ID generated</td></tr>
+        <tr><td>Process Selection > Selected Process Name</td><td>Select the option CIFCustomer Approval Edit-10.2</td></tr>
+        <tr><td colspan="2">Click on Save Process Selection</td></tr>
+        <tr><td colspan="2">Click OK</td></tr>
+    </table>
+    <h3>Verify Retail CIF</h3>
+    <table>
+        <tr><td colspan="2">For verification of the CIF login with the Verifier User ID and follow the below mentioned procedure.</td></tr>
+        <tr><td colspan="2">Menu Path CRM >> CIF Retail >> Entity Queue</td></tr>
+        <tr><td>Tray Type</td><td>Select Business Center Group</td></tr>
+        <tr><td>Entity Type</td><td>Select Customer</td></tr>
+        <tr><td>Group Select</td><td>General Banking</td></tr>
+        <tr><td>Entity ID</td><td>Enter the CIF ID Created</td></tr>
+        <tr><td colspan="2">Click on Get Button, Click Ok</td></tr>
+        <tr><td colspan="2">Click on the CIF ID and check the correctness of the data entered in each tab</td></tr>
+        <tr><td colspan="2">Click on Current Process Step tab</td></tr>
+        <tr><td colspan="2">Click on Approval:- Process Time link at the bottom</td></tr>
+        <tr><td>Decision</td><td>Select Approve from the Drop Down (If CIF needs to be Rejected Select the option Reject)</td></tr>
+        <tr><td>Remarks</td><td>Enter the Remarks, if required (For Reject Remarks is mandatory)</td></tr>
+        <tr><td colspan="2">Click Save Approval Form, Click Ok</td></tr>
+        <tr><td colspan="2">Note down the CIF ID</td></tr>
+    </table>
+    <h3>Modify Retail CIF Data</h3>
+    <table>
+        <tr><td colspan="2">For Modifying an existing CIF follow the below mentioned procedure.</td></tr>
+        <tr><td colspan="2">Menu Path CRM >> CIF Retail >> Edit Entity</td></tr>
+        <tr><td>Entity Type</td><td>Select Customer</td></tr>
+        <tr><td>CIF ID</td><td>Enter CIF ID to be Modified (If the CIF is not available, or
+            search by entering the details in remaining fields)</td></tr>
+        <tr><td colspan="2">Click on Submit</td></tr>
+        <tr><td colspan="2">The CIF ID will be displayed in the grid below the searcher</td></tr>
+        <tr><td colspan="2">Right Click on the Grid to select the CIF ID to be modified. Click Edit Option and select the applicable tab that needs to be modified. Modify the required details and Click on Submit Button. The details will be submitted successfully.</td></tr>
+        <tr><td colspan="2">Click Ok</td></tr>
+    <tr><td colspan="2">If any other Tab needs to be modified, Click on Save button instead of Submit and
+        follow the below process</td></tr>
+        <tr><td colspan="2">Menu Path - CRM > CIF Retail > Entity Queue</td></tr>
+        <tr><td>Tray Type</td><td>Select Self</td></tr>
+        <tr><td>Action</td><td>Saved</td></tr>
+        <tr><td>Entity ID</td><td>Enter the CIF ID</td></tr>
+        <tr><td colspan="2">Click on Get Button</td></tr>
+        <tr><td colspan="2">Right Click on the Grid and Click Edit Option and select the applicable tab that needs to be
+            modified.</td></tr>
+        <tr><td colspan="2">After required modifications Click on Submit Button</td></tr>
+        <tr><td>Process Selection > Selected Process Name</td><td>Select the option CIFCustomer Approval Edit-10.2</td></tr>
+        <tr><td colspan="2">Click on Save Process Selection</td></tr>
+        <tr><td colspan="2">Click OK</td></tr>
+        <tr><td colspan="2">For Verifying the CIF, follow the above mentioned Retail CIF Verification Procedure mentioned above.</td></tr>
+
+    </table>
+    <h3>Modify/Update Guardian Details in Minor CIF</h3>
+    <table>
+        <tr><td colspan="2">For Modifying/updating guardian details in an existing Minor CIF follow the below mentioned procedure.</td></tr>
+        <tr><td colspan="2">Menu Path CRM >> CIF Retail >> Edit Entity</td></tr>
+        <tr><td>Entity Type</td><td>Select Customer</td></tr>
+        <tr><td>CIF ID</td><td>Enter CIF ID to be modified (If the CIF is not available, search by entering the details in remaining fields)</td></tr>
+        <tr><td colspan="2">Click on Submit</td></tr>
+        <tr><td colspan="2">The CIF ID will be displayed in the grid below the searcher</td></tr>
+        <tr><td colspan="2">Right Click on the Grid to select the CIF ID to be modified</td></tr>
+        <tr><td colspan="2">Click Edit Option and select the Psychographic Details Tab</td></tr>
+        <tr><td colspan="2">Click on Relationship Details Tab</td></tr>
+        <tr><td>Relation</td><td>Select Social</td></tr>
+    <tr><td colspan="2">For Adding Guardian, Click on Add Relationship and enter the details
+    For removing the existing Guardian, select the Guardian details displayed in the Grid and click on
+        Remove Relationship</td></tr>
+        <tr><td colspan="2">Click on Submit Button</td></tr>
+        <tr><td>Process Selection >> Selected Process Name</td><td>Select the option CIFCustomer Approval Edit-10.2</td></tr>
+        <tr><td colspan="2">Click on Save Process Selection</td></tr>
+        <tr><td colspan="2">Click Ok</td></tr>
+        <tr><td colspan="2">For Verifying the CIF, follow the above mentioned Retail CIF Verification Procedure mentioned above</td></tr>
+    </table>
+    <h3>Create Corporate CIF</h3>
+    <table>
+        <tr><td colspan="2">Menu Path CRM > Corporate > New Entity > Customer</td></tr>
+        <tr><td colspan="2" class="blue">General >> Basic Info Tab</td></tr>
+        <tr><td>Corporate Name</td><td>Enter the Full Name of the Entity</td></tr>
+        <tr><td>Short Name</td><td>Will be auto populated</td></tr>
+        <tr><td>Status</td><td>Select the appropriate option</td></tr>
+        <tr><td>Legal Entity Type</td><td>Select the appropriate option</td></tr>
+        <tr><td>Key Contact Person's Name</td><td>Enter the Name of Key Contact Person of the Entity</td></tr>
+        <tr><td>Corporate Segment</td><td>Select 101 (Not Relevant)</td></tr>
+        <tr><td>Sub Segment</td><td>Select 101 (Not Relevant)</td></tr>
+        <tr><td>Phone No</td><td>Enter the Key Contact Person's Phone No.</td></tr>
+        <tr><td>Business Type</td><td>Select the appropriate option</td></tr>
+        <tr><td>Principal Place of Operation</td><td>Will be auto populated as IN - INDIA</td></tr>
+        <tr><td>Notes</td><td>Enter the Remarks</td></tr>
+        <tr><td>Registration No</td><td>Enter the Registration No of the Entity</td></tr>
+        <tr><td>Incorporation Date</td><td>Enter Date of Incorporation of the Entity</td></tr>
+        <tr><td>Region (will be renamed as Location)</td><td>Select the required option</td></tr>
+        <tr><td>Relationship Type</td><td>Will be auto populated as NOT AVAILABLE</td></tr>
+        <tr><td>Sector</td><td>Select the appropriate option</td></tr>
+        <tr><td>Sub-sector</td><td>Select the appropriate option</td></tr>
+    <tr><td>Pan Num</td><td>PAN Number (PAN Number entered in Core Interface PAN
+        Number field will be auto populated)</td></tr>
+        <tr><td>Entity Class</td><td>Select the appropriate option</td></tr>
+        <tr><td>Fund Source</td><td>Enter the source of fund</td></tr>
+        <tr><td>Base CCY</td><td>Enter INR</td></tr>
+        <tr><td>Average Annual Income</td><td>Enter the Annual Income</td></tr>
+        <tr><td>Customer Rating</td><td>Select the appropriate option</td></tr>
+        <tr><td>Rating Done On</td><td>Enter the Current Working Date</td></tr>
+        <tr><td>Native Language Code</td><td>Will be auto populated as English</td></tr>
+        <tr><td>Tax Deducted at Source Table Code</td><td>Select the appropriate option</td></tr>
+        <tr><td>Risk Rating</td><td>Select the appropriate option</td></tr>
+        <tr><td colspan="2" class="blue">General >> Identification Document Details</td></tr>
+        <tr><td colspan="2">Click on Add Identification Document Details</td></tr>
+        <tr><td>Document Type</td><td>Select the appropriate option</td></tr>
+        <tr><td>Document Code</td><td>Select the appropriate option</td></tr>
+        <tr><td>Unique ID</td><td>Enter the corresponding Proof Number</td></tr>
+        <tr><td colspan="2">Click on Save</td></tr>
+        <tr><td colspan="2">If Multiple KYC Documents need to be captured, click on Add Identification Document Details and follow
+            the above procedure.</td></tr>
+        <tr><td colspan="2" class="blue">General >> Contact Tab</td></tr>
+        <tr><td colspan="2">Click on Address Tab</td></tr>
+        <tr><td>Preferred Address Type</td><td>Select Registered and click on Add Address Details</td></tr>
+        <tr><td>Address Format</td><td>Select Free Text</td></tr>
+        <tr><td>Address Type</td><td>Registered</td></tr>
+        <tr><td>Address Label</td><td>Enter Landmark</td></tr>
+        <tr><td>Address Line 1</td><td>Enter the Address of the customer</td></tr>
+        <tr><td>Address Line 2</td><td>Enter the Address of the customer</td></tr>
+        <tr><td>Address Line 3</td><td>Enter the Address of the customer</td></tr>
+        <tr><td>City</td><td>Select the appropriate City Code</td></tr>
+        <tr><td>State</td><td>Select the appropriate State</td></tr>
+        <tr><td>Country Code</td><td>Select the appropriate Country Code</td></tr>
+        <tr><td>Postal Code</td><td>Enter the PIN Code</td></tr>
+        <tr><td>Address Valid From</td><td>Will be auto populated</td></tr>
+        <tr><td colspan="2">Click on Save</td></tr>
+        <tr><td colspan="2" class="blue">Click on Phone and E-mail Tab</td></tr>
+        <tr><td>Preferred Contact No Type</td><td>Select the appropriate option</td></tr>
+        <tr><td>Preferred E-Mail ID</td><td>Select the appropriate option</td></tr>
+        <tr><td colspan="2">Click on Add Phone and E-mail</td></tr>
+        <tr><td>Phone No/E-mail ID</td><td>Select Phone</td></tr>
+        <tr><td>Type</td><td>Select the appropriate option</td></tr>
+        <tr><td>Phone No</td><td>First Field - 91 (Country Code)<br>
+        Second Field - Blank (For domestic mobile no)<br>
+            Third Filed - Enter the Mobile No<br></td></tr>
+        <tr><td colspan="2">Click on Save</td></tr>
+        <tr><td colspan="2">If Multiple Phone No needs to be captured, click on Add Phone and E-mail and follow the above
+            procedure.</td></tr>
+        <tr><td colspan="2">Click on Add Phone and E-mail</td></tr>
+        <tr><td>Phone No/E-mail ID</td><td>Select E-mail</td></tr>
+        <tr><td>Type</td><td>Select the appropriate option</td></tr>
+        <tr><td>Email ID Enter Email ID</td></tr>
+        <tr><td colspan="2">Click on Save</td></tr>
+        <tr><td colspan="2">If Multiple Email ID needs to be captured, click on Add Phone and E-mail and follow the above
+            procedure.</td></tr>
+        <tr><td colspan="2" class="blue">General >> Core Interface</td></tr>
+        <tr><td>Education Qualification</td><td>Will be auto populated as NON INDIVIDUAL</td></tr>
+        <tr><td>Customer Group</td><td>Select NON INDIVIDUAL</td></tr>
+        <tr><td>PAN Option</td><td>Select the appropriate option</td></tr>
+        <tr><td>Relative Name</td><td>Will be auto populated as NON INDIVIDUAL</td></tr>
+        <tr><td>Relation Type</td><td>Will be auto populated as NON INDIVIDUAL</td></tr>
+        <tr><td>PAN Number</td><td>Enter PAN Number, if available, Else Enter NA</td></tr>
+        <tr><td>Aadhaar Number</td><td> Will be auto populated as NA</td></tr>
+        <tr><td colspan="2" class="blue">Preferences >> Customer Preference Tab</td></tr>
+        <tr><td>Exemption Submitted on</td><td>Will be auto populated as BOD Date</td></tr>
+        <tr><td>Tax Exemption Start Date</td><td>Financial Year Start Date will be auto populated</td>
+        <tr><td>Tax Exemption End Date</td><td>Financial Year End Date will be auto populated</td></tr>
+        <tr><td>Tax Rate Table Code</td><td>Select the applicable Tax Slab of the customer</td></tr>
+        <tr><td colspan="2">Click on Submit and Note down the CIF ID generated</td></tr>
+        <tr><td>Process Selection > Process Name</td><td>Select the option CorpApproval -10.2</td></tr>
+        <tr><td colspan="2">Click on Save Process Selection</td></tr>
+        <tr><td colspan="2">Click OK</td></tr>
+    </table>
+        <h3>Verify Corporate CIF</h3>
+        <table>
+            <tr><td colspan="2">For verification of the CIF login with the Verifier User ID and follow the below mentioned procedure.</td></tr>
+            <tr><td colspan="2">Menu Path CRM > CIF Corporate > Entity Queue</td></tr>
+            <tr><td>Tray Type</td><td>Select Business Center Group</td></tr>
+            <tr><td>Entity Type</td><td>Select Customer</td></tr>
+            <tr><td>Group</td><td>Select General Banking</td></tr>
+            <tr><td>Entity ID</td><td>Enter the CIF ID Created</td></tr>
+            <tr><td colspan="2">Click on Get Button, Click Ok</td></tr>
+            <tr><td colspan="2">Click on the CIF ID and check the correctness of the data entered in each tab</td></tr>
+            <tr><td colspan="2">Click on Current Process Step tab</td></tr>
+            <tr><td colspan="2">Click on Approval:- Process Time link at the bottom</td></tr>
+        <tr><td>Decision</td><td>Select Approve from the Drop Down (If CIF needs to be
+            Rejected Select the option Reject)</td></tr>
+        <tr><td>Remarks</td><td>Enter the Remarks, if required (For Reject Remarks is
+            mandatory)</td></tr>
+            <tr><td colspan="2">Click Save Approval Form, Click Ok</td></tr>
+            <tr><td colspan="2">Note down the CIF ID</td></tr>
+        </table>
+            <h3>Modify Corporate CIF Data</h3>
+        <table>
+            <tr><td colspan="2">For Modifying an existing CIF follow the below mentioned procedure.</td></tr>
+            <tr><td colspan="2">Menu Path CRM >> CIF Corporate >> Edit Entity</td></tr>
+            <tr><td>Entity</td><td>Type Select Customer</td></tr>
+        <tr><td>CIF ID</td><td>Enter CIF ID to be Modified (If the CIF is not available, or
+            search by entering the details in remaining fields)</td></tr>
+            <tr><td colspan="2">Click on Submit</td></tr>
+            <tr><td colspan="2">The CIF ID will be displayed in the grid below the searcher
+            Right Click on the Grid to select the CIF ID to be modified
+            Click Edit Option and select the applicable tab that needs to be modified
+            Modify the required details and Click on Submit Button. The details will be submitted successfully.
+                Click Ok</td></tr>
+            <tr><td colspan="2">If any other Tab needs to be modified, Click on Save button instead of Submit and
+                follow the below process</td></tr>
+            <tr><td colspan="2">Menu Path - CRM >> CIF Corporate >> Entity Queue</td></tr>
+            <tr><td>Tray Type</td><td>Select Self</td></tr>
+            <tr><td>Action</td><td>Saved</td></tr>
+            <tr><td>Entity ID</td><td>Enter the CIF ID</td></tr>
+            <tr><td colspan="2">Click on Get Button</td></tr>
+            <tr><td colspan="2">Right Click on the Grid and Click Edit Option and select the applicable tab that needs to be
+                modified. After required modifications Click on Submit Button</td></tr>
+            <tr><td>Process Selection > Selected Process Name</td><td>Select the option CorpApproval -10.2</td></tr>
+            <tr><td colspan="2">Click on Save Process Selection</td></tr>
+            <tr><td colspan="2">Click OK</td></tr>
+        </table>
+    <h3>Suspend a Retail CIF</h3>
+    <table>
+        <tr><td colspan="2">Follow the below procedure for Suspending a Retail CIF</td></tr>
+        <tr><td colspan="2">Menu Path for Retail CIF Suspension</td></tr>
+        <tr><td colspan="2">CRM >> CIF Retail >> Operations >> Suspend/Undo Suspension</td></tr>
+    <tr><td>CIF ID</td><td>Enter the CIF ID to be Suspended (If the CIF is not available, or
+        search by entering the details in remaining fields)</td></tr>
+        <tr><td colspan="2">Click on Submit</td></tr>
+    <tr><td colspan="2">The CIF ID will be displayed in the grid below the searcher
+        Right Click on the Grid to select the CIF ID to be Suspended</td></tr>
+        <tr><td colspan="2">Click Edit Option Suspend Customer</td></tr>
+        <tr><td>Attach Notes</td><td>Enter the reason for Suspension</td></tr>
+        <tr><td>Available Reasons for Suspension</td><td>Select the Reason for Suspension</td></tr>
+        <tr><td colspan="2">Click on select button (>>) next to Reason for Suspension</td></tr>
+        <tr><td colspan="2">Click on Save Suspend Customer</td></tr>
+        <tr><td colspan="2">Click Ok</td></tr>
+        <tr><td>Process Selection > Selected Process Name</td><td>Select the option CIFCustomer Approval Edit-10.2</td></tr>
+        <tr><td colspan="2">Click on Save Process Selection</td></tr>
+        <tr><td colspan="2">Click OK</td></tr>
+        <tr><td colspan="2">For Verification of Suspension of CIF follow the procedure of Verify Retail CIF mentioned
+            above.</td></tr>
+    </table>
+    <h3>Unsuspend a Retail CIF</h3>
+    <table>
+        <tr><td colspan="2">For Unsuspending a Retail CIF follow the below mentioned procedure.</td></tr>
+        <tr><td colspan="2">Menu Path CRM > CIF Retail > Operations > Suspend/Undo Suspension</td></tr>
+        <tr><td>CIF ID</td><td>Enter the CIF ID to be Un Suspended</td></tr>
+        <tr><td colspan="2">Click on Submit</td></tr>
+        <tr><td colspan="2">The CIF ID will be displayed in the grid below the searcher</td></tr>
+        <tr><td colspan="2">Right Click on the Grid to select the CIF ID to be Unsuspended. Click on Undo Suspension</td></tr>
+        <tr><td>Remarks</td><td>Enter the reason for Unsuspension</td></tr>
+        <tr><td>Available Reason for Undoing Suspension</td><td>Select the Reason for Undo Suspension.<br>Click on select button (>>) next to Reason for Undoing Suspension</td></tr>
+        <tr><td colspan="2">Save Undo Suspension</td></tr>
+        <tr><td colspan="2">Click Ok</td></tr>
+        <tr><td>Process Selection > Selected Process Name</td><td>Select the option CIFCustomer Approval Edit-10.2</td></tr>
+        <tr><td colspan="2">Click on Save Process Selection</td></tr>
+        <tr><td colspan="2">Click OK</td></tr>
+        <tr><td colspan="2">For Verification of Suspension of CIF follow the procedure of Verify Retail CIF mentioned above.</td></tr>
+    </table>
+    <h3>Suspend a Corporate CIF</h3>
+        <table>
+            <tr><td colspan="2">Follow the below procedure for suspending a Corporate CIF</td></tr>
+            <tr><td colspan="2">Menu Path for Corporate CIF Suspension</td></tr>
+            <tr><td colspan="2">CRM >> CIF Corporate >> Operations >> Suspend/Undo Suspension</td></tr>
+            <tr><td>CIF ID</td><td>Enter the CIF ID to be Suspended (If the CIF is not available, or
+                search by entering the details in remaining fields)</td></tr>
+            <tr><td colspan="2">Click on Submit</td></tr>
+            <tr><td colspan="2">The CIF ID will be displayed in the grid below the searcher</td></tr>
+            <tr><td colspan="2">Right Click on the Grid to select the CIF ID to be Suspended</td></tr>
+            <tr><td colspan="2">Click Edit Option Suspend Customer</td></tr>
+            <tr><td>Available Reasons for Suspension</td><td>Select the Reason for Suspension.<br>Click on select button (>>) next to Reason for Suspension</td></tr>
+            <tr><td>Attach Notes</td><td>Enter the reason for Suspension</td></tr>
+            <tr><td colspan="2">Click on Save Suspend Customer</td></tr>
+            <tr><td colspan="2">Click Ok</td></tr>
+            <tr><td>Process Selection > Process Name</td><td>Select the option CorpApproval -10.2</td></tr>
+            <tr><td colspan="2">Click on Save Process Selection</td></tr>
+            <tr><td colspan="2">Click OK</td></tr>
+            <tr><td colspan="2">For Verification of Suspension of CIF follow the procedure of Verify Corporate CIF mentioned
+                above.</td></tr>
+        </table>
+            <h3>Unsuspend a Corporate CIF</h3>
+    <table>
+        <tr><td colspan="2">For Unsuspending a Retail CIF follow the below mentioned procedure</td></tr>
+        <tr><td colspan="2">Menu Path CRM >> CIF Corporate >> Operations >> Suspend/Undo Suspension</td></tr>
+        <tr><td>CIF ID</td><td>Enter the CIF ID to be Un Suspended</td></tr>
+        <tr><td colspan="2">Click on Submit</td></tr>
+        <tr><td colspan="2">The CIF ID will be displayed in the grid below the searcher</td></tr>
+        <tr><td colspan="2">Right Click on the Grid to select the CIF ID to be Unsuspended</td></tr>
+        <tr><td colspan="2">Click on Undo Suspension</td></tr>
+        <tr><td>Remarks</td><td>Enter the reason for Unsuspension</td></tr>
+        <tr><td>Available Reason for Undoing Suspension</td><td>Select the Reason for Undo Suspension.<br>Click on select button (>>) next to Reason for Undoing Suspension</td></tr>
+        <tr><td colspan="2">Save Undo Suspension</td></tr>
+        <tr><td colspan="2">Click Ok</td></tr>
+        <tr><td>Process Selection > Selected Process Name</td><td>Select the option CorpApprove-10.2</td></tr>
+        <tr><td colspan="2">Click on Save Process Selection</td></tr>
+        <tr><td colspan="2">Click OK</td></tr>
+        <tr><td colspan="2">For Verification of Suspension of CIF follow the procedure of Verify Corporate CIF mentioned above.</td></tr>
+    </table>
+    <h3>Inquire a CIF - 360 degree view</h3>
+        <table>
+            <tr><td colspan="2">This option is used for searching a Customer Information File (CIF). The following functionalities are available for the users.</td></tr>
+            <tr><td colspan="2">Search Retail Entity</td></tr>
+            <tr><td colspan="2">Search Corporate Entity</td></tr>
+            <tr><td colspan="2">Based on the filters, on clicking Submit CIF will be displayed.</td></tr>
+        </table>
+</div>
+
+
+</body>
+</html>

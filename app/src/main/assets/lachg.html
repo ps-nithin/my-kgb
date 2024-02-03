@@ -1,0 +1,53 @@
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=windows-1252">
+    <link rel="stylesheet" type="text/css" href="jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="style2.css">
+    <script src="jquery-3.2.1.min.js"></script>
+    <script src="jquery-ui.js"></script>
+    <script>
+        $(function(){
+            $("#accordion").accordion({
+                collapsible: true,
+                active: false,
+                heightStyle: 'content',
+            });
+        });
+
+    </script>
+    <title>acm</title>
+</head>
+<body>
+
+<div id="accordion">
+    <h3>Loan Charge Collection (LACHG)</h3>
+    <table>
+        <tr><td colspan="2">For collecting charges from a Term Loan Account (LAA Type), invoke the Menu LACHG and follow the below procedure.</td></tr>
+        <tr><td>Mode</td><td>Add</td></tr>
+        <tr><td>Loan Account No</td><td>Enter the Loan Account Number</td></tr>
+        <tr><td colspan="2">Click Go Button</td></tr>
+        <tr><td colspan="2" class="blue">Loan Account Details</td></tr>
+        <tr><td>Scheme Code</td><td>Will be auto populated</td></tr>
+        <tr><td>NPA Status</td><td>Will be auto populated</td></tr>
+        <tr><td colspan="2" class="blue">Transaction Details</td></tr>
+        <tr><td>Commission Acct No</td><td>Select the appropriate Account</td></tr>
+        <tr><td>Charge</td><td>Enter the charge amount to be collected</td></tr>
+        <tr><td>IGST Applicable?</td><td>Select the appropriate option</td></tr>
+        <tr><td>Tran Particulars</td><td>Enter the Transaction Remarks</td></tr>
+        <tr><td>NPATC Ref No</td><td>If NPA Account, Enter the NPATC Reference Number</td></tr>
+        <tr><td>Value Date</td><td>Will be auto populated as Current Working Date</td></tr>
+        <tr><td colspan="2">Click on Fetch Data</td></tr>
+        <tr><td colspan="2" class="blue">Transaction Summary</td></tr>
+        <tr><td>GST Amount</td><td>Will be auto populated</td></tr>
+        <tr><td>Cess Fee</td><td>Will be auto populated</td></tr>
+        <tr><td>Total Debit Amount</td><td>Will be auto populated</td></tr>
+        <tr><td colspan="2">Click on Submit. Note down the Reference Number</td></tr>
+    <tr><td colspan="2">Before verification the same can be modified using the M- Modify option in LACHG. Verification of
+        the record needs to be done using the same Menu.</td></tr>
+    </table>
+
+</div>
+
+
+</body>
+</html>

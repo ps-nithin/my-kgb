@@ -1,0 +1,57 @@
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=windows-1252">
+    <link rel="stylesheet" type="text/css" href="jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="style2.css">
+    <script src="jquery-3.2.1.min.js"></script>
+    <script src="jquery-ui.js"></script>
+    <script>
+        $(function(){
+            $("#accordion").accordion({
+                collapsible: true,
+                active: false,
+                heightStyle: 'content',
+            });
+        });
+
+    </script>
+    <title>acm</title>
+</head>
+<body>
+
+<div id="accordion">
+    <h3>Lien Marking (HALM)</h3>
+    <table>
+        <tr><td colspan="2">Lien Marking in an Account</td></tr>
+        <tr><td colspan="2">For marking user lien in an account Invoke the Menu HALM and follow the below procedure.</td></tr>
+        <tr><td>Function</td><td>Add</td></tr>
+        <tr><td>A/c. ID</td><td>Enter the Account Number</td></tr>
+        <tr><td>Module Type</td><td>U - User Defined</td></tr>
+        <tr><td colspan="2">Click on Go Button</td></tr>
+        <tr><td>New Lien Amount</td><td>Enter the Lien Amount</td></tr>
+        <tr><td>From Effective Date</td><td>Will be auto populated by the system</td></tr>
+        <tr><td>Lien Reason</td><td>Select the appropriate reason using search</td></tr>
+        <tr><td>Notes</td><td>Enter the remarks</td></tr>
+        <tr><td colspan="2">More than one Lien Reason Code can be added by clicking on Add button</td></tr>
+        <tr><td colspan="2">Click on Submit Button</td></tr>
+        <tr><td colspan="2">Verification of the Lien marking can be done by any user having verification rights through HALM Menu. </td></tr>
+    </table>
+
+    <h3>Unmarking lien in an Account</h3>
+    <table>
+        <tr><td colspan="2">For unmarking user lien in an account Invoke the Menu HALM and follow the below procedure.</td></tr>
+        <tr><td>Function</td><td>M - Modify</td></tr>
+        <tr><td>A/c. ID</td><td>Enter the Account Number</td></tr>
+        <tr><td>Module Type</td><td>U - User Defined</td></tr>
+        <tr><td colspan="2">Click on Go Button</td></tr>
+        <tr><td>New Lien Amount</td><td>Modify the amount as zero</td></tr>
+        <tr><td>Notes</td><td>Enter the remarks for unmarking the lien</td></tr>
+        <tr><td colspan="2">Click on Submit Button</td></tr>
+        <tr><td colspan="2">Verification of the Lien unmarking can be done by any user having verification rights through HALM Menu.</td></tr>
+    </table>
+
+</div>
+
+
+</body>
+</html>

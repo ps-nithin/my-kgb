@@ -1,0 +1,52 @@
+
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=windows-1252">
+    <link rel="stylesheet" type="text/css" href="jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="style2.css">
+    <script src="jquery-3.2.1.min.js"></script>
+    <script src="jquery-ui.js"></script>
+    <script>
+        $(function(){
+            $("#accordion").accordion({
+                collapsible: true,
+                active: false,
+                heightStyle: 'content',
+            });
+        });
+
+    </script>
+    <title>acm</title>
+</head>
+<body>
+
+<div id="accordion">
+    <h3>Repayment to Term Loan Accounts (HLASPAY)</h3>
+    <table>
+        <tr><td colspan="2">This Menu is used for initiating repayment (Both Cash and Transfer) towards Loan Accounts (LAA).</td></tr>
+        <tr><td colspan="2">Create a Cash Credit Transaction to Loan Account</td></tr>
+        <tr><td>Payment Type</td><td>S - Payment</td></tr>
+        <tr><td>Transaction Type</td><td>Select Cash will be by default selected</td></tr>
+        <tr><td colspan="2">Click Go Button</td></tr>
+        <tr><td>Loan A/c. ID</td><td>Enter the Loan Account No.</td></tr>
+        <tr><td>Credit Amt.</td><td>Enter the Amount</td></tr>
+    <tr><td>Transaction Remarks</td><td>Enter the transaction particulars (post verification it will be
+        displayed in Remarks 1 in HTM)</td></tr>
+        <tr><td colspan="2">Click on Accept button</td></tr>
+        <tr><td colspan="2">The amount overdue/overflow/adjustments can be seen</td></tr>
+        <tr><td colspan="2">Click on submit button and note down the Tran ID</td></tr>
+    </table>
+    <h3>For Verifying the transaction (to be done by another user having verification rights)</h3>
+    <table>
+        <tr><td colspan="2">Invoke the Menu HLASPAY and follow the below procedure.</td></tr>
+        <tr><td>Payment Type</td><td>V - Verify</td></tr>
+        <tr><td>Transaction ID</td><td>Enter the Tran ID</td></tr>
+        <tr><td colspan="2">Click Go Button</td></tr>
+        <tr><td colspan="2">Click Submit</td></tr>
+    </table>
+
+</div>
+
+
+</body>
+</html>

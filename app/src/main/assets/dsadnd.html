@@ -1,0 +1,54 @@
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=windows-1252">
+    <link rel="stylesheet" type="text/css" href="jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="style2.css">
+    <script src="jquery-3.2.1.min.js"></script>
+    <script src="jquery-ui.js"></script>
+    <script>
+        $(function(){
+            $("#accordion").accordion({
+                collapsible: true,
+                active: false,
+                heightStyle: 'content',
+            });
+        });
+
+    </script>
+    <title>acm</title>
+</head>
+<body>
+
+<div id="accordion">
+    <h3>Downloading of File to Handheld Machine from Finacle (DSADND)</h3>
+    <table>
+        <tr><td colspan="2">Invoke the Menu DSADND and follow the below procedure.</td></tr>
+        <tr><td>Function</td><td>Will be auto populated as DOWNLOAD</td></tr>
+        <tr><td>DSA Agent id</td><td>Enter the Agent ID</td></tr>
+        <tr><td>Commit Flg</td><td>Select Y</td></tr>
+        <tr><td colspan="2">Click on Submit Button. Message will be displayed as File Successfully Generated.</td></tr>
+        <tr><td colspan="2">Download File through HTRFTOPC Menu</td></tr>
+        <tr><td colspan="2">Invoke the Menu HTRFTOPC and follow the below procedure</td></tr>
+        <tr><td>Source File</td><td>Click on Search button</td></tr>
+        <tr><td colspan="2">Select the file &lt;Agent ID&gt;.mst</td></tr>
+        <tr><td colspan="2">Click on Submit Button</td></tr>
+        <tr><td colspan="2">Click on Save Button. The file will get downloaded.</td></tr>
+        <tr><td colspan="2">Click on Save As option and Save the file to the desired Agents Folder.</td></tr>
+        <tr><td colspan="2">Open the Daily Collection Utility</td></tr>
+        <tr><td colspan="2">A screen named Palmtec PC Data transfer Utility will be displayed.</td></tr>
+        <tr><td colspan="2">Fill the source file column by clicking Small Square below Source File label and selecting the
+            file created (Local disc C, in folder named agent ID). Please note the file must have an
+            extension .mst</td></tr>
+        <tr><td colspan="2">If the file name is displayed correctly then ensure the cord from the system is connected to
+            the device properly.</td></tr>
+        <tr><td colspan="2">Switch on the device.</td></tr>
+        <tr><td colspan="2">Press F7 on the device. The device will display Transfer ?</td></tr>
+        <tr><td colspan="2">Press Yes. The device will display a message Waiting for PC..</td></tr>
+        <tr><td colspan="2">Click on the Download to Palmtec button seen on Palmtec PC Data transfer Utility.</td></tr>
+        <tr><td colspan="2">If the download is successful then the utility will display a success message.</td></tr>
+    </table>
+</div>
+
+
+</body>
+</html>

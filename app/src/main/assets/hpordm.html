@@ -1,0 +1,149 @@
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=windows-1252">
+    <link rel="stylesheet" type="text/css" href="jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="style2.css">
+    <script src="jquery-3.2.1.min.js"></script>
+    <script src="jquery-ui.js"></script>
+    <script>
+        $(function(){
+            $("#accordion").accordion({
+                collapsible: true,
+                active: false,
+                heightStyle: 'content',
+            });
+        });
+
+    </script>
+    <title>acm</title>
+</head>
+<body>
+
+<div id="accordion">
+    <h3>Introduction</h3>
+    <table>
+        <tr><td colspan="2">In Finacle 7, all types of NEFT/RTGS transactions (including Cash) were carried out using HRTGS
+    Menu.
+    In Finacle 10, separate menus need to be used for carrying out Cash NEFT and NEFT/RTGS Transfer
+            Transactions. The following are the Menus for initiating NEFT/RTGS.</td></tr>
+    </table>
+    <h3>NEFT/RTGS Menus (Detailed workflow provided below)</h3>
+    <table>
+    <tr><td>HPORDM</td><td>This Menu is used for initiating Customer Induced Transfer Transaction and
+        Inter Bank Transfer Transaction</td></tr>
+        <tr><td>HPOOTC</td><td>For initiating Cash NEFT Transaction</td></tr>
+        <tr><td>HRTGS</td><td>For Inquiring transactions done in Finacle 7</td></tr>
+    </table>
+    <h3>NEFT/RTGS Transfer Transaction (HPORDM)</h3>
+    <table>
+        <tr><td colspan="2">Invoke the Menu HPORDM and follow the below procedure for doing Customer induced Transfer
+            Transaction</td></tr>
+        <tr><td>Function</td><td>Add</td></tr>
+        <tr><td>Payment Product</td><td>Customer Transfer</td></tr>
+        <tr><td colspan="2">Click on Go Button</td></tr>
+        <tr><td colspan="2" class="blue">Payment Order >> Remittance Details</td></tr>
+        <tr><td>Debit A/c.</td><td>Enter the Operative Account from which the transaction needs to be initiated</td></tr>
+        <tr><td>Instrument Type</td><td>Select CHQ - Cheque</td></tr>
+        <tr><td>Instrument Alpha/Serial No</td><td>Enter the Cheque Number, if applicable</td></tr>
+        <tr><td>Remittance CCY/Amt.</td><td>Enter the Transaction Amount</td></tr>
+        <tr><td>Lien Flag</td><td>Will be auto populated as Y</td></tr>
+        <tr><td>Remarks</td><td>Enter Remarks, if any</td></tr>
+        <tr><td colspan="2" class="blue">Payment Order >> Beneficiary Customer</td></tr>
+        <tr><td>Address Type</td><td>Select A - Name and Address</td></tr>
+        <tr><td>A/c. ID</td><td>Enter the Beneficiary Account Number</td></tr>
+        <tr><td>Name</td><td>Enter the Beneficiary Name</td></tr>
+        <tr><td>Address Line 1</td><td>Enter the Address</td></tr>
+        <tr><td>Address Line 2</td><td>Enter the Address</td></tr>
+        <tr><td>Address Line 3</td><td>Enter the Address</td></tr>
+        <tr><td colspan="2" class="blue">Payment Order >> Account with Institution</td></tr>
+        <tr><td>Address Type</td><td>Select B - BIC (IFSC Code)</td></tr>
+        <tr><td>BIC</td><td>Enter the IFSC of the Beneficiary Bank and press Tab</td></tr>
+        <tr><td colspan="2" class="blue">Payment Order >> Credit Details</td></tr>
+        <tr><td>Method of Payment Derivation</td><td>Will be auto populated as System</td></tr>
+        <tr><td>Method of Payment</td><td>Select NEFT or RTGS as applicable</td></tr>
+        <tr><td colspan="2">After selecting Method of Payment, Click on Fetch Button</td></tr>
+        <tr><td colspan="2" class="blue">Payment Order >> Charges Details</td></tr>
+        <tr><td>Charge Option</td><td>Will be auto populated as Our</td></tr>
+        <tr><td>Charge Code</td><td>Will be auto populated according to Method of Payment
+            selected</td></tr>
+        <tr><td>Net Charges</td><td>Will be auto populated as No</td></tr>
+        <tr><td>Repair Charges</td><td>Will be auto populated as No</td></tr>
+        <tr><td>Waive Charges</td><td>Will be auto populated as No/Yes based on the Debit Account Scheme</td></tr>
+        <tr><td colspan="2">Click on View Charges Button to view the applicable charges including GST</td></tr>
+        <tr><td colspan="2">Click Submit</td></tr>
+        <tr><td colspan="2" class="blue">Payment Order >> Remittance Info >> Expand Button</td></tr>
+        <tr><td>Mobile Number</td><td>Enter the Sender’s Mobile Number</td></tr>
+        <tr><td>Email ID</td><td>Enter Email Id, If available</td></tr>
+        <tr><td colspan="2">Click on Validate Button</td></tr>
+        <tr><td colspan="2" class="blue">Reimbursment Tab</td></tr>
+        <tr><td colspan="2">A window will pop up for Double checking the Beneficiary Account Number and Transaction
+            Amount</td></tr>
+        <tr><td>Beneficiary Credit A/c ID</td><td>Enter the Beneficiary Account Number and Click Ok</td></tr>
+        <tr><td>Remittance CCY/Amt.</td><td>Enter the Transaction Amount and Click Ok</td></tr>
+        <tr><td colspan="2">A pop up message will be shown to visit the Payment Order Tab for Final Submission Click Ok</td></tr>
+        <tr><td colspan="2">Ensure correctness of the Ordering Party details</td></tr>
+        <tr><td colspan="2" class="blue">Payment Order Tab</td></tr>
+        <tr><td colspan="2">Click on Submit and Note down the Payment Order ID</td></tr>
+    </table>
+    <h3>Verification of NEFT/RTGS Transaction (To be done by another user having verification rights)</h3>
+        <table>
+            <tr><td colspan="2">For verification of the NEFT/RTGS Transaction, Invoke the Menu HPORDM and follow the below mentioned procedure.</td></tr>
+            <tr><td>Function</td><td>Verify</td></tr>
+            <tr><td>Payment Order ID</td><td>Enter the Payment Order ID or Select using Search Option</td></tr>
+            <tr><td colspan="2">Click on Go Button</td></tr>
+            <tr><td colspan="2">Transaction details will be displayed. Ensure the correctness of the transaction</td></tr>
+            <tr><td colspan="2" class="blue">Reimbursement Details Tab</td></tr>
+            <tr><td colspan="2">A window will pop up for Double checking the Beneficiary Account Number and Transaction Amount</td></tr>
+            <tr><td>Beneficiary Credit A/c ID</td><td>Enter the Beneficiary Account Number and Click Ok</td></tr>
+            <tr><td>Remittance CCY/Amt.</td><td>Enter the Transaction Amount and Click Ok</td></tr>
+            <tr><td colspan="2">A pop up message will be shown to visit the Payment Order Tab for Final Submission Click Ok</td></tr>
+            <tr><td colspan="2" class="blue">Payment Order Tab</td></tr>
+            <tr><td colspan="2">Click on Submit. Note down the UTR Number</td></tr>
+        </table>
+    <h3>Inter Bank RTGS Transfer Transaction (HPORDM)</h3>
+    <table>
+        <tr><td colspan="2">Invoke the Menu HPORDM and follow the below procedure for doing Inter Bank RTGS Transaction</td></tr>
+        <tr><td>Function</td><td>Add</td></tr>
+        <tr><td>Payment Product</td><td>Inter Bank Transfer</td></tr>
+        <tr><td colspan="2">Click on Go Button</td></tr>
+        <tr><td colspan="2" class="blue">Payment Order >> Remittance Details</td></tr>
+        <tr><td>Debit A/c.</td><td>Enter the SL Suspense for Keeping DD/NEFT Account 40XXX1013050114</td></tr>
+        <tr><td>Remittance CCY/Amt.</td><td>Enter the Transaction Amount</td></tr>
+        <tr><td>Lien Flag</td><td>Will be auto populated as Y</td></tr>
+        <tr><td>Remarks</td><td>Enter Remarks, if any</td></tr>
+        <tr><td colspan="2" class="blue">Payment Order >> Beneficiary Customer</td></tr>
+        <tr><td>Address Type</td><td>Select B - BIC (IFSC Code)</td></tr>
+        <tr><td>BIC</td><td>Enter the IFSC of the Beneficiary Bank and press Tab</td></tr>
+        <tr><td colspan="2" class="blue">Payment Order >> Credit Details</td></tr>
+        <tr><td>Method of Payment Derivation</td><td>Will be auto populated as System</td></tr>
+        <tr><td>Method of Payment</td><td>Will be auto populated as RTGS</td></tr>
+        <tr><td colspan="2">Click on Fetch Button</td></tr>
+        <tr><td colspan="2" class="blue">Reimbursment Tab</td></tr>
+        <tr><td colspan="2">A window will pop up for Double checking the Transaction Amount</td></tr>
+        <tr><td>Remittance CCY/Amt.</td><td>Enter the Transaction Amount and Click Ok</td></tr>
+        <tr><td colspan="2">A pop up message will be shown to visit the Payment Order Tab for Final Submission Click Ok</td></tr>
+        <tr><td colspan="2" class="blue">Payment Order Tab</td></tr>
+        <tr><td colspan="2">Click on Submit and Note down the Payment Order ID</td></tr>
+    </table>
+        <h3>Verification of Inter Bank RTGS Transaction (To be done by another user having
+            verification rights)</h3>
+        <table>
+            <tr><td colspan="2">For verification of the RTGS Transaction, Invoke the Menu HPORM and follow the below mentioned
+                procedure.</td></tr>
+            <tr><td>Function</td><td>Verify</td></tr>
+            <tr><td>Payment Order ID</td><td>Enter the Payment Order ID or Select using Search Option</td></tr>
+            <tr><td colspan="2">Click on Go Button</td></tr>
+            <tr><td colspan="2">Transaction details will be displayed. Ensure the correctness of the transaction</td></tr>
+            <tr><td colspan="2">Reimbursement Details Tab</td></tr>
+            <tr><td colspan="2">A window will pop up for Double checking the Transaction Amount</td></tr>
+            <tr><td>Remittance CCY/Amt.</td><td>Enter the Transaction Amount and Click Ok</td></tr>
+            <tr><td colspan="2">A pop up message will be shown to visit the Payment Order Tab for Final Submission Click Ok</td></tr>
+            <tr><td colspan="2" class="blue">Payment Order Tab</td></tr>
+            <tr><td colspan="2">Click on Submit. Note down the UTR Number</td></tr>
+        </table>
+
+</div>
+
+
+</body>
+</html>

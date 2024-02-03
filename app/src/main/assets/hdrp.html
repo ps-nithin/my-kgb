@@ -1,0 +1,54 @@
+
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=windows-1252">
+    <link rel="stylesheet" type="text/css" href="jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="style2.css">
+    <script src="jquery-3.2.1.min.js"></script>
+    <script src="jquery-ui.js"></script>
+    <script>
+        $(function(){
+            $("#accordion").accordion({
+                collapsible: true,
+                active: false,
+                heightStyle: 'content',
+            });
+        });
+
+    </script>
+    <title>acm</title>
+</head>
+<body>
+
+<div id="accordion">
+    <h3>Deposit Receipt Printing (HDRP)</h3>
+    <table>
+        <tr><td colspan="2">For printing Deposit Receipt, invoke the menu HDRP and follow the below procedure. For displaying
+            all pending receipts for printing, invoke the Menu and Click on Go Button.</td></tr>
+        <tr><td colspan="2">Users can use any of the following filter options to get the print of a specific account.</td></tr>
+        <tr><td colspan="2">1. Scheme Code</td></tr>
+        <tr><td colspan="2">2. CIF ID</td></tr>
+        <tr><td colspan="2">3. From A/c. ID - To A/c ID</td></tr>
+        <tr><td colspan="2">4. From A/c. Open Date - To A/c Open Date</td></tr>
+        <tr><td colspan="2">The records pending for printing will be displayed in the Grid</td></tr>
+        <tr><td colspan="2">Select the tick mark against the Account which needs to be printed</td></tr>
+        <tr><td colspan="2">Press Accept</td></tr>
+        <tr><td colspan="2">Deposit Receipt Print screen will be displayed</td></tr>
+        <tr><td>Print Srl. No.</td><td>Ensure correctness of the Deposit Receipt Serial Number</td></tr>
+        <tr><td>Deposit Receipt Print Indicator</td><td>Will be auto populated as System Generated</td></tr>
+        <tr><td colspan="2">Click Submit button</td></tr>
+        <tr><td colspan="2">Print details will be displayed</td></tr>
+    <tr><td colspan="2">Click on Print Print dialogue box will appear. Ensure proper printer is
+        selected and Click on Print</td></tr>
+        <tr><td colspan="2">Deposit Receipt will be printed</td></tr>
+        <tr><td colspan="2">Click on Return button Desktop Print confirmation dialogue box will appear</td></tr>
+        <tr><td colspan="2">If printed successfully, Click on Proceed</td></tr>
+    <tr><td colspan="2">If the print is having any issues, untick all the check boxes and click on proceed to Go
+        Back to Printing.</td></tr>
+    </table>
+
+</div>
+
+
+</body>
+</html>

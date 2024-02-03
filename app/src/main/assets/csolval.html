@@ -1,0 +1,52 @@
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=windows-1252">
+    <link rel="stylesheet" type="text/css" href="jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="style2.css">
+    <script src="jquery-3.2.1.min.js"></script>
+    <script src="jquery-ui.js"></script>
+    <script>
+        $(function(){
+            $("#accordion").accordion({
+                collapsible: true,
+                active: false,
+                heightStyle: 'content',
+            });
+        });
+
+    </script>
+    <title>acm</title>
+</head>
+<body>
+
+<div id="accordion">
+    <h3>Step 1 - SOL Validation</h3>
+    <table>
+        <tr><td colspan="2">Invoke the Menu CSOLVAL and follow the below Procedure</td></tr>
+        <tr><td>Function</td><td>Select V - Validation Run</td></tr>
+        <tr><td colspan="2">Click on Submit</td></tr>
+    <tr><td colspan="2">System will check whether any pending entries exist for the SOL and the Report of blocking
+    validations will be generated, if any.
+    Invoke the Menu HPR and view the Report. If any pendencies exist, clear the Same. If the SOL
+        validation is successful, the following message will be displayed in the Report</td></tr>
+        <tr><td colspan="2">40XXX - CSOLVAL validated successfully for the day DD-MM- YYYY by USERID. Kindly Submit the SOL.</td></tr>
+    </table>
+    <h3>Step 2 - SOL Submission (To be done by an Officer)</h3>
+    <table>
+        <tr><td colspan="2">Invoke the Menu CSOLVAL and follow the below Procedure</td></tr>
+        <tr><td>Function</td><td>Select S - Submission</td></tr>
+    <tr><td>Submission Remarks</td><td>Enter the remarks in the following format<br>
+        For DD-MM-YYYY (Eg: IF EOD is done for 15-01-2024 Enter the remarks as FOR 15-01-2024)</td></tr>
+        <tr><td colspan="2">Click on Submit</td></tr>
+        <tr><td colspan="2">Invoke the Menu HPR to view the report generated. If the SOL is submitted Successfully the
+            following message will be displayed.</td></tr>
+        <tr><td colspan="2">40XXX - CSOLVAL Submitted successfully for the day DD-MM- YYYY by USERID</td></tr>
+        <tr><td colspan="2">If the above message is displayed, the EOD activity of the branch is completed. Remaining activities
+            will be done centrally by the Functional Team.</td></tr>
+
+    </table>
+</div>
+
+
+</body>
+</html>

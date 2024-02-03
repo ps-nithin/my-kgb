@@ -1,0 +1,85 @@
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=windows-1252">
+    <link rel="stylesheet" type="text/css" href="jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="style2.css">
+    <script src="jquery-3.2.1.min.js"></script>
+    <script src="jquery-ui.js"></script>
+    <script>
+        $(function(){
+            $("#accordion").accordion({
+                collapsible: true,
+                active: false,
+                heightStyle: 'content',
+            });
+        });
+
+    </script>
+    <title>acm</title>
+</head>
+<body>
+
+<div id="accordion">
+    <h3>Open Savings Bank Account (HOAACSB)</h3>
+    <table>
+        <tr><td colspan="2">Invoke the Menu HOAACSB and follow the below procedure for opening Savings Account for a Customer</td></tr>
+        <tr><td>Function</td><td>Open</td></tr>
+        <tr><td>CIF ID</td><td>Enter the CIF ID for which account needs to be created</td></tr>
+        <tr><td>Scheme Code</td><td>Enter the Scheme Code</td></tr>
+        <tr><td colspan="2">Click on Go Button</td></tr>
+        <tr><td colspan="2" class="blue">General Details</td></tr>
+        <tr><td>A/c. Statement</td><td>Select the appropriate option.<br>If S - Statement/B - Both is opted enter the frequency as well</td></tr>
+        <tr><td>Mode of Operation</td><td>Select the appropriate option</td></tr>
+        <tr><td colspan="2">Click on Validate</td></tr>
+        <tr><td colspan="2" class="blue">Interest Details</td></tr>
+        <tr><td>Next Interest Calculation Date (Cr)</td><td>Enter the next interest calculation date (Enter the Month End Date)</td></tr>
+        <tr><td>Next Interest Calculation Date (Dr)</td><td>Enter the next interest calculation date (Enter the Month End Date)</td></tr>
+        <tr><td colspan="2">Click on Validate</td></tr>
+        <tr><td colspan="2" class="blue">Scheme Details</td></tr>
+        <tr><td>Nomination</td><td>Select the appropriate option</td></tr>
+        <tr><td colspan="2">Click on Validate</td></tr>
+        <tr><td colspan="2" class="blue">Nomination Details (Applicable only if the Nomination is selected as Yes)</td></tr>
+        <tr><td>Registration No</td><td>Will be auto populated by the same. Note down the same.</td></tr>
+        <tr><td>CIF ID</td><td>Enter the Nominee CIF .Applicable only if the nominee is having CIF</td></tr>
+        <tr><td>Nominee Name</td><td>Enter the Name of the Nominee</td></tr>
+        <tr><td>Relationship</td><td>Select the appropriate Relationship Code</td></tr>
+        <tr><td>Address Line 1</td><td>Enter the Address details of the Nominee</td></tr>
+        <tr><td>Address Line 2</td><td>Enter the Address details of the Nominee</td></tr>
+        <tr><td>Address Line 3</td><td>Enter the Address details of the Nominee</td></tr>
+        <tr><td>City</td><td>Select the applicable City Code</td></tr>
+        <tr><td>State</td><td>Select the applicable State Code (66 for kerala)</td></tr>
+        <tr><td>Country</td><td>Select the applicable country code (IN for India)</td></tr>
+        <tr><td>Postal Code</td><td>Enter the PIN Code</td></tr>
+        <tr><td>Nomination Pcnt</td><td>Enter 100</td></tr>
+        <tr><td colspan="2">Click on Validate</td></tr>
+        <tr><td colspan="2" class="blue">Related Party Details</td></tr>
+        <tr><td colspan="2">The details of the main account holder will be displayed in the tab</td></tr>
+        <tr><td colspan="2">If additional party needs to be added, Click on Add button or click the blue arrow on top right</td></tr>
+        <tr><td>Relation Type</td><td>Select the appropriate option</td></tr>
+        <tr><td>Relation Code</td><td>Select the appropriate option</td></tr>
+        <tr><td>CIF ID</td><td>Enter the CIF of the related party</td></tr>
+        <tr><td colspan="2">If more than one additional party needs to be added, click on Add button or click the blue arrow on top right again and repeat the process</td></tr>
+        <tr><td colspan="2">Click on Validate</td></tr>
+        <tr><td colspan="2">Click on Submit and note down the A/c. ID</td></tr>
+        <tr><td colspan="2">Before verification of the account modification can be done using the menu HOAACMSB</td></tr>
+    </table>
+        <h3>Verification of Account Opening (To be done by another user having verification rights)</h3>
+        <table>
+            <tr><td colspan="2">Invoke the Menu HOAACVSB and follow the below mentioned procedure.</td></tr>
+            <tr><td>Function</td><td>Verify</td></tr>
+            <tr><td>Temporary A/c. ID</td><td>Enter the A/c. ID created or select using the search</td></tr>
+            <tr><td colspan="2">Click on Go</td></tr>
+            <tr><td colspan="2">Visit the following tabs and ensure the correctness of the data entered</td></tr>
+            <tr><td colspan="2" class="blue">General Details</td></tr>
+            <tr><td colspan="2" class="blue">Interest Details</td></tr>
+            <tr><td colspan="2" class="blue">Scheme Details</td></tr>
+            <tr><td colspan="2" class="blue">Nomination Details (Applicable only if the Nomination is selected as Yes)</td></tr>
+            <tr><td colspan="2" class="blue">Related Party Details</td></tr>
+            <tr><td colspan="2">Click on Submit and note down the A/c. ID</td></tr>
+        </table>
+
+</div>
+
+
+</body>
+</html>

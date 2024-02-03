@@ -1,0 +1,45 @@
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=windows-1252">
+    <link rel="stylesheet" type="text/css" href="jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="style2.css">
+    <script src="jquery-3.2.1.min.js"></script>
+    <script src="jquery-ui.js"></script>
+    <script>
+        $(function(){
+            $("#accordion").accordion({
+                collapsible: true,
+                active: false,
+                heightStyle: 'content',
+            });
+        });
+
+    </script>
+    <title>acm</title>
+</head>
+<body>
+
+<div id="accordion">
+    <h3>Reversal of Proxy Transactions</h3>
+    <table>
+        <tr><td colspan="2">Posting of Proxy Transaction is to be done using the Menu HSPTM.</td></tr>
+        <tr><td>Function</td><td>R - Reversal</td></tr>
+        <tr><td>Status</td><td>O - Outstanding</td></tr>
+        <tr><td>Tran. Date From</td><td>Enter the From Date</td></tr>
+        <tr><td>Tran. Date To</td><td>Enter the To Date</td></tr>
+        <tr><td>Include Null</td><td>Select No</td></tr>
+        <tr><td>Processing Mode</td><td>Select Manual</td></tr>
+        <tr><td colspan="2">Click on Go Button</td></tr>
+        <tr><td colspan="2">All the pending transactions will be displayed</td></tr>
+        <tr><td colspan="2">Put tick mark against the accounts</td></tr>
+        <tr><td colspan="2">Click on Submit</td></tr>
+        <tr><td colspan="2">Note down the Transaction ID displayed against each Account and Click Ok</td></tr>
+    <tr><td colspan="2">If the account is having sufficient balance, the transaction created will be in posted status and
+        another user should verify the same through HTM Menu. If the account is not having sufficient balance then TOD needs to be granted.</td></tr>
+    </table>
+
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,147 @@
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=windows-1252">
+    <link rel="stylesheet" type="text/css" href="jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="style2.css">
+    <script src="jquery-3.2.1.min.js"></script>
+    <script src="jquery-ui.js"></script>
+    <script>
+        $(function(){
+            $("#accordion").accordion({
+                collapsible: true,
+                active: false,
+                heightStyle: 'content',
+            });
+        });
+
+    </script>
+    <title>acm</title>
+</head>
+<body>
+
+<div id="accordion">
+    <h3>Introduction</h3>
+    <table>
+        <tr><td colspan="2">In Finacle 7, we are using the core security menu (SRM) to create Term Deposit, Stock and Book
+    Debt securities. For all other securities we are using customized menus like SRMCROP, SRMMA etc.
+    EM security is stored in the CERSAI module.
+    In Finacle 10, core menus used to store securities have undergone changes. Following are the
+    menus used to store security of term deposits, stock statements and book debt. There is no change
+            in other menus.</td></tr>
+        <tr></tr><td colspan="2">Core Menus (Detailed workflow provided below)</td></tr>
+    <tr><td>HCLM</td><td>For creating Collateral ID</td></tr>
+    <tr><td>HSCLM</td><td>For linking/Unlinking Collateral ID to an account</td></tr>
+    <tr><td>HLACM</td><td>For Term Deposit Collateral Linking</td></tr>
+    <tr><td>HCLL</td><td>Collateral Lookup - For doing Collateral Inquiry</td></tr>
+    <tr><td colspan="2">Customized Menus (No Change)</td></tr>
+    <tr><td>SRMCROP</td><td>For linking Crop as Security</td></tr>
+    <tr><td>SRMGL</td><td>For linking Gold as Security</td></tr>
+    <tr><td>SRMVEH</td><td>For linking Vehicle as Security</td></tr>
+    <tr><td>SRMANI</td><td>For linking Animal as Security</td></tr>
+    <tr><td>SRMMA</td><td>For linking Vehicle as Security</td></tr>
+    <tr><td>SRMPB</td><td>For linking Poultry and Bee as Security</td></tr>
+    <tr><td>SRMINS</td><td>For linking Insurance as Security</td></tr>
+    <tr><td>SRMNSC</td><td>For linking NSC Certificate as Security</td></tr>
+    <tr><td>CERSAIPM</td><td>For creating EM Security</td></tr>
+    <tr><td>CERSAILM</td><td>For linking EM Security</td></tr>
+    </table>
+    <h3>Collateral ID Creation - Stock/Book Debt (HCLM)</h3>
+    <table>
+        <tr><td colspan="2">This Menu is used for creating Collateral ID of Inventory (Stock), Book Debts and Term Deposits. All
+            other security types need to be entered through corresponding security menus.</td></tr>
+        <tr><td colspan="2">Invoke the Menu HCLM and follow the below procedure</td></tr>
+        <tr><td>Function</td><td>L - Lodge</td></tr>
+        <tr><td>Type</td><td>Select the applicable collateral type<br>
+            B - Book Debt<br>
+            T - Inventory for Stock<br></td></tr>
+        <tr><td colspan="2">Click Go Button</td></tr>
+        <tr><td colspan="2" class="blue">General Tab</td></tr>
+        <tr><td>Collateral Code</td><td>Select the collateral code from search</td></tr>
+        <tr><td>Ceiling Limit Per Linkage</td><td>Enter the collateral Value</td></tr>
+        <tr><td colspan="2">Click on Validate button</td></tr>
+        <tr><td colspan="2" class="blue">Net Value Tab</td></tr>
+        <tr><td>Gross Value</td><td>Enter the collateral Value</td></tr>
+        <tr><td colspan="2">Click on Validate button</td></tr>
+        <tr><td colspan="2" class="blue">Particulars Tab</td></tr>
+        <tr><td>Due Date</td><td>Enter the Due Date of the STOCK/BOOK DEBT</td></tr>
+        <tr><td>Frequency for Statement</td><td>Select the applicable Frequency of the STOCK/BOOK DEBT</td></tr>
+        <tr><td colspan="2">Click on Submit and note down the Collateral ID generated</td></tr>
+    <tr><td colspan="2">Before verification, Modification of the Collateral ID can be done by the created user only by
+        invoking the Menu HCLM.</td></tr>
+        <tr><td colspan="2">Verification of the Collateral ID can be done by any user (other than creator) having verification
+            rights through HCLM Menu</td></tr>
+    </table>
+
+    <h3>Collateral ID Modification/Addition/Substitution at the RenewalStock/Book Debt (HCLM)</h3>
+        <table>
+            <tr><td colspan="2" class="blue">Substitution of Collateral ID</td></tr>
+            <tr><td colspan="2">For Substituting an existing Collateral ID, Invoke the Menu HCLM and follow the below procedure.</td></tr>
+            <tr><td>Function</td><td>S - Substitute</td></tr>
+        <tr><td>Type</td><td>Select the applicable collateral type<br>
+        B - Book Debt<br>
+            T - Inventory for Stock<br></td></tr>
+            <tr><td>Collateral ID</td><td>Enter the Collateral ID that needs to be substituted</td></tr>
+            <tr><td colspan="2">Click Go Button</td></tr>
+            <tr><td colspan="2" class="blue">General Tab</td></tr>
+            <tr><td colspan="2">The details of the Collateral will be displayed</td></tr>
+            <tr><td>Ceiling Limit Per Linkage</td><td>Enter the New collateral Value</td></tr>
+            <tr><td colspan="2">Click on Validate button</td></tr>
+            <tr><td colspan="2" class="blue">Particulars Tab</td></tr>
+            <tr><td>Due Date</td><td>Enter the New Due Date of the STOCK/BOOK DEBT</td></tr>
+            <tr><td>Frequency for Statement</td><td>Select the applicable Frequency of the STOCK/BOOK DEBT</td></tr>
+            <tr><td colspan="2">Click on Submit</td></tr>
+        <tr><td colspan="2">Before verification, Modification of the Collateral ID can be done by the created user only by
+            invoking the Menu HCLM.</td></tr>
+            <tr><td colspan="2">Verification of the Collateral ID can be done by any user (other than creator) having verification rights through HCLM Menu.</td></tr>
+            <tr><td colspan="2" class="blue">Modification of Collateral ID</td></tr>
+            <tr><td colspan="2">For Modifying an existing collateral ID, Invoke the Menu HCLM and follow the below procedure.</td></tr>
+            <tr><td>Function</td><td>M - Modify</td></tr>
+            <tr><td>Type</td><td>Select the applicable collateral type<br>
+            B - Book Debt<br>
+                T - Inventory for Stock<br></td></tr>
+            <tr><td>Collateral ID</td><td>Enter the Collateral ID that needs to be Modified</td></tr>
+            <tr><td colspan="2">Click Go Button</td></tr>
+            <tr><td colspan="2" class="blue">General Tab</td></tr>
+            <tr><td colspan="2">The details of the Collateral will be displayed</td></tr>
+            <tr><td>Ceiling Limit Per Linkage</td><td>Enter the New Collateral Value</td></tr>
+            <tr><td colspan="2">Click on Validate button</td></tr>
+            <tr><td colspan="2" class="blue">Net Value Tab</td></tr>
+            <tr><td>Gross Value</td><td>Enter the New Collateral Value</td></tr>
+            <tr><td colspan="2">Click on Validate button</td></tr>
+            <tr><td colspan="2" class="blue">Particulars Tab</td></tr>
+            <tr><td>Due Date</td><td>Enter the New Due Date of the STOCK/BOOK DEBT</td></tr>
+            <tr><td>Frequency for Statement</td><td>Select the applicable Frequency of the STOCK/BOOK DEBT</td></tr>
+            <tr><td colspan="2">Click on Submit</td></tr>
+                <tr><td colspan="2">Before verification, Modification of the Collateral ID can be done by the created user only by
+                    invoking the Menu HCLM.</td></tr>
+                <tr><td colspan="2">Verification of the Collateral ID can be done by any user (other than creator) having verification
+                    rights through HCLM Menu.</td></tr>
+        </table>
+    <h3>Collateral ID Creation - Term Deposits (HCLM)</h3>
+                <table>
+                    <tr><td colspan="2">This Menu is used for creating Collateral ID of Inventory (Stock), Book Debts and Term Deposits. All
+                other security types need to be entered through corresponding security menus.
+                        For creating Term Deposit Collateral ID, invoke the Menu HCLM and follow the below procedure</td></tr>
+                    <tr><td>Function</td><td>L - Lodge</td></tr>
+                <tr><td>Type</td><td>Select the applicable collateral type<br>
+                    D - Deposits<br></td></tr>
+                    <tr><td colspan="2">Click Go Button</td></tr>
+                    <tr><td colspan="2" class="blue">General Tab</td></tr>
+                    <tr><td>Collateral Code</td><td>Select the collateral code as TD</td></tr>
+                    <tr><td>Ceiling Limit Per Linkage</td><td>Enter the collateral Value</td></tr>
+                    <tr><td colspan="2">Click on Validate button</td></tr>
+                    <tr><td colspan="2" class="blue">Particulars Tab</td></tr>
+                    <tr><td>Deposit A/c. ID</td><td>Enter the Deposit Account Number</td></tr>
+                    <tr><td colspan="2">Click on Validate button</td></tr>
+                    <tr><td colspan="2">Click on Submit and note down the Collateral ID generated</td></tr>
+                    <tr><td colspan="2">Before verification, Modification of the Collateral ID can be done by the created user only by
+                        invoking the Menu HCLM.</td></tr>
+                    <tr><td colspan="2">Verification of the Collateral ID can be done by any user (other than creator) having verification
+                        rights through HCLM Menu.</td></tr>
+                </table>
+
+</div>
+
+
+</body>
+</html>

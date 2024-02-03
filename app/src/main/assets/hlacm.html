@@ -1,0 +1,45 @@
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=windows-1252">
+    <link rel="stylesheet" type="text/css" href="jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="style2.css">
+    <script src="jquery-3.2.1.min.js"></script>
+    <script src="jquery-ui.js"></script>
+    <script>
+        $(function(){
+            $("#accordion").accordion({
+                collapsible: true,
+                active: false,
+                heightStyle: 'content',
+            });
+        });
+
+    </script>
+    <title>acm</title>
+</head>
+<body>
+
+<div id="accordion">
+    <h3>Unlinking of Collateral while Closing LTD Accounts</h3>
+    <table>
+        <tr><td colspan="2">If the LTD Account is opened in Finacle 10, the collateral ID is to be unlinked through
+            HLACM Menu.</td></tr>
+    <tr><td colspan="2">Unlinking of collateral from LTD accounts created in Finacle 7 (Migrated Accounts) is to be
+    done using HSCLM Menu. For unlinking the security ID through HSCLM follow the procedure
+        detailed above.</td></tr>
+    <tr><td colspan="2">For unlinking Term Deposit collateral opened in Finacle 10, invoke the Menu HLACM and follow the
+        below procedure.</td></tr>
+        <tr><td>Function</td><td>M - Modify</td></tr>
+        <tr><td>A/c. ID</td><td>Enter the Account Number</td></tr>
+        <tr><td colspan="2">Click on Go Button</td></tr>
+        <tr><td colspan="2">The Term Deposit Account Number and Security details will be displayed</td></tr>
+        <tr><td>Record</td><td>Select the Tick mark against Del box to unlink the Deposit from Loan Account</td></tr>
+        <tr><td colspan="2">Click on Submit Button</td></tr>
+        <tr><td colspan="2">Verification of the collateral linking can be done by any user (other than creator) having verification
+            rights through HLACM Menu.</td></tr>
+    </table>
+</div>
+
+
+</body>
+</html>

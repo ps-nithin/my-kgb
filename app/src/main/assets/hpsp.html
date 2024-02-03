@@ -1,0 +1,43 @@
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=windows-1252">
+    <link rel="stylesheet" type="text/css" href="jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="style2.css">
+    <script src="jquery-3.2.1.min.js"></script>
+    <script src="jquery-ui.js"></script>
+    <script>
+        $(function(){
+            $("#accordion").accordion({
+                collapsible: true,
+                active: false,
+                heightStyle: 'content',
+            });
+        });
+
+    </script>
+    <title>acm</title>
+</head>
+<body>
+
+<div id="accordion">
+    <h3>Pass Sheet Printing (HPSP)</h3>
+    <table>
+        <tr><td colspan="2">For generating the Pass Sheet for an account invoke the Menu HPSP and follow the below
+            procedure.</td></tr>
+        <tr><td>Statement Type</td><td>Select Statement of A/c</td></tr>
+        <tr><td>Event</td><td>By default Duplicate will be selected</td></tr>
+        <tr><td>From A/c. ID</td><td>Enter the Account Number</td></tr>
+        <tr><td>To A/c. ID</td><td>Will be auto populated</td></tr>
+        <tr><td>Period From</td><td>Enter the Start Date for Statement</td></tr>
+        <tr><td>Period To</td><td>Enter the End Date for Statement</td></tr>
+        <tr><td>Print >> Waive</td><td>Fees If Charges are to be waived, put tick mark</td></tr>
+    <tr><td colspan="2">By default charge will be collected for the first pass sheet
+        also. If the charges need to be waived, select the option accordingly.</td></tr>
+        <tr><td colspan="2">Click Submit</td></tr>
+        <tr><td colspan="2">Invoke the Menu HPR to view the passsheet. Select the Print Screen option to print the same.</td></tr>
+    </table>
+</div>
+
+
+</body>
+</html>

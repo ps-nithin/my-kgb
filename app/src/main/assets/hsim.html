@@ -1,0 +1,91 @@
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=windows-1252">
+    <link rel="stylesheet" type="text/css" href="jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="style2.css">
+    <script src="jquery-3.2.1.min.js"></script>
+    <script src="jquery-ui.js"></script>
+    <script>
+        $(function(){
+            $("#accordion").accordion({
+                collapsible: true,
+                active: false,
+                heightStyle: 'content',
+            });
+        });
+
+    </script>
+    <title>acm</title>
+</head>
+<body>
+
+<div id="accordion">
+    <h3>Introduction</h3>
+    <table>
+        <tr><td colspan="2">In Finacle 7, all types of Standing Instruction were created using the Menu SIM.
+            In Finacle 10, Standing Instruction transactions can be created using HSIM and HSSIM Menu.The
+            following are the major Standing Instruction related Menus available in Finacle 10.</td></tr>
+        <tr><td>HSSIM</td><td>Simple Standing Instruction Maintenance</td></tr>
+        <tr><td>HSIM</td><td>Standing Instruction Maintenance</td></tr>
+        <tr><td>HSIRP</td><td>Standing Instruction Register Print</td></tr>
+        <tr><td>HSIETR</td><td>Standing Instruction Executed Today Report</td></tr>
+    </table>
+    <h3>Standing Instruction Maintenance</h3>
+    <table>
+        <tr><td colspan="2">Standing Instructions can also be created using HSIM Menu. Invoke the Menu HSIM and follow the below procedure.</td></tr>
+        <tr><td>Function</td><td>Add</td></tr>
+        <tr><td colspan="2">Click on Go Button</td></tr>
+        <tr><td colspan="2" class="blue">Header Details Tab</td></tr>
+        <tr><td>Standing Instruction Type</td><td>Select the appropriate option</td></tr>
+        <tr><td>CIF ID</td><td>Enter CIF ID of the Debit Account (Applicable only for Customer Induced Transaction)</td></tr>
+        <tr><td colspan="2" class="blue">Execution Details</td></tr>
+        <tr><td>Standing Instructions Frequency</td><td>Select the appropriate SI frequency</td></tr>
+        <tr><td>Execution Time</td><td>Select the appropriate option</td></tr>
+        <tr><td>Next Execution Date</td><td>Enter the date of Next Execution</td></tr>
+        <tr><td>End Date</td><td>Enter the SI End Date</td></tr>
+        <tr><td>Validate CCY Holiday</td><td>Select Yes</td></tr>
+        <tr><td>Del. Transaction if not Posted</td><td>Select the appropriate option</td></tr>
+        <tr><td>Autopost</td><td>Select the appropriate option</td></tr>
+        <tr><td>Carry Forward If Failed</td><td>Select the appropriate option. (Select Y to carry forward the SI for failed execution)</td></tr>
+    <tr><td>Carry Forward Max. Times</td><td>Enter the number of times the SI needs to carry forward in case of failed execution.<br>
+        Note: If 0 is entered, the SI will be indefinitely carry forwarded</td></tr>
+        <tr><td colspan="2" class="blue">SubInstruction Details Tab</td></tr>
+        <tr><td>Amt. Indicator</td><td>Select F - Fixed</td></tr>
+        <tr><td>Part Transaction Type</td><td>Select Dr</td></tr>
+        <tr><td>Create Memo Pad Entry</td><td>No need to select</td></tr>
+        <tr><td>CCY</td><td>Enter INR</td></tr>
+        <tr><td colspan="2" class="blue">Fixed Amount Condition</td></tr>
+        <tr><td>Fixed Amt.</td><td>Enter the Amount</td></tr>
+        <tr><td colspan="2" class="blue">SI Part Tran. Entry</td></tr>
+        <tr><td>Part Transaction Details</td><td>Click on the hyperlink Click here</td></tr>
+        <tr><td>A/c. ID</td><td>Enter the Debit Account Number</td></tr>
+        <tr><td>Amt. Type</td><td>Select F - Fixed</td></tr>
+        <tr><td>Amt.</td><td>Enter the Amount</td></tr>
+        <tr><td>Notes</td><td>Enter Remarks, if any</td></tr>
+        <tr><td colspan="2">Click Accept</td></tr>
+        <tr><td colspan="2">Click Add Button on the top left to enter Credit Account Details</td></tr>
+        <tr><td>Amt. Indicator</td><td>Select F - Fixed</td></tr>
+        <tr><td>Part Transaction Type</td><td>Select Cr</td></tr>
+        <tr><td>Create Memo Pad Entry</td><td>No need to select</td></tr>
+        <tr><td>CCY</td><td>Enter INR</td></tr>
+        <tr><td colspan="2" class="blue">Fixed Amount Condition</td></tr>
+        <tr><td>Fixed Amt.</td><td>Enter the Amount</td></tr>
+        <tr><td colspan="2" class="blue">SI Part Tran. Entry</td></tr>
+        <tr><td>Part Transaction Details</td><td>Click on the hyperlink Click here</td></tr>
+        <tr><td>A/c. ID</td><td>Enter the Credit Account Number</td></tr>
+        <tr><td>Amt. Type</td><td>Select F - Fixed</td></tr>
+        <tr><td>Amt.</td><td>Enter the Amount</td></tr>
+        <tr><td>Notes</td><td>Enter Remarks, if any</td></tr>
+        <tr><td colspan="2">Click Accept</td></tr>
+        <tr><td colspan="2" class="blue">Sub Instruction List Tab</td></tr>
+        <tr><td colspan="2">Transaction details will be displayed</td></tr>
+        <tr><td colspan="2">Click on Submit Button. Note down the SI Serial Number</td></tr>
+        <tr><td colspan="2">Verification of the Standing Instruction needs to be done using HSIM Menu. Before verification the
+            same can be modified using the M- Modify option in HSIM.</td></tr>
+    </table>
+
+</div>
+
+
+</body>
+</html>

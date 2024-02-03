@@ -1,0 +1,55 @@
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=windows-1252">
+    <link rel="stylesheet" type="text/css" href="jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="style2.css">
+    <script src="jquery-3.2.1.min.js"></script>
+    <script src="jquery-ui.js"></script>
+    <script>
+        $(function(){
+            $("#accordion").accordion({
+                collapsible: true,
+                active: false,
+                heightStyle: 'content',
+            });
+        });
+
+    </script>
+    <title>acm</title>
+</head>
+<body>
+
+<div id="accordion">
+    <h3>Term Deposit Renewal (HTDREN)</h3>
+    <table>
+        <tr><td colspan="2">For renewal of a matured Term Deposit Account Invoke the Menu HTDREN and follow the below procedure.</td></tr>
+        <tr><td>Function</td><td>R - Renewal</td></tr>
+        <tr><td>A/c. ID</td><td>Enter the Account Number</td></tr>
+        <tr><td colspan="2">Click on Go Button</td></tr>
+        <tr><td>The Effective Open Date</td><td>Maturity Date of the deposit will be auto populated</td></tr>
+        <tr><td>Calculate Overdue Int</td><td>Select the appropriate option. Select Yes if the account is overdue, Else Select No</td></tr>
+        <tr><td>Overdue Int. Code</td><td>Applicable code will be auto populated</td></tr>
+        <tr><td>Renewal Option</td><td>Select the appropriate option</td></tr>
+        <tr><td>Renewal Interest Table Code</td><td>Will be auto populated by the system (Change the code if applicable)</td></tr>
+        <tr><td>Renewal Scheme Code</td><td>Existing scheme code will be auto populated. User can change the Renewal Scheme Code, if applicable</td></tr>
+        <tr><td>Renewal Period (MMM/DDD)</td><td>Enter the period for which the deposit needs to be renewed</td></tr>
+        <tr><td>Renewal CCY</td><td>INR will be auto populated</td></tr>
+        <tr><td>Renewal General Ledger Subhead Code</td><td>Will be auto populated by the system</td></tr>
+        <tr><td>Renewal CCY/Amt.</td><td>Enter the Renewal Amount. (Applicable only if the renewal option selected is F - Fixed Amt.)</td></tr>
+        <tr><td>Additional CCY/Amt.</td><td>Enter the Additional Amount to be added up (Applicable only if the renewal option selected is A - Additional Amt. or E - Principal + Extra)</td></tr>
+        <tr><td>Source A/c. for Additional Amt.</td><td>Enter the Source Account for Additional Amount (Applicable only if the renewal option selected is F - Fixed Amt. or A - Additional Amt. or E - Principal + Extra)</td></tr>
+        <tr><td>Print renewal Confirmation</td><td>Select Later</td></tr>
+        <tr><td colspan="2">Click on Submit</td></tr>
+        <tr><td colspan="2">Verification of Term Deposit Renewal (To be done by another user having verification rights). Invoke the Menu HTDREN and follow the below mentioned procedure.</td></tr>
+        <tr><td>Function</td><td>Verify</td></tr>
+        <tr><td>Temporary A/c. ID</td><td>Enter the A/c. ID or select using the search</td></tr>
+        <tr><td colspan="2">Click on Go button</td></tr>
+        <tr><td colspan="2">Verify the details displayed</td></tr>
+        <tr><td colspan="2">Click on Submit</td></tr>
+    </table>
+
+</div>
+
+
+</body>
+</html>

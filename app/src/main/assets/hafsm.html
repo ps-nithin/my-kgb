@@ -1,0 +1,59 @@
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=windows-1252">
+    <link rel="stylesheet" type="text/css" href="jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="style2.css">
+    <script src="jquery-3.2.1.min.js"></script>
+    <script src="jquery-ui.js"></script>
+    <script>
+        $(function(){
+            $("#accordion").accordion({
+                collapsible: true,
+                active: false,
+                heightStyle: 'content',
+            });
+        });
+
+    </script>
+    <title>acm</title>
+</head>
+<body>
+
+<div id="accordion">
+    <h3>Introduction</h3>
+    <table>
+        <tr><td colspan="2">For freezing and unfreezing the transactions in an account, HAFSM Menu needs to be used in
+    Finacle 10. The main difference between Finacle 7 and Finacle 10 Freezing of an account is that
+    multiple freeze reason codes can be added for an account.
+    In Finacle 10, the menu option used for marking/lifting lien in an account is HALM. The detailed
+            procedure for the same is furnished below:</td></tr>
+    </table>
+    <h3>Freeze an Account</h3>
+    <table>
+    <tr><td colspan="2">To Freeze an account, Invoke the Menu HAFSM and follow the below procedure. Multiple Freeze
+        reason codes can be linked for an account.</td></tr>
+        <tr><td>Function</td><td>F - Freeze</td></tr>
+        <tr><td>A/c. ID</td><td>Enter the Account Number</td></tr>
+        <tr><td>Freeze Code</td><td>Select Debit Only (Currently only Debit Freeze is enabled for Branches)</td></tr>
+        <tr><td>Reason Code</td><td>Select the appropriate reason using search</td></tr>
+        <tr><td colspan="2">Click on Go Button</td></tr>
+        <tr><td colspan="2">Details will be displayed in the Grid. Select the record by tick mark against the record</td></tr>
+        <tr><td colspan="2">Multiple Freeze Reason Codes can be entered for an account by selecting the same against Freeze Reason Code</td></tr>
+        <tr><td colspan="2">Click on Submit Button</td></tr>
+        <tr><td colspan="2">Verification of the Freeze is to be done by another user having verification rights through HAFSM Menu.</td></tr>
+    </table>
+    <h3>Unfreeze an Account</h3>
+        <table>
+            <tr><td>Function</td><td>U - Unfreeze</td></tr>
+            <tr><td>A/c. ID</td><td>Enter the Account Number</td></tr>
+            <tr><td colspan="2">Click on Go Button</td></tr>
+            <tr><td colspan="2">Verify the details displayed.</td></tr>
+            <tr><td colspan="2">Select the record by tick mark against the record</td></tr>
+            <tr><td colspan="2">Click on Submit Button</td></tr>
+            <tr><td colspan="2">Verification of the Unfreeze can be done by another user having verification rights through HAFSM Menu.</td></tr>
+        </table>
+</div>
+
+
+</body>
+</html>

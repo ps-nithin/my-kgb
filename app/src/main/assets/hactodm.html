@@ -1,0 +1,65 @@
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=windows-1252">
+    <link rel="stylesheet" type="text/css" href="jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="style2.css">
+    <script src="jquery-3.2.1.min.js"></script>
+    <script src="jquery-ui.js"></script>
+    <script>
+        $(function(){
+            $("#accordion").accordion({
+                collapsible: true,
+                active: false,
+                heightStyle: 'content',
+            });
+        });
+
+    </script>
+    <title>acm</title>
+</head>
+<body>
+
+<div id="accordion">
+    <h3>Introduction</h3>
+    <table>
+        <tr><td colspan="2">In Finacle 7, Temporary Overdraft was granted to customers using ACTODM and verification was
+            done using ACTODMAU Menu. In Finacle 10, TOD related activities can be carried out using the following Menus.</td></tr>
+    <tr><td>HACTODM</td><td>For granting/verification of TOD in an account</td></tr>
+    <tr><td>HACTODI</td><td>For inquiring TOD granted in an account</td></tr>
+    <tr><td>HTODRP</td><td>TOD Register Print</td></tr>
+    </table>
+    <h3>Creation of TOD</h3>
+    <table>
+    <tr><td colspan="2">For Granting TOD in an account, Invoke the Menu HACTODM and follow the below mentioned procedure.</td></tr>
+    <tr><td>Function</td><td>Modify</td></tr>
+    <tr><td>A/c. ID</td><td>Enter the Account Number</td></tr>
+    <tr><td colspan="2">Click on Go Button</td></tr>
+    <tr><td colspan="2">Click on Add New Record Button</td></tr>
+    <tr><td>Grant Date</td><td>Enter the Current date</td></tr>
+    <tr><td>Advance Amt.</td><td>Enter the TOD Amount</td></tr>
+    <tr><td>Interest</td><td>Select A/c. Level Interest</td></tr>
+    <tr><td colspan="2">Click on Accept</td></tr>
+    <tr><td>Expiry Date</td><td>Expiry Date will be auto populated</td></tr>
+    <tr><td>Penalty Date</td><td>Penalty Date will be auto populated</td></tr>
+    <tr><td>Advance Type</td><td>Select the appropriate option</td></tr>
+    <tr><td>Permitted By</td><td>Select the User ID</td></tr>
+    <tr><td>Notes</td><td>Enter the Remarks</td></tr>
+    <tr><td colspan="2">Click on Submit</td></tr>
+    </table>
+    <h3>Verification of TOD</h3>
+    <table>
+        <tr><td colspan="2">For verifying the TOD granted, Invoke the Menu HACTODM and follow the below mentioned procedure.</td></tr>
+        <tr><td>Function</td><td>Verify</td></tr>
+        <tr><td>A/c. ID</td><td>Enter the Account Number or select using search</td></tr>
+        <tr><td colspan="2">Click on Go Button</td></tr>
+        <tr><td colspan="2">Click on Grant Date hyperlink. Details of TOD granted will be displayed</td></tr>
+        <tr><td colspan="2">Ensure the correctness of the data entered and Click on Accept</td></tr>
+        <tr><td colspan="2">Click on Submit</td></tr>
+    </table>
+
+
+</div>
+
+
+</body>
+</html>

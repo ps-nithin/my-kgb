@@ -1,0 +1,62 @@
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=windows-1252">
+    <link rel="stylesheet" type="text/css" href="jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="style2.css">
+    <script src="jquery-3.2.1.min.js"></script>
+    <script src="jquery-ui.js"></script>
+    <script>
+        $(function(){
+            $("#accordion").accordion({
+                collapsible: true,
+                active: false,
+                heightStyle: 'content',
+            });
+        });
+
+    </script>
+    <title>acm</title>
+</head>
+<body>
+
+<div id="accordion">
+    <h3>Close a Loan Account (HPAYOFF)</h3>
+    <table>
+        <tr><td colspan="2">Invoke the Menu HPAYOFF and follow the below procedure for closing the Term Loan Account of a Customer.</td></tr>
+        <tr><td>Function</td><td>P - Payoff Loan Amt</td></tr>
+        <tr><td>A/c. ID</td><td>Enter the Account Number or select using the search</td></tr>
+        <tr><td>Pay Off Value Date</td><td>Current date will be auto populated by the system</td></tr>
+        <tr><td>Transaction Type</td><td>
+    Select the appropriate option<br>
+    C/CR - Cash Receipt<br>
+    T/CI - Transfer Customer Induced<br>
+            T/BI - Transfer Bank Induced<br></td></tr>
+        <tr><td>Collect/Refund A/c. ID</td><td>Enter the account from which the amount needs to be debited (Applicable only if T/CI is selected)</td></tr>
+        <tr><td colspan="2">Click on Go button</td></tr>
+        <tr><td colspan="2">Click Accept after putting tick mark against the record that needs to be modified.</td></tr>
+        <tr><td colspan="2">Loan Pay Off Process Tab will be displayed - Do not modify any values</td></tr>
+        <tr><td colspan="2">Click on Create Transaction button</td></tr>
+        <tr><td colspan="2">The transaction details will be displayed</td></tr>
+        <tr><td colspan="2">Click on Submit Button</td></tr>
+        <tr><td colspan="2">Click on Accept</td></tr>
+    </table>
+    <h3>Verification of Term Loan Account Closure (To be done by another user having
+        verification rights)</h3>
+        <table>
+            <tr><td colspan="2">Invoke the Menu HPAYOFF and follow the below mentioned procedure.</td></tr>
+            <tr><td>Function</td><td>V - Verify</td></tr>
+            <tr><td>A/c. ID</td><td>Enter the Account Number or select using the search</td></tr>
+            <tr><td colspan="2">Click on Go button</td></tr>
+            <tr><td colspan="2">Click on Accept</td></tr>
+            <tr><td colspan="2">Loan Pay Off Process Tab will be displayed</td></tr>
+            <tr><td colspan="2">Click on Create Transaction button</td></tr>
+            <tr><td colspan="2">The transaction details will be displayed.</td></tr>
+            <tr><td colspan="2">Click on Submit Button. Note down the Tran ID generated.</td></tr>
+            <tr><td colspan="2">Click Accept.</td></tr>
+        </table>
+
+</div>
+
+
+</body>
+</html>

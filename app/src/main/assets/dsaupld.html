@@ -1,0 +1,43 @@
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=windows-1252">
+    <link rel="stylesheet" type="text/css" href="jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="style2.css">
+    <script src="jquery-3.2.1.min.js"></script>
+    <script src="jquery-ui.js"></script>
+    <script>
+        $(function(){
+            $("#accordion").accordion({
+                collapsible: true,
+                active: false,
+                heightStyle: 'content',
+            });
+        });
+
+    </script>
+    <title>acm</title>
+</head>
+<body>
+
+<div id="accordion">
+    <h3>Uploading Daily Collection to Finacle from Handheld Machine (DSAUPLD)</h3>
+    <table>
+        <tr><td colspan="2">Collection amount has to be credited to office accounts specific to that Agent through HTM Menu.</td></tr>
+        <tr><td colspan="2">Verify the Transaction and open the Daily Collection Utility.</td></tr>
+        <tr><td colspan="2">Enter the file path as C:\&lt;Agent ID&gt; and click the button Upload to PC</td></tr>
+    <tr><td colspan="2">If upload is successful then the utility will display a successful message and create a file at
+        agents folder at local disc C. The file format will be <Agent ID_Date,Month,Year_Hour,Minute, Second> .trn</td></tr>
+        <tr><td colspan="2">Change the file extension to .txt</td></tr>
+        <tr><td colspan="2">Then login to Finacle and Invoke the Menu DSAUPLD and follow the below procedure.</td></tr>
+        <tr><td>DSA id</td><td>Enter the Agent ID</td></tr>
+        <tr><td>Upload File Name</td><td>Click on Browse Button and Access the file path C:\&lt;Agent ID&gt;. Select the applicable .txt file and press Open</td></tr>
+        <tr><td colspan="2">Click on Submit Button and Note down the Tran ID</td></tr>
+        <tr><td colspan="2">Access the menu HACLINQ and enter the office account to ensure that the transaction is proper.</td></tr>
+    </table>
+
+
+</div>
+
+
+</body>
+</html>

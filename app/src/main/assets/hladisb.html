@@ -1,0 +1,60 @@
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=windows-1252">
+    <link rel="stylesheet" type="text/css" href="jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="style2.css">
+    <script src="jquery-3.2.1.min.js"></script>
+    <script src="jquery-ui.js"></script>
+    <script>
+        $(function(){
+            $("#accordion").accordion({
+                collapsible: true,
+                active: false,
+                heightStyle: 'content',
+            });
+        });
+
+    </script>
+    <title>acm</title>
+</head>
+<body>
+
+<div id="accordion">
+    <h3>Term Loan Disbursement (HLADISB)</h3>
+    <table>
+        <tr><td colspan="2">For disbursing an amount from a term loan account, invoke the Menu HLADISB and follow the
+            below procedure.</td></tr>
+        <tr><td>Function</td><td>Disbursement</td></tr>
+        <tr><td>A/c. ID</td><td>Enter the Account Number</td></tr>
+        <tr><td>Remarks</td><td>Enter the Transaction Particulars</td></tr>
+        <tr><td>Transaction Type</td><td>Select Transfer</td></tr>
+        <tr><td colspan="2">Amount Available for Disbursement will be shown below Loan Period</td></tr>
+        <tr><td>Disbursement Amount</td><td>Enter the amount that needs to be disbursed</td></tr>
+    <tr><td>Final Disbursement</td><td>Select Yes, If full disbursement needs to be done<br>
+        Select No, If it is a partial disbursement</td></tr>
+        <tr><td colspan="2">Click on Accept</td></tr>
+        <tr><td colspan="2">Click on Go Button</td></tr>
+        <tr><td colspan="2">Click on Accept</td></tr>
+        <tr><td>Credit A/c. No.</td><td>Enter the Credit Account Number</td></tr>
+        <tr><td colspan="2">Ensure the correctness of the data</td></tr>
+        <tr><td colspan="2">Click on Submit Button</td></tr>
+    </table>
+    <h3>Verification of Loan Disbursement Transaction (To be done by another user having
+        verification rights)</h3>
+    <table>
+        <tr><td colspan="2">Invoke the Menu HLADISB and follow the below procedure.</td></tr>
+        <tr><td>Function</td><td>Verify</td></tr>
+        <tr><td>A/c. ID</td><td>Enter the Account Number or select using the search</td></tr>
+        <tr><td colspan="2">Ensure the correctness of the data displayed</td></tr>
+        <tr><td colspan="2">Click on Accept</td></tr>
+        <tr><td colspan="2">Click on Go Button</td></tr>
+        <tr><td colspan="2">Click on Accept</td></tr>
+        <tr><td colspan="2">Ensure the correctness of the data displayed</td></tr>
+        <tr><td colspan="2">Click on Accept</td></tr>
+        <tr><td colspan="2">Click on Submit. Note down the Transaction ID</td></tr>
+    </table>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,77 @@
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=windows-1252">
+    <link rel="stylesheet" type="text/css" href="jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="style2.css">
+    <script src="jquery-3.2.1.min.js"></script>
+    <script src="jquery-ui.js"></script>
+    <script>
+        $(function(){
+            $("#accordion").accordion({
+                collapsible: true,
+                active: false,
+                heightStyle: 'content',
+            });
+        });
+
+    </script>
+    <title>acm</title>
+</head>
+<body>
+
+<div id="accordion">
+    <h3>Cash NEFT Transaction (HPOOTC)</h3>
+    <table>
+        <tr><td colspan="2">Invoke the Menu HPOOTC and follow the below procedure for doing Customer induced Cash NEFT Transaction</td></tr>
+        <tr><td>Function</td><td>Add</td></tr>
+        <tr><td>Transaction Type</td><td>Will be auto populated as Cash</td></tr>
+        <tr><td>Cash</td><td>CCY INR</td></tr>
+        <tr><td colspan="2">Click on Go Button</td></tr>
+        <tr><td colspan="2" class="blue">Remittance Details</td></tr>
+        <tr><td>Remittance CCY/Amt.</td><td>Enter the Transaction Amount</td></tr>
+        <tr><td>Inclusive of Charges</td><td>Will be auto populated as No</td></tr>
+        <tr><td>Beneficiary Bank Identifier</td><td>Enter the IFSC of the Beneficiary Bank</td></tr>
+        <tr><td>Method of Payment Derivation</td><td>Will be auto populated as System</td></tr>
+        <tr><td>Method of Payment</td><td>Select NEFT</td></tr>
+        <tr><td>Charge Option</td><td>Will be auto populated as Our</td></tr>
+        <tr><td colspan="2">Click on Fetch Button. For viewing charges, click on the icon next to Charge Option</td></tr>
+        <tr><td colspan="2" class="blue">Sender Details</td></tr>
+        <tr><td>Debit A/c.</td><td>Cash in Hand Account of the SOl will be auto populated</td></tr>
+        <tr><td>Name</td><td>Enter the Name of Sender</td></tr>
+        <tr><td>Address Line 1</td><td>Enter the Address</td></tr>
+        <tr><td>Address Line 2</td><td>Enter the Address</td></tr>
+        <tr><td>Address Line 3</td><td>Enter the Address</td></tr>
+        <tr><td colspan="2" class="blue">Beneficiary Customer</td></tr>
+        <tr><td>A/c. ID</td><td>Enter the Beneficiary Account Number</td></tr>
+        <tr><td>Name</td><td>Enter the Beneficiary Customer Name</td></tr>
+        <tr><td colspan="2">Click on More Details Button</td></tr>
+        <tr><td colspan="2" class="blue">Payment Details >> Beneficiary Customer</td></tr>
+        <tr><td>Address Line 1</td><td>Enter the Address of the Beneficiary</td></tr>
+        <tr><td>Address Line 2</td><td>Enter the Address of the Beneficiary</td></tr>
+        <tr><td colspan="2" class="blue">Payment Details >> Remittance Information</td></tr>
+        <tr><td>Line 1</td><td>Enter the Sender’s Mobile Number</td></tr>
+        <tr><td colspan="2">Click on Submit Button</td></tr>
+        <tr><td colspan="2">A window will pop up for Double checking the Beneficiary Account Number and Transaction Amount</td></tr>
+        <tr><td>Beneficiary Credit A/c ID</td><td>Enter the Beneficiary Account Number and Click Ok</td></tr>
+        <tr><td>Remittance CCY/Amt.</td><td>Enter the Transaction Amount and Click Ok</td></tr>
+        <tr><td colspan="2">Note down the Payment Order ID</td></tr>
+    </table>
+        <h3>Verification of Cash NEFT Transaction (To be done by another user having verification
+            rights)</h3>
+        <table>
+            <tr><td colspan="2">For verification of the Cash NEFT Transaction, Invoke the Menu HPOOTC and follow the below mentioned procedure.</td></tr>
+            <tr><td>Function</td><td>Verify</td></tr>
+            <tr><td>Payment Order ID</td><td>Enter the Payment Order ID or Select using Search Option</td></tr>
+            <tr><td colspan="2">Click on Go Button</td></tr>
+            <tr><td colspan="2">Transaction details will be displayed. Ensure the correctness of the transaction</td></tr>
+            <tr><td colspan="2">Click on Submit</td></tr>
+            <tr><td colspan="2">A window will pop up for Double checking the Beneficiary Account Number and Transaction Amount</td></tr>
+            <tr><td>Beneficiary Credit A/c ID</td><td>Enter the Beneficiary Account Number and Click Ok</td></tr>
+            <tr><td>Remittance CCY/Amt.</td><td>Enter the Transaction Amount and Click Ok</td></tr>
+            <tr><td colspan="2">Note down the UTR Number</td></tr>
+        </table>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,238 @@
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=windows-1252">
+    <link rel="stylesheet" type="text/css" href="jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="style2.css">
+    <script src="jquery-3.2.1.min.js"></script>
+    <script src="jquery-ui.js"></script>
+    <script>
+        $(function(){
+            $("#accordion").accordion({
+                collapsible: true,
+                active: false,
+                heightStyle: 'content',
+            });
+        });
+
+    </script>
+    <title>acm</title>
+</head>
+<body>
+
+<div id="accordion">
+    <h3>Introduction</h3>
+    <table>
+        <tr><td colspan="2">In Finacle 7x all major transactions including Loan Disbursements were carried out using TM Menu.
+    In Finacle 10, separate Menus are available for initiating each kind of transaction. Following are the
+            Menus available in Finacle 10 for carrying out the transaction related activities.</td></tr>
+        <tr><td colspan="2">Transaction Menus (Detailed workflow provided below)</td></tr>
+        <tr><td>HTM</td><td>Transaction Maintenance</td></tr>
+        <tr><td>KCCTM</td><td>KCC Account Transactions</td></tr>
+        <tr><td>HLADISB</td><td>Loan Disbursement</td></tr>
+        <tr><td>HLASPAY</td><td>Loan Repayment</td></tr>
+        <tr><td>LACHG</td><td>Loan Charge Debit</td></tr>
+        <tr><td>HPORDM</td><td>NEFT/RTGS Transfer Transactions</td></tr>
+        <tr><td>HPOOTC</td><td>CASH NEFT</td></tr>
+        <tr><td>HSPTM</td><td>Proxy Transaction</td></tr>
+        <tr><td>HACTODM</td><td>Temporary Overdraft</td></tr>
+        <tr><td>HDDMI</td><td>Issuance of Demand Draft</td></tr>
+        <tr><td>HDDMP</td><td>Payment of Demand Draft</td></tr>
+    </table>
+    <h3>Transaction in Operative Account (HTM)</h3>
+    <table>
+        <tr><td colspan="2">This Menu is used for initiating all types of transactions in Operative Accounts (SBA,CCA,ODA,CCA).</td></tr>
+    </table>
+
+    <h3>Create a Cash Receipt Transaction in an Account</h3>
+    <table>
+        <tr><td>Function</td><td>A - Add</td></tr>
+        <tr><td>Transaction Type/Subtype</td><td>Select C/NR - Cash/Normal Receipt</td></tr>
+        <tr><td colspan="2">Click Go Button</td></tr>
+        <tr><td colspan="2">Part Transaction Type - Credit will be by default selected</td></tr>
+        <tr><td>A/c. ID</td><td>Enter the Account Number</td></tr>
+        <tr><td>Ref. CCY/Amt.</td><td>Enter the Transaction Amount</td></tr>
+        <tr><td>Transaction Particulars</td><td>Enter the transaction particulars (BY CASH will be auto
+            populated)</td></tr>
+        <tr><td colspan="2">Click on Save button and note down the Tran ID</td></tr>
+        <tr><td colspan="2">Before posting/verifying the Transaction ID, the same can be modified using the M- Modify option.</td></tr>
+        <tr><td colspan="2">For posting the transaction (To be done by another user having verification rights)</td></tr>
+        <tr><td colspan="2">Invoke the Menu HTM and follow the below procedure.</td></tr>
+        <tr><td>Function</td><td>P - Post</td></tr>
+        <tr><td>Transaction ID</td><td>Enter the Tran ID</td></tr>
+        <tr><td colspan="2">Click on Go Button</td></tr>
+        <tr><td colspan="2">Verify the details entered</td></tr>
+        <tr><td colspan="2">Click Submit</td></tr>
+        <tr><td colspan="2">If the posting of the transaction is done at the time of creation the same needs to be Verified by
+            another user. If the posting is done by another user then the transaction will be in verified status.</td></tr>
+    </table>
+    <h3>Create a Cash Payment Transaction in an Account</h3>
+    <table>
+        <tr><td>Function</td><td>A - Add</td></tr>
+        <tr><td>Transaction Type/Subtype</td><td>Select C/NP - Cash/Normal Payment</td></tr>
+        <tr><td colspan="2">Click Go Button</td></tr>
+        <tr><td colspan="2">Part Transaction Type - Debit will be by default selected</td></tr>
+        <tr><td>A/c. ID</td><td>Enter the Account Number</td></tr>
+        <tr><td colspan="2">Click on the signature icon next to account number and view the signature</td></tr>
+        <tr><td colspan="2">Click Verify and Submit</td></tr>
+        <tr><td>Ref. CCY/Amt.</td><td>Enter the Amount</td></tr>
+        <tr><td>Transaction Particulars</td><td>Enter the transaction particulars</td></tr>
+        <tr><td colspan="2">Click on Save button and note down the Tran ID</td></tr>
+        <tr><td colspan="2">Before posting/verifying the Transaction ID the same can be modified using the M- Modify option
+            For posting the transaction (To be done by another user having verification rights)</td></tr>
+        <tr><td colspan="2">Invoke the Menu HTM and follow the below procedure.</td></tr>
+        <tr><td>Function</td><td>P - Post</td></tr>
+        <tr><td>Transaction ID</td><td>Enter the Tran ID</td></tr>
+        <tr><td colspan="2">Click on Go Button</td></tr>
+        <tr><td colspan="2">Verify the details entered</td></tr>
+        <tr><td colspan="2">Click on the signature icon next to account number and view the signature</td></tr>
+        <tr><td colspan="2">Click Verify and Submit</td></tr>
+        <tr><td colspan="2">Click Submit</td></tr>
+        <tr><td colspan="2">If the posting of the transaction is done at the time of creation the same needs to be Verified by
+            another user. If the posting is done by another user then the transaction will be in verified status.</td></tr>
+    </table>
+        <h3>Create a Customer Induced Transfer Transaction</h3>
+    <table>
+        <tr><td>Function</td><td>A - Add</td></tr>
+        <tr><td>Transaction Type/Subtype</td><td>Select T/CI - Customer Induced</td></tr>
+        <tr><td colspan="2">Click Go Button</td></tr>
+        <tr><td colspan="2">Part Transaction Type - Debit will be by default selected</td></tr>
+        <tr><td>A/c. ID</td><td>Enter the Debit Account No.</td></tr>
+        <tr><td colspan="2">Click on the signature icon next to account number and view the signature</td></tr>
+        <tr><td colspan="2">Click Verify and Submit</td></tr>
+        <tr><td>Ref. CCY/Amt.</td><td>Enter the Amount</td></tr>
+        <tr><td>Transaction Particulars</td><td>Enter the transaction particulars</td></tr>
+        <tr><td colspan="2">Click on Add button or click the blue arrow on top right for creating next leg of the transaction</td></tr>
+        <tr><td colspan="2">Select Part Transaction Type as Credit</td></tr>
+        <tr><td>A/c. ID</td><td>Enter the Credit Account No.</td></tr>
+        <tr><td>Ref. CCY/Amt.</td><td>Enter the Amount</td></tr>
+        <tr><td>Transaction Particulars</td><td>Enter the transaction particulars</td></tr>
+        <tr><td colspan="2">Click on Save button and note down the Tran ID</td></tr>
+        <tr><td colspan="2">Before posting/verifying the Transaction ID the same can be modified using the M- Modify option
+            For posting the transaction (To be done by another user having verification rights)</td></tr>
+        <tr><td colspan="2">Invoke the Menu HTM and follow the below procedure.</td></tr>
+        <tr><td>Function</td><td>P - Post</td></tr>
+        <tr><td>Transaction ID</td><td>Enter the Tran ID</td></tr>
+        <tr><td colspan="2">Click on Go Button</td></tr>
+        <tr><td colspan="2">Verify the details entered</td></tr>
+        <tr><td colspan="2">Click Submit</td></tr>
+        <tr><td colspan="2">If the posting of the transaction is done at the time of creation the same needs to be Verified by
+            another user. If the posting is done by another user then the transaction will be in verified status.</td></tr>
+    </table>
+    <h3>Inter Branch Cash Withdrawal</h3>
+    <table>
+        <tr><td colspan="2">For initiating an Inter Branch cash withdrawal, invoke the Menu HTM and follow the below procedure.</td></tr>
+        <tr><td colspan="2">To be done by the Branch initiating Cash Payment</td></tr>
+        <tr><td>Function</td><td>A - Add</td></tr>
+        <tr><td>Transaction Type/Subtype</td><td>Select C/NP - Cash/Normal Payment</td></tr>
+        <tr><td colspan="2">Click Go Button</td></tr>
+        <tr><td colspan="2">Part Transaction Type - Debit will be by default selected</td></tr>
+        <tr><td>A/c. ID</td><td>Enter the BA -RE CASH CBS A/C 40XXX1023010003</td></tr>
+        <tr><td>Ref. CCY/Amt.</td><td>Enter the Transaction Amount</td></tr>
+        <tr><td>Transaction Particulars</td><td>Enter the transaction particulars</td></tr>
+        <tr><td>Head Office Transaction Type</td><td>Select P - Parking Transaction</td></tr>
+        <tr><td>Options</td><td>Select A- Additional Part Tran Details</td></tr>
+        <tr><td colspan="2">Click Go Button</td></tr>
+        <tr><td>Category Code</td><td>Select BACAS</td></tr>
+        <tr><td>Bank Code</td><td>Will be auto populated by the system</td></tr>
+        <tr><td>Branch Code</td><td>Enter the Branch Code to which the cash is being paid</td></tr>
+        <tr><td>Particulars 1</td><td>Enter the Remarks</td></tr>
+        <tr><td>Amt 1</td><td>Transaction Amount will be auto populated by the system</td></tr>
+        <tr><td>Advice Requisition Ind.</td><td>Select S - System</td></tr>
+        <tr><td colspan="2">Click Accept</td></tr>
+        <tr><td colspan="2">Click on Save button and note down the Tran ID</td></tr>
+        <tr><td colspan="2">Before posting/verifying the Transaction ID the same can be modified using the M- Modify option
+        For posting the transaction (To be done by another user having verification rights)
+            Invoke the Menu HTM and follow the below procedure.</td></tr>
+        <tr><td>Function</td><td>P - Post</td></tr>
+        <tr><td>Transaction ID</td><td>Enter the Tran ID</td></tr>
+        <tr><td colspan="2">Click on Go Button</td></tr>
+        <tr><td colspan="2">Verify the details entered</td></tr>
+        <tr><td colspan="2">Click Submit</td></tr>
+        <tr><td colspan="2">If the posting of the transaction is done at the time of creation the same needs to be Verified by
+            another user. If the posting is done by another user then the transaction will be in verified status.</td></tr>
+        <tr><td colspan="2" class="blue">To be done by the Cash Receiving Branch</td></tr>
+        <tr><td colspan="2">Invoke the Menu HTM and follow the below procedure</td></tr>
+        <tr><td>Function</td><td>A - Add</td></tr>
+        <tr><td>Transaction Type/Subtype</td><td>Select C/NR - Cash/Normal Receipt</td></tr>
+        <tr><td colspan="2">Click Go Button</td></tr>
+        <tr><td colspan="2">Part Transaction Type - Credit will be by default selected</td></tr>
+        <tr><td>A/c. ID</td><td>Enter the BA -RE CASH CBS A/C 40XXX1023010003<br>
+            40XXX denotes the SOLID of the Branch from which the cash is paid</td></tr>
+        <tr><td>Ref. CCY/Amt.</td><td>Enter the Transaction Amount</td></tr>
+        <tr><td>Transaction Particulars</td><td>Enter the transaction particulars</td></tr>
+        <tr><td>Head Office Transaction Type</td><td>Select A - Bar Adjustment</td></tr>
+        <tr><td class="blue">Options</td><td>Select A- Additional Part Tran Details</td></tr>
+        <tr><td colspan="2">Click Go Button</td></tr>
+        <tr><td>Bank Code</td><td>Will be auto populated by the system</td></tr>
+        <tr><td>Branch Code</td><td>Enter the Branch Code to which the cash is being paid</td></tr>
+        <tr><td colspan="2">Click on Go Button</td></tr>
+        <tr><td colspan="2">The transaction details will be displayed in a grid. Put tick mark against the required transaction</td></tr>
+        <tr><td colspan="2">Click Accept</td></tr>
+        <tr><td colspan="2">Click on Save button and note down the Tran ID</td></tr>
+        <tr><td colspan="2">Before posting/verifying the Transaction ID the same can be modified using the M- Modify option
+            For posting the transaction (To be done by another user having verification rights)</td></tr>
+        <tr><td colspan="2">Invoke the Menu HTM and follow the below procedure.</td></tr>
+        <tr><td>Function</td><td>P - Post</td></tr>
+        <tr><td>Transaction ID</td><td>Enter the Tran ID</td></tr>
+        <tr><td colspan="2">Click on Go Button</td></tr>
+        <tr><td colspan="2">Verify the details entered</td></tr>
+        <tr><td colspan="2">Click Submit</td></tr>
+        <tr><td colspan="2">If the posting of the transaction is done at the time of creation the same needs to be Verified by
+            another user. If the posting is done by another user then the transaction will be in verified status.</td></tr>
+    </table>
+    <h3>Granting of Instant TOD</h3>
+    <table>
+        <tr><td colspan="2">For granting Instant TOD during a Cash Payment Transaction, Invoke the Menu HTM and follow the below procedure.</td></tr>
+        <tr><td>Function</td><td>A - Add</td></tr>
+        <tr><td>Transaction Type/Subtype</td><td>Select C/NP - Cash/Normal Payment</td></tr>
+        <tr><td colspan="2">Click Go Button</td></tr>
+        <tr><td colspan="2">Part Transaction Type - Debit will be by default selected</td></tr>
+        <tr><td>A/c. ID</td><td>Enter the Account Number</td></tr>
+        <tr><td>Ref. CCY/Amt.</td><td>Enter the Amount</td></tr>
+        <tr><td>Transaction Particulars</td><td>Enter the transaction particulars</td></tr>
+        <tr><td>Grant Temporary Overdraft</td><td>Select Yes</td></tr>
+        <tr><td>Grant Date</td><td>Will be auto populated as Current Date</td></tr>
+        <tr><td>Expiry Date</td><td>Will be auto populated as Current Date</td></tr>
+        <tr><td>Penalty Date</td><td>Will be auto populated</td></tr>
+        <tr><td>Permitted By</td><td>Select the User ID using search</td></tr>
+        <tr><td>Notes</td><td>Enter the Remarks</td></tr>
+        <tr><td colspan="2">Click on Save button and note down the Tran ID</td></tr>
+        <tr><td colspan="2">Before posting/verifying the Transaction ID the same can be modified using the M- Modify option</td></tr>
+        <tr><td colspan="2">If the posting of the transaction is done at the time of creation the same needs to be Verified by
+            another user. If the posting is done by another user then the transaction will be in verified status</td></tr>
+    </table>
+    <h3>Subsidy in Office Account (HTM)</h3>
+    <table>
+        <tr><td colspan="2">For linking back end subsidy to a loan account, Invoke the menu HTM and follow the below Procedure.</td></tr>
+        <tr><td>Function</td><td>A - Add</td></tr>
+        <tr><td>Transaction Type/Subtype</td><td>Select T/BI - Bank Induced</td></tr>
+        <tr><td colspan="2">Click Go Button</td></tr>
+        <tr><td colspan="2">Part Transaction Type - Debit will be by default selected</td></tr>
+        <tr><td>A/c. ID</td><td>Enter the Office Account where the subsidy is received</td></tr>
+        <tr><td>Ref. CCY/Amt.</td><td>Enter the Amount</td></tr>
+        <tr><td>Transaction Particulars</td><td>Enter the transaction particulars</td></tr>
+        <tr><td colspan="2">Click on Add button or click the blue arrow on top right for creating next leg of the transaction</td></tr>
+        <tr><td colspan="2">Select Part Transaction Type as Credit</td></tr>
+        <tr><td>A/c. ID</td><td>Enter the SL Subsidy Account Number 40XXX1014010018</td></tr>
+        <tr><td>Ref. CCY/Amt.</td><td>Enter the Amount</td></tr>
+        <tr><td>Transaction Particulars</td><td>Enter the transaction particulars</td></tr>
+        <tr><td>Options</td><td>Select G - Partitioning Details and Click Go Button</td></tr>
+        <tr><td>Entity Type</td><td>Select ACCNT - A/cs</td></tr>
+        <tr><td>Entity ID</td><td>Enter the loan Account Number to which the subsidy needs to be linked</td></tr>
+        <tr><td colspan="2">Click Accept</td></tr>
+        <tr><td colspan="2">Click on Save button and note down the Tran ID</td></tr>
+        <tr><td colspan="2">Before posting/verifying the Transaction ID the same can be modified using the M- Modify option
+            For posting the transaction (To be done by another user having verification rights)</td></tr>
+        <tr><td colspan="2">Invoke the Menu HTM</td></tr>
+        <tr><td>Function</td><td>P - Post</td></tr>
+        <tr><td>Transaction ID</td><td>Enter the Tran ID</td></tr>
+        <tr><td colspan="2">Verify the details entered</td></tr>
+        <tr><td colspan="2">Click Submit</td></tr>
+        <tr><td colspan="2">If the posting of the transaction is done at the time of creation the same needs to be Verified by
+            another user. If the posting is done by another user then the transaction will be in verified status.</td></tr>
+    </table>
+</div>
+
+
+</body>
+</html>

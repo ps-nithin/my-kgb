@@ -1,0 +1,77 @@
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=windows-1252">
+    <link rel="stylesheet" type="text/css" href="jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="style2.css">
+    <script src="jquery-3.2.1.min.js"></script>
+    <script src="jquery-ui.js"></script>
+    <script>
+        $(function(){
+            $("#accordion").accordion({
+                collapsible: true,
+                active: false,
+                heightStyle: 'content',
+            });
+        });
+
+    </script>
+    <title>acm</title>
+</head>
+<body>
+
+<div id="accordion">
+    <h3>Introduction</h3>
+    <table>
+        <tr><td colspan="2">Compared to Finacle 7, one of the major changes is in the Signature Management. In Finacle 10, a
+    dedicated module named SVS is available in FININFRA for signature management. The module
+    allows the user to Add/Update/Delete Signature and Photographs in an account or CIF ID. User can
+            navigate to SVS module by accessing the following the below procedure</td></tr>
+        <tr><td colspan="2">Select the Solution FININFRA</td></tr>
+        <tr><td colspan="2">Click on Signature Verification System</td></tr>
+        <tr><td colspan="2">Click on Signatures and Photographs</td></tr>
+        <tr><td colspan="2">Click on Maintain Signatures and Photographs</td></tr>
+    </table>
+    <h3>Add Signature and Photograph</h3>
+    <table>
+        <tr><td colspan="2">For adding signature to an account/CIF ID access the following Menu path and follow the procedure</td></tr>
+    <tr><td colspan="2">Select the Solution FININFRA >> Signature Verification System >> Signatures and
+        Photographs >> Maintain Signatures and Photographs</td></tr>
+        <tr><td>Function</td><td>Select Add</td></tr>
+        <tr><td>A/c. Type</td><td>Normal A/c will be auto populated</td></tr>
+        <tr><td>A/c. ID</td><td>Enter the Account Number for which the signature is to be captured</td></tr>
+        <tr><td>CIF ID</td><td>Enter the Customer ID</td></tr>
+        <tr><td colspan="2">Click on Go Button</td></tr>
+        <tr><td>Signature Upload Mode</td><td>Select Upload from File and click the icon next to it</td></tr>
+        <tr><td colspan="2">A new window will pop up. Click Browse button and select the relevant signature file to be uploaded</td></tr>
+        <tr><td colspan="2">Click Ok</td></tr>
+        <tr><td>Image Access Code</td><td>Select ALL</td></tr>
+        <tr><td>Signature Effective From</td><td>Enter the Current Date</td></tr>
+        <tr><td>Signature Expires On</td><td>Enter 31-12-2099</td></tr>
+        <tr><td colspan="2">Click Submit Button</td></tr>
+        <tr><td colspan="2">User will get the message “Signature and Photograph Record added Successfully. Verification is pending”</td></tr>
+    </table>
+    <h3>Verification of Signature and photograph</h3>
+    <table>
+    <tr><td colspan="2">Select the Solution FININFRA >> Signature Verification System >> Signatures and
+        Photographs >> Maintain Signatures and Photographs</td></tr>
+    <tr><td>Function</td><td>Select Verify</td></tr>
+    <tr><td>A/c. Type</td><td>Normal A/c will be auto populated</td></tr>
+    <tr><td>A/c. ID</td><td>Enter the Account Number</td></tr>
+    <tr><td>CIF ID</td><td>Enter the Customer ID</td></tr>
+    <tr><td colspan="2">Click Go Button</td></tr>
+    <tr><td colspan="2">Verify Pending Signatures and Photographs Tab will be displayed</td></tr>
+    <tr><td colspan="2">The record will be displayed in a Grid, Click the icon under Signature
+        Pop up window will display the signature. Click on the icon next to signature to enlarge the same.</td></tr>
+    <tr><td colspan="2">Click Close Button</td></tr>
+    <tr><td colspan="2">Click on Close Button</td></tr>
+    <tr><td colspan="2">To verify the record, Tick the checkbox under Verify.
+        (Note: To Reject the record tick the checkbox under Undo)</td></tr>
+    <tr><td colspan="2">Click on Submit Button</td></tr>
+    <tr><td colspan="2">User will get the message “Signature and Photograph Record(s) Verified Successfully"</td></tr>
+    </table>
+
+</div>
+
+
+</body>
+</html>

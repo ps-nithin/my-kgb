@@ -9,6 +9,7 @@
         android:id="@+id/appbarlayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        app:statusBarForeground="@color/colorPrimaryDark"
         android:background="#4CAF50">
 
         <androidx.appcompat.widget.Toolbar
@@ -54,6 +55,7 @@
         android:layout_below="@+id/appbarlayout"
         android:background="@color/white"
         android:dividerHeight="1px"
+        android:divider="@color/lightgrey"
         android:nestedScrollingEnabled="true"
         android:scrollbars="none"
         app:layout_behavior="@string/appbar_scrolling_view_behavior">

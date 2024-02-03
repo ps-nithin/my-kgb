@@ -1,0 +1,79 @@
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=windows-1252">
+    <link rel="stylesheet" type="text/css" href="jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="style2.css">
+    <script src="jquery-3.2.1.min.js"></script>
+    <script src="jquery-ui.js"></script>
+    <script>
+        $(function(){
+            $("#accordion").accordion({
+                collapsible: true,
+                active: false,
+                heightStyle: 'content',
+            });
+        });
+
+    </script>
+    <title>acm</title>
+</head>
+<body>
+
+<div id="accordion">
+    <h3>Open Gold Loan Accounts (OGOLD)</h3>
+    <table>
+        <tr><td colspan="2">This Menu is used for opening Gold Loan Accounts. Invoke the Menu OGOLD and follow the below mentioned procedure.</td></tr>
+        <tr><td colspan="2">Key Fields</td></tr>
+        <tr><td>Mode</td><td>A - Add</td></tr>
+        <tr><td>Scheme Code</td><td>Select the applicable Scheme</td></tr>
+        <tr><td>Nomination</td><td>Select the appropriate option</td></tr>
+        <tr><td>CIF</td><td>Select the appropriate option</td></tr>
+        <tr><td>CIF ID</td><td>Enter the CIF ID (Applicable if Enter CIF option is selected)</td></tr>
+        <tr><td>Account No</td><td>Enter the Account Number (Applicable if Enter Fetch from Account option is selected)</td></tr>
+        <tr><td colspan="2">Click Go Button</td></tr>
+        <tr><td colspan="2" class="blue">Basic Information</td></tr>
+        <tr><td>Ornament Details</td><td>Enter the Ornament Details. 10 Fields are available for entering the details</td></tr>
+        <tr><td>No of Items</td><td>Enter the No of Ornaments pledged against each item</td></tr>
+        <tr><td>Gross Weight (in Gms)</td><td>Enter the Gross Weight of the ornaments</td></tr>
+        <tr><td>Net Weight (in Gms)</td><td>Enter the Net Weight of the ornaments</td></tr>
+        <tr><td>Appraised Value</td><td>Enter the Appraised Value</td></tr>
+        <tr><td>Loan Amount</td><td>Enter the Loan Amount</td></tr>
+        <tr><td>Purpose</td><td>Enter the Purpose of Advance</td></tr>
+        <tr><td>Borrower Type</td><td>Select the appropriate option</td></tr>
+        <tr><td colspan="2" class="blue">Land Holding (Applicable only if the Scheme selected is AGL)</td></tr>
+        <tr><td>Land Holding</td><td>Enter the land holding area and select the appropriate area type</td></tr>
+        <tr><td>Survery No</td><td>Enter the Survey No</td></tr>
+        <tr><td colspan="2" class="blue">Nominee (Applicable only if Nomination is opted in Key Field)</td></tr>
+        <tr><td>Nominee Category</td><td>Select the Appropriate option</td></tr>
+        <tr><td>Nominee CIF</td><td>Enter the Nominee CIF Applicable If nominee is having CIF</td></tr>
+        <tr><td>Nominee Name</td><td>Enter the Name of the Nominee</td></tr>
+        <tr><td>Address Line 1</td><td>Enter the Address details of the Nominee</td></tr>
+        <tr><td>Address Line 2</td><td>Enter the Address details of the Nominee</td></tr>
+        <tr><td>City Code</td><td>Select the applicable City Code</td></tr>
+        <tr><td>Relationship</td><td>Select relationship of Nominee to the Customer</td></tr>
+        <tr><td>Nominee Date of Incorporation</td><td></td></tr>
+        <tr><td colspan="2" class="blue">Nominee Guardian (Applicable only Nomination is opted as Nominee is Minor in Key Field)</td></tr>
+        <tr><td>Guardian Category</td><td>Select the Appropriate option</td></tr>
+        <tr><td>Guardian CIF</td><td>Enter the Guardian CIF ( Applicable only If the Guardian is having CIF)</td></tr>
+        <tr><td>Guardian Name</td><td>Enter the Name of the Guardian</td></tr>
+        <tr><td>Address Line 1</td><td>Enter the Address details of the Guardian</td></tr>
+        <tr><td>Address Line 2</td><td>Enter the Address details of the Guardian</td></tr>
+        <tr><td>City Code</td><td>Select the applicable City Code</td></tr>
+        <tr><td>Guardian Type/Relation</td><td>Select the applicable Guardian Relationship</td></tr>
+        <tr><td colspan="2" class="blue">Transaction</td></tr>
+        <tr><td>Transaction Mode</td><td>Select Transfer</td></tr>
+        <tr><td>Transaction Amount</td><td>Enter the Disbursement Amount</td></tr>
+        <tr><td>Transfer Account No</td><td>Enter the operative account of the customer</td></tr>
+        <tr><td colspan="2" class="blue">Print/FATCA</td></tr>
+        <tr><td>Print Opening Form?</td><td>Select Yes, If Print is required at the time of creation. Else select No</td></tr>
+        <tr><td>FATCA Applicable?</td><td>Select the appropriate option</td></tr>
+        <tr><td>Override Customer Limit?</td><td>Select the appropriate option</td></tr>
+        <tr><td colspan="2">Click on Submit and note down the Reference No</td></tr>
+        <tr><td colspan="2">Before verification, modification can be done by any user using the menu OGOLD. Verification of
+            the record to be done by another user having verification rights using the same Menu.</td></tr>
+    </table>
+</div>
+
+
+</body>
+</html>

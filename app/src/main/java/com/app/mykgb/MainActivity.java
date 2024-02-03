@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
         //final TextView result=(TextView)findViewById(R.id.textview1);
         final ListView listview=(ListView)findViewById(R.id.listview1);
         //getWindow().requestFeature(Window.FEATURE_ACTION_BAR_OVERLAY);
-
+        this.getWindow().setStatusBarColor(getResources().getColor(R.color.colorPrimaryDark));
         //final SQLiteDatabase db1=SQLiteDatabase.openDatabase("/data/data/com.app.mykgb/databases/kgbmenu",null,0);
         dbHelper dbHelper = new dbHelper(getApplicationContext());
         SQLiteDatabase db = dbHelper.getReadableDatabase();

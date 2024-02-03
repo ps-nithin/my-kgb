@@ -1,0 +1,60 @@
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=windows-1252">
+    <link rel="stylesheet" type="text/css" href="jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="style2.css">
+    <script src="jquery-3.2.1.min.js"></script>
+    <script src="jquery-ui.js"></script>
+    <script>
+        $(function(){
+            $("#accordion").accordion({
+                collapsible: true,
+                active: false,
+                heightStyle: 'content',
+            });
+        });
+
+    </script>
+    <title>acm</title>
+</head>
+<body>
+
+<div id="accordion">
+    <h3>Close a Term Deposit Account (HCAACTD)</h3>
+    <table>
+        <tr><td colspan="2">Invoke the Menu HCAACTD and follow the below procedure for closing the Term Deposit Account of a Customer.</td></tr>
+        <tr><td>Function</td><td>Z - Close</td></tr>
+        <tr><td>A/c. ID</td><td>Enter the Account Number or select using the search</td></tr>
+        <tr><td>Closure Value Date</td><td>Current date will be auto populated by the system</td></tr>
+        <tr><td>Withdrawal Amt. (Principal)</td><td>Outstanding deposit amount will be displayed</td></tr>
+        <tr><td colspan="2">Click on Go button</td></tr>
+        <tr><td colspan="2" class="blue">A/c Information Tab</td></tr>
+        <tr><td colspan="2">Verify the details displayed</td></tr>
+        <tr><td colspan="2" class="blue">Closure Details Tab</td></tr>
+        <tr><td>Close Mode</td><td>Select R - Repayment A/c Only option</td></tr>
+        <tr><td>Repayment A/c. ID</td><td>Enter the Repayment Account which the closure proceeds to be credited</td></tr>
+        <tr><td colspan="2" class="blue">Visit Closure Exceptions Tab</td></tr>
+        <tr><td colspan="2">Click Submit. User can view the details of the account by expanding the respective Tabs</td></tr>
+        <tr><td colspan="2">Click Ok button.</td></tr>
+    </table>
+    <h3>Verification of Term Deposit Account Closure (To be done by another user having
+        verification rights)</h3>
+        <table>
+            <tr><td colspan="2">Invoke the Menu HCAACVTD and follow the below mentioned procedure.</td></tr>
+            <tr><td>Function</td><td>V - Verify</td></tr>
+            <tr><td>A/c. ID</td><td>Enter the Account Number or select using the search</td></tr>
+            <tr><td colspan="2">Click on Go button</td></tr>
+            <tr><td colspan="2" class="blue">A/c Information Tab</td></tr>
+            <tr><td colspan="2">Check the account Information displayed</td></tr>
+            <tr><td colspan="2" class="blue">Closure Details Tab</td></tr>
+            <tr><td colspan="2">Check the closure details</td></tr>
+            <tr><td colspan="2" class="blue">Closure Exceptions</td></tr>
+            <tr><td colspan="2">Click on Submit. Verifying User can view the details of the account by expanding the respective Tabs</td></tr>
+            <tr><td colspan="2">Click Ok. Note down the Tran ID generated.</td></tr>
+        </table>
+
+</div>
+
+
+</body>
+</html>

@@ -30,11 +30,13 @@ public class DetailActivity extends AppCompatActivity {
         Intent intent=getIntent();
         Toolbar detail_toolbar = (Toolbar) findViewById(R.id.toolbar_detail);
         Bundle bun=intent.getExtras();
+        this.getWindow().setStatusBarColor(getResources().getColor(R.color.colorPrimaryDark));
         if(bun!=null){
             String detail_title=(String)bun.get(MainActivity.MENU_NAME);
             detail_title=detail_title.split("\\s+")[1];
             detail_toolbar.setTitle(detail_title.toUpperCase());
             setSupportActionBar(detail_toolbar);
+
             WebView wv=(WebView)findViewById(R.id.detail_webview);
             wv.setOnLongClickListener(new View.OnLongClickListener() {
                 @Override

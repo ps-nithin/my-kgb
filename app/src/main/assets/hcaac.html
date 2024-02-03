@@ -1,0 +1,66 @@
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=windows-1252">
+    <link rel="stylesheet" type="text/css" href="jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="style2.css">
+    <script src="jquery-3.2.1.min.js"></script>
+    <script src="jquery-ui.js"></script>
+    <script>
+        $(function(){
+            $("#accordion").accordion({
+                collapsible: true,
+                active: false,
+                heightStyle: 'content',
+            });
+        });
+
+    </script>
+    <title>acm</title>
+</head>
+<body>
+
+<div id="accordion">
+    <h3>Introduction</h3>
+    <table>
+        <tr><td colspan="2">In Finacle 7, all types of account closure (SBA,CAA,TDA,ODA,CCA,LAA) was carried out using the
+            Core Menu CAAC and the verification of the same was done through CAACAU Menu.
+            In Finacle 10, the core menus used for account closure have been splitted, for closing each type of
+            account, different menus need to be invoked. The following are the core Menus that need to be used for closing the accounts.</td></tr>
+        <tr><td>HCAAC</td><td>Closure of all type of Operative Accounts (CASA and CCOD)</td></tr>
+        <tr><td>HCAACTD</td><td>Closure of Term Deposits</td></tr>
+        <tr><td>HPAYOFF</td><td>Closure of Term Loan Accounts</td></tr>
+        <tr><td>CAACLA</td><td>Final Closure of Loan Accounts</td></tr>
+        <tr><td colspan="2">The detailed workflow for closing different types of accounts are given below.</td></tr>
+    </table>
+    <h3>Close an Operative Account (HCAAC)</h3>
+    <table>
+        <tr><td colspan="2">Invoke the Menu HCAAC and follow the below procedure for closing the Operative Account (SBA,CAA,CCA,ODA) of a Customer.</td></tr>
+        <tr><td>Function</td><td>Z - Close</td></tr>
+        <tr><td>A/c. ID</td><td>Enter the Account Number or select using the search</td></tr>
+        <tr><td>Balance</td><td>Put Tick Mark against transfer</td></tr>
+        <tr><td>Transaction Type</td><td></td></tr>
+        <tr><td>Transfer A/c. ID</td><td>Enter the account number to which the balance needs to be credited</td></tr>
+        <tr><td colspan="2">Click on Go button</td></tr>
+        <tr><td colspan="2" class="blue">A/c Information Tab</td></tr>
+        <tr><td colspan="2">Verify the details displayed</td></tr>
+        <tr><td colspan="2" class="blue">Closure Tab</td></tr>
+        <tr><td>Closure Notes</td><td>Enter the closure remarks, if any</td></tr>
+        <tr><td colspan="2">Click Submit. Note down the Tran ID</td></tr>
+    </table>
+    <h3>Verification of Account Closure (To be done by another user having verification rights)</h3>
+        <table>
+            <tr><td colspan="2">Invoke the Menu HCAAC and follow the below mentioned procedure.</td></tr>
+            <tr><td>Function</td><td>V - Verify</td></tr>
+            <tr><td>A/c. ID</td><td>Enter the Account Number or select using the search</td></tr>
+            <tr><td colspan="2">Click on Go button</td></tr>
+            <tr><td colspan="2" class="blue">A/c Information Tab</td></tr>
+            <tr><td colspan="2">Check the account Information displayed</td></tr>
+            <tr><td colspan="2" class="blue">Closure Tab</td></tr>
+            <tr><td colspan="2">Check the closure details</td></tr>
+            <tr><td colspan="2">Click on Submit</td></tr>
+        </table>
+</div>
+
+
+</body>
+</html>

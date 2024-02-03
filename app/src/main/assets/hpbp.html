@@ -1,0 +1,41 @@
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=windows-1252">
+    <link rel="stylesheet" type="text/css" href="jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="style2.css">
+    <script src="jquery-3.2.1.min.js"></script>
+    <script src="jquery-ui.js"></script>
+    <script>
+        $(function(){
+            $("#accordion").accordion({
+                collapsible: true,
+                active: false,
+                heightStyle: 'content',
+            });
+        });
+
+    </script>
+    <title>acm</title>
+</head>
+<body>
+
+<div id="accordion">
+    <h3>Pass Book Printing (HPBP)</h3>
+    <table>
+        <tr><td colspan="2">For Issuing passbook for an account, invoke the Menu HPBP and follow the below procedure.</td></tr>
+        <tr><td>A/c. ID</td><td>Enter Account Number</td></tr>
+        <tr><td>New Passbook</td><td>Will be auto populated</td></tr>
+        <tr><td>Start Line No.</td><td>Will be auto populated</td></tr>
+        <tr><td>Start Page No.</td><td>Will be auto populated</td></tr>
+        <tr><td colspan="2">USer can modify the above values using Modify option</td></tr>
+        <tr><td colspan="2">Click on Print</td></tr>
+        <tr><td colspan="2">Print details will be displayed</td></tr>
+    <tr><td colspan="2">Click on Print Print dialogue box will appear. Ensure proper printer is
+        selected and Click on Print</td></tr>
+        <tr><td colspan="2">Pass Book will be printed</td></tr>
+    </table>
+</div>
+
+
+</body>
+</html>

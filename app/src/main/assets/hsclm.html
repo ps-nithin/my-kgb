@@ -1,0 +1,63 @@
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=windows-1252">
+    <link rel="stylesheet" type="text/css" href="jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="style2.css">
+    <script src="jquery-3.2.1.min.js"></script>
+    <script src="jquery-ui.js"></script>
+    <script>
+        $(function(){
+            $("#accordion").accordion({
+                collapsible: true,
+                active: false,
+                heightStyle: 'content',
+            });
+        });
+
+    </script>
+    <title>acm</title>
+</head>
+<body>
+
+<div id="accordion">
+    <h3>Linking/Unlinking of Collateral ID to Loan Accounts (HSCLM)</h3>
+    <table>
+        <tr><td colspan="2">This menu is used for performing the following operations.</td></tr>
+        <tr><td colspan="2">1. LINK/MODIFY/UNLINK -Inventory (Stock)/ Book Debts with loan accounts</td></tr>
+        <tr><td colspan="2">2. UNLINK-Deposit Collateral ID linked to loan against deposit opened before migration and linked through HSCLM.</td></tr>
+        <tr><td colspan="2">3. If loan against deposit (LTD) is opened post migration same to be unlinked via HLACM menu</td></tr>
+        <tr><td colspan="2">4. LINK/MODIFY/UNLINK-Deposit collateral ID created and linked through HCLM/HSCLM for loans other than LTD</td></tr>
+    </table>
+    <h3>Link/Modify Collateral ID to an Account</h3>
+    <table>
+        <tr><td colspan="2">Invoke the Menu HSCLM and follow the below procedure</td></tr>
+        <tr><td>Function</td><td>L - Link</td></tr>
+        <tr><td>A/c. ID</td><td>Enter the Account Number</td></tr>
+        <tr><td>Collateral ID</td><td>Enter the Collateral ID</td></tr>
+        <tr><td colspan="2">Click Accept Button</td></tr>
+        <tr><td>Apportioned Value</td><td>Enter the collateral Value</td></tr>
+        <tr><td>Nature</td><td>Select the applicable nature of security</td></tr>
+        <tr><td colspan="2">Click on Submit and note down the Collateral ID and the Account Number linked</td></tr>
+        <tr><td colspan="2">Verification of the collateral linking can be done by any user (other than creator) having verification
+            rights through HSCLM Menu</td></tr>
+        <tr><td colspan="2">Post Verification, Modification of the collateral linkage can be done by any user by invoking the Menu
+            HSCLM and the same to be verified.</td></tr>
+    </table>
+    <h3>Unlinking a Collateral ID from Account</h3>
+        <table>
+            <tr><td colspan="2">Invoke the Menu HSCLM and follow the below procedure</td></tr>
+            <tr><td>Function</td><td>U - Unlink</td></tr>
+            <tr><td>A/c. ID</td><td>Enter the Account Number</td></tr>
+            <tr><td>Collateral ID</td><td>Enter the Collateral ID</td></tr>
+            <tr><td colspan="2">Click Accept Button</td></tr>
+            <tr><td>Reason Code</td><td>Select the Reason Code</td></tr>
+            <tr><td colspan="2">Click on Submit. The Collateral ID will be delinked from the Account.</td></tr>
+        <tr><td colspan="2">Verification of the collateral linking can be done by any user (other than creator) having verification
+            rights through HSCLM Menu</td></tr>
+            <tr><td colspan="2">Before Verification of the Collateral ID the same can be canceled through HCLM Menu.</td></tr>
+        </table>
+</div>
+
+
+</body>
+</html>

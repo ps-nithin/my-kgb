@@ -1,0 +1,78 @@
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=windows-1252">
+    <link rel="stylesheet" type="text/css" href="jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="style2.css">
+    <script src="jquery-3.2.1.min.js"></script>
+    <script src="jquery-ui.js"></script>
+    <script>
+        $(function(){
+            $("#accordion").accordion({
+                collapsible: true,
+                active: false,
+                heightStyle: 'content',
+            });
+        });
+
+    </script>
+    <title>acm</title>
+</head>
+<body>
+
+<div id="accordion">
+    <h3>Introduction</h3>
+    <table>
+        <tr><td colspan="2">In Finacle 10, the existing procedure Review, Renewal and Extension of validity period of CC/OD accounts will continue as such.</td></tr>
+        <tr><td colspan="2">The following Menus are available in Finacle 10 for carrying out the limit maintenance.</td></tr>
+        <tr><td colspan="2">1. LAR Loan Application Register</td></tr>
+        <tr><td colspan="2">2. HACLHM Account Limit History Maintenance</td></tr>
+        <tr><td colspan="2">3. ACSTATUS 87 Review Confirmation (CBS Annex Module)</td></tr>
+    </table>
+    <h3>Sanction Limit Modification</h3>
+    <table>
+        <tr><td colspan="2">For Modifying the Sanction Limit of an account invoke the Menu HACLHM and follow the below procedure.</td></tr>
+        <tr><td>Operation</td><td>Select Sanction Limit</td></tr>
+        <tr><td>Function</td><td>Modify</td></tr>
+        <tr><td>A/c. ID</td><td>Enter the Account Number</td></tr>
+        <tr><td colspan="2">Click on Go Button</td></tr>
+        <tr><td colspan="2">The limit details will be displayed in the grid.</td></tr>
+        <tr><td colspan="2">Select the record by entering a tick mark in the check box against the record that needs to be modified.</td></tr>
+        <tr><td>Applicable From Date</td><td>Enter current working Date</td></tr>
+        <tr><td>Sanction Limit</td><td>Modify the Sanction Limit</td></tr>
+        <tr><td>Supercede Record</td><td>Select the appropriate option</td></tr>
+        <tr><td>Limit Ref. No.</td><td>Enter the LAR ID, if applicable or Enter the Sanction Reference Number as the case may be</td></tr>
+        <tr><td colspan="2">Click on Submit Button</td></tr>
+        <tr><td colspan="2">Click Accept</td></tr>
+    </table>
+    <h3>Drawing Power Modification</h3>
+    <table>
+        <tr><td colspan="2">For Modifying the Drawing Power of an account Invoke the Menu HACLHM and follow the below procedure.</td></tr>
+        <tr><td>Operation</td><td>Select Drawing Power</td></tr>
+        <tr><td>Function</td><td>Modify</td></tr>
+        <tr><td>A/c. ID</td><td>Enter the Account Number</td></tr>
+        <tr><td colspan="2">Click on Go Button</td></tr>
+        <tr><td colspan="2">The limit details will be displayed in the grid.</td></tr>
+        <tr><td colspan="2">Select the record by putting tick mark against the record that needs to be modified.</td></tr>
+        <tr><td>Applicable Date</td><td>Enter BOD Date</td></tr>
+        <tr><td>Drawing Power Indicator</td><td>Select as Derived</td></tr>
+        <tr><td colspan="2">Click on Submit Button</td></tr>
+        <tr><td colspan="2">Click Accept</td></tr>
+    </table>
+    <h3>Verification of Sanction Limit/Drawing Power Modification</h3>
+    <table>
+        <tr><td colspan="2">For Verifying the Sanction Limit / Drawing Power of an account Invoke the Menu HACLHM and follow the below procedure.</td></tr>
+    <tr><td>Menu</td><td>HACLHM</td></tr>
+    <tr><td>Operation</td><td>Select Sanction Limit / Drawing Power, as the case may be</td></tr>
+    <tr><td>Function</td><td>Verify</td></tr>
+    <tr><td>A/c. ID</td><td>Enter the Account Number Or Select using search</td></tr>
+    <tr><td colspan="2">Click on Go Button</td></tr>
+    <tr><td colspan="2">Validate the entered data</td></tr>
+    <tr><td colspan="2">Click on Submit Button</td></tr>
+    <tr><td colspan="2">Click Accept</td></tr>
+    </table>
+
+</div>
+
+
+</body>
+</html>

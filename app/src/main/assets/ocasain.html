@@ -1,0 +1,208 @@
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=windows-1252">
+    <link rel="stylesheet" type="text/css" href="jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="style2.css">
+    <script src="jquery-3.2.1.min.js"></script>
+    <script src="jquery-ui.js"></script>
+    <script>
+        $(function(){
+            $("#accordion").accordion({
+                collapsible: true,
+                active: false,
+                heightStyle: 'content',
+            });
+        });
+
+    </script>
+    <title>acm</title>
+</head>
+<body>
+
+<div id="accordion">
+    <h3>Retail CIF Creation (OCASAIN)</h3>
+    <table>
+        <tr><td colspan="2">This Menu is used for creating Customer ID/Account of Retail Customers (Individuals). Users can create the following using this menu.</td></tr>
+        <tr><td colspan="2">1. CIF Only</td></tr>
+        <tr><td colspan="2">2. Both CIF and Account</td></tr>
+        <tr><td colspan="2">3. Account Only</td></tr>
+        <tr><td colspan="2">Invoke the Menu OCASAIN and select the option CIF Only for creation CIF ID for an individual customer</td></tr>
+        <tr><td colspan="2">Key Fields</td></tr>
+        <tr><td>Mode</td><td>A - Add</td></tr>
+        <tr><td>Create</td><td>Select CIF Only option from the drop down</td></tr>
+        <tr><td>Is Minor ?</td><td>Select applicable value</td></tr>
+        <tr><td>IS NRE ?</td><td>Select applicable value</td></tr>
+        <tr><td>Is Staff?</td><td>Select applicable value</td></tr>
+        <tr><td>Nomination</td><td>Select applicable value</td></tr>
+        <tr><td colspan="2">Click Go Button</td></tr>
+        <tr><td colspan="2">Basic Information</td></tr>
+        <tr><td>Name</td><td>Select the salutation and Enter the name of customer</td></tr>
+        <tr><td>Father/Spouse Name</td><td>Select the Relation Type and Enter the name of Father/Spouse</td></tr>
+        <tr><td>Mothers Name</td><td>Enter Mothers Name</td></tr>
+        <tr><td>Gender</td><td>Select the Gender of the customer</td></tr>
+        <tr><td>Date of Birth</td><td>Enter the Date of Birth of the customer</td></tr>
+        <tr><td>Religion</td><td>Select the Religion of the customer</td></tr>
+        <tr><td>Caste</td><td>Select the Caste of the customer</td></tr>
+        <tr><td>Customer Type</td><td>Select the Customer Type</td></tr>
+        <tr><td>Customer Status</td><td>Select the Customer Status</td></tr>
+        <tr><td>Nationality</td><td>Select the Nationality</td></tr>
+        <tr><td>Physical State</td><td>Select the Physical State</td></tr>
+        <tr><td>Education Level</td><td>Select the Education Qualification of the customer</td></tr>
+        <tr><td>Occupation</td><td>Select the Occupation Applicable for the Customer</td></tr>
+        <tr><td>Annual Income</td><td>Enter the Annual Income</td></tr>
+        <tr><td>Marital Status</td><td>Select the Marital Status of the customer</td></tr>
+        <tr><td>Staff No (Applicable only if Staff Flag is selected as Yes in Key Fields)</td><td>Enter the Staff Number</td></tr>
+        <tr><td colspan="2">Communication Details</td></tr>
+        <tr><td>Address Line 1</td><td>Enter the Address of the customer</td></tr>
+        <tr><td>Address Line 2</td><td>Enter the Address of the customer</td></tr>
+        <tr><td>City Code</td><td>Select the applicable City Code</td></tr>
+        <tr><td>Location</td><td>Select the applicable Location Code</td></tr>
+        <tr><td>Landmark</td><td>Enter the Landmark related to customer location</td></tr>
+        <tr><td>Mobile No</td><td>Enter the Mobile No</td></tr>
+        <tr><td>Land Line No</td><td>Enter the Land Line No</td></tr>
+        <tr><td>Contact No</td><td>Enter the Contact No</td></tr>
+        <tr><td>eMAil ID</td><td>Enter the eMAil ID</td></tr>
+        <tr><td colspan="2">Personal Identification Documents</td></tr>
+        <tr><td>ID/Address Proof 1</td><td>Select the ID/Address Proof Type</td></tr>
+        <tr><td>No</td><td>Enter the ID/Address Proof Number</td></tr>
+        <tr><td>ID/Address Proof 2</td><td>Select the ID/Address Proof Type (If applicable)</td></tr>
+        <tr><td>No</td><td>Enter the ID/Address Proof Number</td></tr>
+        <tr><td>Seed AADHAAR</td><td>Select the applicable Option.Yes to be selected if the same needs to be registered for DBT Purpose
+            No Enter the Aadhaar Number (Applicable only if Seed Aadhaar is selected as Yes)</td></tr>
+        <tr><td>IIN No</td><td>Select the appropriate Bank Name (Applicable only if Seed Aadhaar is selected as Yes)</td></tr>
+        <tr><td>PAN</td><td>Option Select the applicable option</td></tr>
+        <tr><td>No</td><td>Enter the PAN Number, If the option selected is Tax Slab Select the Applicable Tax Slab</td></tr>
+        <tr><td colspan="2">NRE Details (Applicable only if NRE flag is selected as Yes in Key Fields)</td></tr>
+        <tr><td>Passport Issue Date</td><td>Enter the Passport Issue Date</td></tr>
+        <tr><td>Expiry Date</td><td>Enter the Expiry Date of Passport</td></tr>
+        <tr><td>Turned NRE on</td><td>Enter the date on which the customer has become NRE</td></tr>
+        <tr><td>NRE Country</td><td>Select the NRE Country</td></tr>
+        <tr><td>NRE Address Line 1</td><td>Enter the NRE Address details of the customer</td></tr>
+        <tr><td>NRE Address Line 2</td><td>Enter the NRE Address details of the customer</td></tr>
+        <tr><td>NRE Address Line 3</td><td>Enter the NRE Address details of the customer</td></tr>
+        <tr><td>NRE Mobile No - Country Code</td><td>Select the Country Code</td></tr>
+        <tr><td>Mobile No</td><td>Enter the Mobile Number excluding Country Code</td></tr>
+        <tr><td colspan="2">Guardian Details (Applicable only if Minor flag is selected as Yes - Operated by Guardian in Key Fields)</td></tr>
+        <tr><td>Guardian CIF</td><td>Enter the CIF ID of Guardian</td></tr>
+        <tr><td>Guardian Type/Relation</td><td>Select relationship of Guardian to the Customer</td></tr>
+        <tr><td colspan="2">Miscellaneous Details</td></tr>
+        <tr><td>Ration Card No</td><td>Enter the Ration Card Number (If available)</td></tr>
+        <tr><td>Farmer Registration No</td><td>Enter the Farmers Registration Number (If available)</td></tr>
+        <tr><td>Risk Category</td><td>Select the applicable Risk Rating of the customer</td></tr>
+        <tr><td>Override OUNSC Check</td><td>Check whether the customer details are matching with the OUNSC Report. If No, Select Yes</td></tr>
+        <tr><td colspan="2">Print/FATCA</td></tr>
+        <tr><td>Print Opening Form?</td><td>Select Yes, If Print is required at the time of creation. Else select No</td></tr>
+        <tr><td>FATCA Applicable?</td><td>Select the applicable option</td></tr>
+        <tr><td colspan="2">Click on Submit and note down the Reference No</td></tr>
+    </table>
+    <h3>Open CASA Accounts - Individuals (OCASAIN)</h3>
+    <table>
+        <tr><td colspan="2">This Menu is used for creating Customer ID/Account of Retail Customers (Individuals). Users can create the following using this menu.</td></tr>
+        <tr><td colspan="2">CIF Only</td></tr>
+        <tr><td colspan="2">Both CIF and Account</td></tr>
+        <tr><td colspan="2">Account Only</td></tr>
+        <tr><td colspan="2">Invoke the Menu OCASAIN and follow the below procedure for opening Both CIF and Account for a customer</td></tr>
+        <tr><td colspan="2">Key Fields</td></tr>
+        <tr><td>Mode</td><td>A - Add</td></tr>
+        <tr><td>Create</td><td>Select the required creation type from the drop down Both CIF and Account</td></tr>
+        <tr><td>Is Minor ?</td><td>Select applicable value</td></tr>
+        <tr><td>IS NRE ?</td><td>Select applicable value</td></tr>
+        <tr><td>Is Staff?</td><td>Select applicable value</td></tr>
+        <tr><td>Nomination</td><td>Select applicable value</td></tr>
+        <tr><td colspan="2">Click Go Button</td></tr>
+        <tr><td colspan="2" class="blue">Basic Information</td></tr>
+        <tr><td>Name</td><td>Select the salutation and Enter the name of customer</td></tr>
+        <tr><td>Father/Spouse</td><td>Name Select the Relation Type and Enter the name of Father/Spouse</td></tr>
+        <tr><td>Mothers Name</td><td>Enter Mothers Name</td></tr>
+        <tr><td>Gender</td><td>Select the Gender of the customer</td></tr>
+        <tr><td>Date of Birth</td><td>Enter the Date of Birth of the customer</td></tr>
+        <tr><td>Religion</td><td>Select the Religion of the customer</td></tr>
+        <tr><td>Caste</td><td>Select the Caste of the customer</td></tr>
+        <tr><td>Customer Type</td><td>Select the Customer Type</td></tr>
+        <tr><td>Customer Status</td><td>Select the Customer Status</td></tr>
+        <tr><td>Nationality</td><td>Select the Nationality</td></tr>
+        <tr><td>Physical State</td><td>Select the Physical State</td></tr>
+        <tr><td>Education Level</td><td>Select the Education Qualification of the customer</td></tr>
+        <tr><td>Occupation</td><td>Select the appropriate option</td></tr>
+        <tr><td>Annual Income</td><td>Enter the Annual Income</td></tr>
+        <tr><td>Marital Status</td><td>Select the Marital Status of the customer</td></tr>
+        <tr><td>Staff No (Applicable only if Staff Flag is selected as Yes in Key Fields)</td><td>Enter the Staff Number</td></tr>
+        <tr><td colspan="2" class="blue">Communication Details</td></tr>
+        <tr><td>Address Line 1</td><td>Enter the Address of the customer</td></tr>
+        <tr><td>Address Line 2</td><td>Enter the Address of the customer</td></tr>
+        <tr><td>City Code</td><td>Select the applicable City Code</td></tr>
+        <tr><td>Location</td><td>Select the applicable Location Code</td></tr>
+        <tr><td>Landmark</td><td>Enter the Landmark related to customer location</td></tr>
+        <tr><td>Mobile No</td><td>Enter the Mobile No</td></tr>
+        <tr><td>Land Line No</td><td>Enter the Land Line No</td></tr>
+        <tr><td>Contact No</td><td>Enter the Contact No</td></tr>
+        <tr><td>eMAil ID</td><td>Enter the eMAil ID</td></tr>
+        <tr><td colspan="2" class="blue">Personal Identification Documents</td></tr>
+        <tr><td>ID/Address Proof 1</td><td>Select the ID/Address Proof Type</td></tr>
+        <tr><td>No</td><td>Enter the ID/Address Proof Number</td></tr>
+        <tr><td>ID/Address Proof 2</td><td>Select the ID/Address Proof Type (If applicable)</td></tr>
+        <tr><td>No</td><td>Enter the ID/Address Proof Number</td></tr>
+        <tr><td>Seed AADHAAR</td><td>Select the applicable Option. Yes to be selected if the same needs to be registered for DBT Purpose</td></tr>
+        <tr><td>No</td><td>Enter the Aadhaar Number (Applicable only if Seed Aadhaar is selected as Yes)</td></tr>
+        <tr><td>IIN No</td><td>Select the appropriate Bank Name (Applicable only if Seed Aadhaar is selected as Yes)</td></tr>
+        <tr><td>PAN Option</td><td>Select the applicable option</td></tr>
+        <tr><td>No</td><td>Enter the PAN Number, If the option selected is Has PAN</td></tr>
+        <tr><td>Tax Slab</td><td>Select the Applicable Tax Slab</td></tr>
+        <tr><td colspan="2" class="blue">NRE Details (Applicable only if NRE flag is selected as Yes in Key Fields)</td></tr>
+        <tr><td>Passport Issue Date</td><td>Enter the Passport Issue Date</td></tr>
+        <tr><td>Expiry Date</td><td>Enter the Expiry Date of Passport</td></tr>
+        <tr><td>Turned NRE on</td><td>Enter the date on which the customer has become NRE</td></tr>
+        <tr><td>NRE Country</td><td>Select the NRE Country</td></tr>
+        <tr><td>NRE Address Line 1</td><td>Enter the NRE Address details of the customer</td></tr>
+        <tr><td>NRE Address Line 2</td><td>Enter the NRE Address details of the customer</td></tr>
+        <tr><td>NRE Address Line 3</td><td>Enter the NRE Address details of the customer</td></tr>
+        <tr><td>NRE Mobile No - Country Code</td><td>Select the Country Code</td></tr>
+        <tr><td>Mobile No</td><td>Enter the Mobile Number excluding Country Code</td></tr>
+        <tr><td colspan="2" class="blue">Guardian Details (Applicable only if Minor flag is selected as Yes - Operated by Guardian in Key Fields)</td></tr>
+        <tr><td>Guardian CIF</td><td>Enter the CIF ID of Guardian</td></tr>
+        <tr><td>Guardian Type/Relation</td><td>Select relationship of Guardian to the Customer</td></tr>
+        <tr><td colspan="2" class="blue">Miscellaneous Details</td></tr>
+        <tr><td>Ration Card No</td><td>Enter the Ration Card Number (If available)</td></tr>
+        <tr><td>Farmer Registration No</td><td>Enter the Farmers Registration Number (If available)</td></tr>
+        <tr><td>Risk Category</td><td>Select the applicable Risk Rating of the customer</td></tr>
+        <tr><td>Override OUNSC Check</td><td>Check whether the customer details are matching with the OUNSC Report. If No, Select Yes</td></tr>
+        <tr><td colspan="2" class="blue">Account Details</td></tr>
+        <tr><td>Scheme Code</td><td>Select the Scheme Code</td></tr>
+        <tr><td>Initial Cash Deposit</td><td>Enter the Deposit Amount. If Not Applicable, Enter 0</td></tr>
+        <tr><td>Constituent 1 CIF</td><td>Enter the Constituent CIF, If Applicable</td></tr>
+        <tr><td>Account Relationship</td><td>Select the Relationship of the constituent with customer</td></tr>
+        <tr><td>Cust Relation Code</td><td>Select the Relation Code</td></tr>
+        <tr><td>Constituent 2 CIF</td><td>Enter the Constituent CIF, If Applicable</td></tr>
+        <tr><td>Account Relationship</td><td>Select the Relationship of the constituent with customer</td></tr>
+        <tr><td>Cust Relation Code</td><td>Select the Relation Code</td></tr>
+        <tr><td>Constituent 3 CIF</td><td>Enter the Constituent CIF, If Applicable</td></tr>
+        <tr><td>Account Relationship</td><td>Select the Relationship of the constituent with customer</td></tr>
+        <tr><td>Cust Relation Code</td><td>Select the Relation Code</td></tr>
+        <tr><td>Mode of Operation</td><td>Select the applicable Mode of Operation</td></tr>
+        <tr><td colspan="2" class="blue">Nominee (Applicable only if Nominee flag is opted in Key Field)</td></tr>
+        <tr><td>Nominee Category</td><td>Select the Appropriate option</td></tr>
+        <tr><td>Nominee CIF</td><td>Enter the Nominee CIF. Applicable only if the nominee is having CIF</td></tr>
+        <tr><td>Nominee Name</td><td>Enter the Name of the Nominee</td></tr>
+        <tr><td>Address Line 1</td><td>Enter the Address details of the Nominee</td></tr>
+        <tr><td>Address Line 2</td><td>Enter the Address details of the Nominee</td></tr>
+        <tr><td>City Code</td><td>Select the applicable City Code</td></tr>
+        <tr><td>Guardian Type/Relationship</td><td>Select the applicable Guardian Relationship</td></tr>
+        <tr><td colspan="2" class="blue">Enroll</td></tr>
+        <tr><td>PMJJBY</td><td>Select Yes, If enrollment is required. Else Select No</td></tr>
+        <tr><td>PMSBY</td><td>Select Yes, If enrollment is required. Else Select No</td></tr>
+        <tr><td>ATM Card</td><td>Enter the ATM Card Number to be issued. Else leave the field blank</td></tr>
+        <tr><td colspan="2" class="blue">Print/FATCA</td></tr>
+        <tr><td>Print Opening Form?</td><td>Select Yes, If Print is required at the time of creation. Else select No</td></tr>
+        <tr><td>FATCA Applicable?</td><td>Select the appropriate option</td></tr>
+        <tr><td colspan="2">Click on Submit and note down the Reference No</td></tr>
+        <tr><td colspan="2">Before verification, Modification can be done by invoking the Menu OCASAIN. Verification of the account can be done by any user (other than creator) having verification rights
+            through OCASAIN Menu</td></tr>
+
+    </table>
+
+
+</div>
+
+
+</body>
+</html>

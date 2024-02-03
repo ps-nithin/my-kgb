@@ -1,0 +1,46 @@
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=windows-1252">
+    <link rel="stylesheet" type="text/css" href="jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="style2.css">
+    <script src="jquery-3.2.1.min.js"></script>
+    <script src="jquery-ui.js"></script>
+    <script>
+        $(function(){
+            $("#accordion").accordion({
+                collapsible: true,
+                active: false,
+                heightStyle: 'content',
+            });
+        });
+
+    </script>
+    <title>acm</title>
+</head>
+<body>
+
+<div id="accordion">
+    <h3>Printing all unprinted DDs</h3>
+    <table>
+
+        <tr><td colspan="2">For printing all unprinted Demand Drafts, invoke the menu HDDPALL and follow the below procedure.</td></tr>
+        <tr><td>Start Date</td><td>Will be auto populated as Current Date</td></tr>
+        <tr><td colspan="2">Click on Go Button</td></tr>
+        <tr><td colspan="2">DD Print screen will be displayed</td></tr>
+        <tr><td>Inventory Type</td><td>Will be auto populated</td></tr>
+        <tr><td>Inventory No</td><td>Ensure correctness of the Demand Draft Serial Number</td></tr>
+        <tr><td colspan="2">Click Submit button</td></tr>
+        <tr><td colspan="2">Print details will be displayed</td></tr>
+    <tr><td colspan="2">Click on Print Print dialogue box will appear. Ensure proper printer is
+        selected and Click on Print</td></tr>
+        <tr><td colspan="2">DD will be printed</td></tr>
+        <tr><td colspan="2">Click on Return button Desktop Print confirmation dialogue box will appear</td></tr>
+        <tr><td colspan="2">If printed successfully, Click on Proceed</td></tr>
+    <tr><td colspan="2">If the print is having any issues, untick all the check boxes and click on proceed to Go
+    Back to Printing. If multiple records are pending for printing the next record will be displayed. Click on Submit to proceed further.</td></tr>
+    </table>
+</div>
+
+
+</body>
+</html>

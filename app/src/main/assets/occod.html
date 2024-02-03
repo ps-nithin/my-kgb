@@ -1,0 +1,109 @@
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=windows-1252">
+    <link rel="stylesheet" type="text/css" href="jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="style2.css">
+    <script src="jquery-3.2.1.min.js"></script>
+    <script src="jquery-ui.js"></script>
+    <script>
+        $(function(){
+            $("#accordion").accordion({
+                collapsible: true,
+                active: false,
+                heightStyle: 'content',
+            });
+        });
+
+    </script>
+    <title>acm</title>
+</head>
+<body>
+
+<div id="accordion">
+    <h3>Open Cash Credit/Overdraft Accounts (OCCOD)</h3>
+    <table>
+        <tr><td colspan="2">This Menu is used for opening Cash Credit and Overdraft Accounts. Invoke the Menu OCCOD and follow the below mentioned procedure.</td></tr>
+        <tr><td colspan="2">Key Fields</td></tr>
+        <tr><td>Mode</td><td>A - Add</td></tr>
+        <tr><td>Scheme Code</td><td>Select the applicable Scheme</td></tr>
+        <tr><td>LAR Application ID</td><td>Enter the LAR Application ID, if Applicable</td></tr>
+        <tr><td>Capture Constituent?</td><td>Select the appropriate option</td></tr>
+        <tr><td>Gold Security Applicable?</td><td>Select the appropriate option</td></tr>
+        <tr><td>CIF</td><td>Select the appropriate option</td></tr>
+        <tr><td>CIF ID</td><td>Enter the CIF ID (Applicable if Enter CIF option is selected)</td></tr>
+        <tr><td>Account No</td><td>Enter the Account Number (Applicable if Enter Fetch from Account option is selected)</td></tr>
+        <tr><td colspan="2">Click Go Button</td></tr>
+        <tr><td colspan="2" class="blue">Sanction Details</td></tr>
+        <tr><td>Sanction Level</td><td>Select the appropriate option (Will be auto populated, if LAR
+            ID is given in Key Field)</td></tr>
+        <tr><td>Sanction Authority</td><td>Select the appropriate option (Will be auto populated, if LAR
+            ID is given in Key Field)</td></tr>
+        <tr><td>Sanction Ref No</td><td>Enter the Sanction Reference Number (Not Applicable, if LAR
+            ID is given in Key Field)</td></tr>
+        <tr><td>Sanction Date</td><td>Enter the Sanction Date (Will be auto populated, if LAR ID is
+            given in Key Field)</td></tr>
+        <tr><td>Global Limit</td><td>Enter the Global Limit (Will be auto populated, if LAR ID is
+            given in Key Field)</td></tr>
+        <tr><td>Period in MM</td><td>Enter the Loan Period (Will be auto populated, if LAR ID is
+            given in Key Field)</td></tr>
+        <tr><td colspan="2" class="blue">Basic Info</td></tr>
+        <tr><td>Current Limit</td><td>Enter the Current Limit Sanctioned</td></tr>
+        <tr><td>Limit Expiry Date</td><td>Enter the Due Date of the Loan</td></tr>
+        <tr><td>Draw Down Account No</td><td>Enter the account from which the Demand need to be collected, if applicable</td></tr>
+        <tr><td>Borrower Type</td><td>Select the appropriate option</td></tr>
+        <tr><td>Mode of Operation</td><td>Select the appropriate option</td></tr>
+        <tr><td>Purpose</td><td>Select the appropriate option</td></tr>
+        <tr><td>Special Programme</td><td>Select the appropriate option</td></tr>
+        <tr><td colspan="2" class="blue">Constituents (Applicable only if Capture Constituent is opted in Key Field)</td></tr>
+        <tr><td>Constituent 1</td><td>Enter the Constituent CIF, if Applicable</td></tr>
+        <tr><td>Account Relationship</td><td>Select the Relationship of the constituent with customer</td></tr>
+        <tr><td>Cust Relation Code</td><td>Select the Relation Code</td></tr>
+        <tr><td>Constituent 2</td><td>Enter the Constituent CIF, If applicable</td></tr>
+        <tr><td>Account Relationship</td><td>Select the Relationship of the constituent with customer</td></tr>
+        <tr><td>Cust Relation Code</td><td>Select the Relation Code</td></tr>
+        <tr><td>Constituent 3</td><td>Enter the Constituent CIF, If Applicable</td></tr>
+        <tr><td>Account Relationship</td><td>Select the Relationship of the constituent with customer</td></tr>
+        <tr><td>Cust Relation Code</td><td>Select the Relation Code</td></tr>
+        <tr><td>Constituent 4</td><td>Enter the Constituent CIF, If Applicable</td></tr>
+        <tr><td>Account Relationship</td><td>Select the Relationship of the constituent with customer</td></tr>
+        <tr><td>Cust Relation Code</td><td>Select the Relation Code</td></tr>
+        <tr><td colspan="2" class="blue">Security (Up to four Security can be linked)</td></tr>
+        <tr><td>Security</td><td>Select the appropriate Security</td></tr>
+        <tr><td>Type</td><td>Select the appropriate Security Type</td></tr>
+        <tr><td>Frequency</td><td>Select the appropriate option (Applicable only for Stock/Book Debt Security)</td></tr>
+        <tr><td>Account No</td><td>Enter the Deposit Account No (Applicable only for Term Deposit security)</td></tr>
+        <tr><td>Account Name</td><td>Will be auto populated (Applicable only for Term Deposit security)</td></tr>
+        <tr><td>Value</td><td>Enter the value of security (Will be auto populated in case of Term Deposit security)</td></tr>
+        <tr><td colspan="2" class="blue">Nominee (Applicable only if Gold Security is opted with Minor/Major Nominee in Key Field)</td></tr>
+        <tr><td>Nominee Category</td><td>Select the Appropriate option</td></tr>
+        <tr><td>Nominee CIF</td><td>Enter the Nominee CIF Applicable If nominee is having CIF</td></tr>
+        <tr><td>Nominee Name</td><td>Enter the Name of the Nominee</td></tr>
+        <tr><td>Address Line 1</td><td>Enter the Address details of the Nominee</td></tr>
+        <tr><td>Address Line 2</td><td>Enter the Address details of the Nominee</td></tr>
+        <tr><td>City Code</td><td>Select the applicable City Code</td></tr>
+        <tr><td>Relationship</td><td>Select relationship of Nominee to the Customer</td></tr>
+        <tr><td>Nominee Date of Incorporation</td><td></td></tr>
+        <tr><td colspan="2" class="blue">Nominee Guardian (Applicable only if Gold Security is opted with Minor Nominee in Key Field)</td></tr>
+        <tr><td>Guardian Category</td><td>Select the Appropriate option</td></tr>
+        <tr><td>Guardian CIF</td><td>Enter the Guardian CIF ( Applicable only If the Guardian is having CIF)</td></tr>
+        <tr><td>Guardian Name</td><td>Enter the Name of the Guardian</td></tr>
+        <tr><td>Address Line 1</td><td>Enter the Address details of the Guardian</td></tr>
+        <tr><td>Address Line 2</td><td>Enter the Address details of the Guardian</td></tr>
+        <tr><td>City Code</td><td>Select the applicable City Code</td></tr>
+        <tr><td>Guardian Type/Relation</td><td>Select the applicable Guardian Relationship</td></tr>
+        <tr><td colspan="2" class="blue">Transaction</td></tr>
+        <tr><td>Transaction Mode</td><td>Select Transfer</td></tr>
+        <tr><td>Transaction Amount</td><td>Enter the Disbursement Amount</td></tr>
+        <tr><td>Transfer Account No</td><td>Enter the operative account of the customer</td></tr>
+        <tr><td colspan="2" class="blue">Print/FATCA</td></tr>
+        <tr><td>Print Opening Form?</td><td>Select Yes, If Print is required at the time of creation. Else select No</td></tr>
+        <tr><td>FATCA Applicable?</td><td>Select the applicable option</td></tr>
+        <tr><td colspan="2">Click on Submit and note down the Reference No</td></tr>
+        <tr><td colspan="2">Before verification, modification can be done by any user using the menu OCCOD. Verification of
+            the record to be done by another user having verification rights using the same Menu.</td></tr>
+    </table>
+</div>
+
+
+</body>
+</html>

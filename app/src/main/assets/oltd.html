@@ -1,0 +1,74 @@
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=windows-1252">
+    <link rel="stylesheet" type="text/css" href="jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="style2.css">
+    <script src="jquery-3.2.1.min.js"></script>
+    <script src="jquery-ui.js"></script>
+    <script>
+        $(function(){
+            $("#accordion").accordion({
+                collapsible: true,
+                active: false,
+                heightStyle: 'content',
+            });
+        });
+
+    </script>
+    <title>acm</title>
+</head>
+<body>
+
+<div id="accordion">
+    <h3>Open Loan Against Term Deposits (OLTD)</h3>
+    <table>
+        <tr><td colspan="2">This Menu is used for opening Loan Against Term Deposits and Daily Deposits. Invoke the Menu OLTD and follow the below mentioned procedure.</td></tr>
+        <tr><td colspan="2">Key Fields</td></tr>
+        <tr><td>Mode</td><td>A - Add</td></tr>
+        <tr><td>Scheme Code</td><td>Select the applicable Scheme</td></tr>
+        <tr><td>Capture Constituent?</td><td>Select the appropriate option</td></tr>
+        <tr><td>Term Deposit Account No</td><td>Enter the Deposit Account Number</td></tr>
+        <tr><td colspan="2">Click Go Button</td></tr>
+        <tr><td colspan="2" class="blue">Basic Info</td></tr>
+        <tr><td>Deposit Scheme</td><td>Select the appropriate option</td></tr>
+        <tr><td>Deposit Balance</td><td>Will be auto populated</td></tr>
+        <tr><td>Due Date</td><td>Will be auto populated</td></tr>
+        <tr><td>Lendable Amount</td><td>Will be auto populated</td></tr>
+        <tr><td>Loan Amount</td><td>Enter the required Loan Amount</td></tr>
+        <tr><td>Plus Rate</td><td>Enter the applicable rate that needs to be charged above the deposit rate</td></tr>
+        <tr><td>Margin Permission No</td><td>Enter the Permission Number for increasing the margin, else enter NA</td></tr>
+        <tr><td>Interest Permission No</td><td>Enter the Permission Number for Interest Rate Reduction, else enter NA</td></tr>
+        <tr><td>Due Date</td><td>Enter the Due Date</td></tr>
+        <tr><td>Purpose</td><td>Select the appropriate option</td></tr>
+        <tr><td>Borrower Type</td><td>Select the appropriate option</td></tr>
+        <tr><td>Mode of Operation</td><td>Select the appropriate option</td></tr>
+        <tr><td colspan="2" class="blue">Constituents (Applicable only if Capture Constituent is opted in Key Field)</td></tr>
+        <tr><td>Constituent 1</td><td>Enter the Constituent CIF, If Applicable</td></tr>
+        <tr><td>Account Relationship</td><td>Select the Relationship of the constituent with customer</td></tr>
+        <tr><td>Cust Relation Code</td><td>Select the Relation Code</td></tr>
+        <tr><td>Constituent 2</td><td>Enter the Constituent CIF, If Applicable</td></tr>
+        <tr><td>Account Relationship</td><td>Select the Relationship of the constituent with customer</td></tr>
+        <tr><td>Cust Relation Code</td><td>Select the Relation Code</td></tr>
+        <tr><td>Constituent 3</td><td>Enter the Constituent CIF, If Applicable</td></tr>
+        <tr><td>Account Relationship</td><td>Select the Relationship of the constituent with customer</td></tr>
+        <tr><td>Cust Relation Code</td><td>Select the Relation Code</td></tr>
+        <tr><td>Constituent 4</td><td>Enter the Constituent CIF, If Applicable</td></tr>
+        <tr><td>Account Relationship</td><td>Select the Relationship of the constituent with customer</td></tr>
+        <tr><td>Cust Relation Code</td><td>Select the Relation Code</td></tr>
+        <tr><td colspan="2" class="blue">Transaction</td></tr>
+        <tr><td>Transaction Mode</td><td>Select Transfer</td></tr>
+        <tr><td>Transaction Amount</td><td>Enter the Disbursement Amount</td></tr>
+        <tr><td>Credit Account No</td><td>Enter the operative account of the customer</td></tr>
+        <tr><td colspan="2" class="blue">Print/FATCA</td></tr>
+        <tr><td>Print Opening Form?</td><td>Select Yes, If Print is required at the time of creation. Else select No</td></tr>
+        <tr><td>FATCA Applicable?</td><td>Select the appropriate option</td></tr>
+        <tr><td colspan="2">Click on Submit and note down the Reference No</td></tr>
+        <tr><td colspan="2">Before verification, modification can be done by any user using the menu OLTD. Verification of the
+            record to be done by another user having verification rights using the same Menu.</td></tr>
+    </table>
+
+</div>
+
+
+</body>
+</html>
